@@ -1,0 +1,301 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CollectCell"
+provides-nominal:
+- "C3SHW11CollectCell"
+provides-member:
+- ["C3SHW11CollectCell", ""]
+provides-dynamic-lookup:
+- "picture"
+- "itemName"
+- "servicePay"
+- "awakeFromNib"
+- "facilitatorName"
+- "setSelected"
+depends-top-level:
+- "Bool"
+- "CollectCell"
+- "UIImageView"
+- "UILabel"
+- "UITableViewCell"
+depends-member:
+- ["PSs9AnyObject", "awakeFromNib"]
+- ["PSs9AnyObject", "facilitatorName"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "itemName"]
+- ["PSs9AnyObject", "picture"]
+- ["PSs9AnyObject", "servicePay"]
+- ["PSs9AnyObject", "setSelected"]
+- ["PSs9AnyObject", ""]
+- ["PSs11CVarArgType", "awakeFromNib"]
+- ["PSs11CVarArgType", "facilitatorName"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "itemName"]
+- ["PSs11CVarArgType", "picture"]
+- ["PSs11CVarArgType", "servicePay"]
+- ["PSs11CVarArgType", "setSelected"]
+- ["PSs11CVarArgType", ""]
+- ["C3SHW11CollectCell", "Bool"]
+- ["C3SHW11CollectCell", "UIImageView"]
+- ["C3SHW11CollectCell", "UILabel"]
+- ["C3SHW11CollectCell", "awakeFromNib"]
+- ["C3SHW11CollectCell", "deinit"]
+- ["C3SHW11CollectCell", "facilitatorName"]
+- ["C3SHW11CollectCell", "init"]
+- ["C3SHW11CollectCell", "itemName"]
+- ["C3SHW11CollectCell", "picture"]
+- ["C3SHW11CollectCell", "servicePay"]
+- ["C3SHW11CollectCell", "setSelected"]
+- ["PSs23CustomStringConvertible", "awakeFromNib"]
+- ["PSs23CustomStringConvertible", "facilitatorName"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "itemName"]
+- ["PSs23CustomStringConvertible", "picture"]
+- ["PSs23CustomStringConvertible", "servicePay"]
+- ["PSs23CustomStringConvertible", "setSelected"]
+- ["PSs23CustomStringConvertible", ""]
+- ["PSs9Equatable", "awakeFromNib"]
+- ["PSs9Equatable", "facilitatorName"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "itemName"]
+- ["PSs9Equatable", "picture"]
+- ["PSs9Equatable", "servicePay"]
+- ["PSs9Equatable", "setSelected"]
+- ["PSs9Equatable", ""]
+- ["PSs8Hashable", "awakeFromNib"]
+- ["PSs8Hashable", "facilitatorName"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "itemName"]
+- ["PSs8Hashable", "picture"]
+- ["PSs8Hashable", "servicePay"]
+- ["PSs8Hashable", "setSelected"]
+- ["PSs8Hashable", ""]
+- ["PSo8NSCoding", "awakeFromNib"]
+- ["PSo8NSCoding", "facilitatorName"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "itemName"]
+- ["PSo8NSCoding", "picture"]
+- ["PSo8NSCoding", "servicePay"]
+- ["PSo8NSCoding", "setSelected"]
+- ["PSo8NSCoding", ""]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "awakeFromNib"]
+- ["CSo8NSObject", "facilitatorName"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "itemName"]
+- ["CSo8NSObject", "picture"]
+- ["CSo8NSObject", "servicePay"]
+- ["CSo8NSObject", "setSelected"]
+- ["PSo16NSObjectProtocol", "awakeFromNib"]
+- ["PSo16NSObjectProtocol", "facilitatorName"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "itemName"]
+- ["PSo16NSObjectProtocol", "picture"]
+- ["PSo16NSObjectProtocol", "servicePay"]
+- ["PSo16NSObjectProtocol", "setSelected"]
+- ["PSo16NSObjectProtocol", ""]
+- ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
+- ["PSo29UIAccessibilityIdentification", "facilitatorName"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "itemName"]
+- ["PSo29UIAccessibilityIdentification", "picture"]
+- ["PSo29UIAccessibilityIdentification", "servicePay"]
+- ["PSo29UIAccessibilityIdentification", "setSelected"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- ["PSo12UIAppearance", "awakeFromNib"]
+- ["PSo12UIAppearance", "facilitatorName"]
+- ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "itemName"]
+- ["PSo12UIAppearance", "picture"]
+- ["PSo12UIAppearance", "servicePay"]
+- ["PSo12UIAppearance", "setSelected"]
+- ["PSo12UIAppearance", ""]
+- ["PSo21UIAppearanceContainer", "awakeFromNib"]
+- ["PSo21UIAppearanceContainer", "facilitatorName"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "itemName"]
+- ["PSo21UIAppearanceContainer", "picture"]
+- ["PSo21UIAppearanceContainer", "servicePay"]
+- ["PSo21UIAppearanceContainer", "setSelected"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo17UICoordinateSpace", "awakeFromNib"]
+- ["PSo17UICoordinateSpace", "facilitatorName"]
+- ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "itemName"]
+- ["PSo17UICoordinateSpace", "picture"]
+- ["PSo17UICoordinateSpace", "servicePay"]
+- ["PSo17UICoordinateSpace", "setSelected"]
+- ["PSo17UICoordinateSpace", ""]
+- ["PSo13UIDynamicItem", "awakeFromNib"]
+- ["PSo13UIDynamicItem", "facilitatorName"]
+- ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "itemName"]
+- ["PSo13UIDynamicItem", "picture"]
+- ["PSo13UIDynamicItem", "servicePay"]
+- ["PSo13UIDynamicItem", "setSelected"]
+- ["PSo13UIDynamicItem", ""]
+- ["PSo27UIGestureRecognizerDelegate", "awakeFromNib"]
+- ["PSo27UIGestureRecognizerDelegate", "facilitatorName"]
+- ["PSo27UIGestureRecognizerDelegate", "init"]
+- ["PSo27UIGestureRecognizerDelegate", "itemName"]
+- ["PSo27UIGestureRecognizerDelegate", "picture"]
+- ["PSo27UIGestureRecognizerDelegate", "servicePay"]
+- ["PSo27UIGestureRecognizerDelegate", "setSelected"]
+- ["PSo27UIGestureRecognizerDelegate", ""]
+- ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "awakeFromNib"]
+- ["CSo11UIResponder", "facilitatorName"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "itemName"]
+- ["CSo11UIResponder", "picture"]
+- ["CSo11UIResponder", "servicePay"]
+- ["CSo11UIResponder", "setSelected"]
+- ["CSo15UITableViewCell", "Bool"]
+- ["CSo15UITableViewCell", "UIImageView"]
+- ["CSo15UITableViewCell", "UILabel"]
+- ["CSo15UITableViewCell", "awakeFromNib"]
+- ["CSo15UITableViewCell", "facilitatorName"]
+- ["CSo15UITableViewCell", "init"]
+- ["CSo15UITableViewCell", "itemName"]
+- ["CSo15UITableViewCell", "picture"]
+- ["CSo15UITableViewCell", "servicePay"]
+- ["CSo15UITableViewCell", "setSelected"]
+- ["CSo15UITableViewCell", ""]
+- ["PSo18UITraitEnvironment", "awakeFromNib"]
+- ["PSo18UITraitEnvironment", "facilitatorName"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "itemName"]
+- ["PSo18UITraitEnvironment", "picture"]
+- ["PSo18UITraitEnvironment", "servicePay"]
+- ["PSo18UITraitEnvironment", "setSelected"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "Bool"]
+- ["CSo6UIView", "UIImageView"]
+- ["CSo6UIView", "UILabel"]
+- ["CSo6UIView", "awakeFromNib"]
+- ["CSo6UIView", "facilitatorName"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "itemName"]
+- ["CSo6UIView", "picture"]
+- ["CSo6UIView", "servicePay"]
+- ["CSo6UIView", "setSelected"]
+- ["PSs12_Reflectable", "awakeFromNib"]
+- ["PSs12_Reflectable", "facilitatorName"]
+- ["PSs12_Reflectable", "init"]
+- ["PSs12_Reflectable", "itemName"]
+- ["PSs12_Reflectable", "picture"]
+- ["PSs12_Reflectable", "servicePay"]
+- ["PSs12_Reflectable", "setSelected"]
+- ["PSs12_Reflectable", ""]
+depends-nominal:
+- "PSs9AnyObject"
+- "PSs11CVarArgType"
+- "C3SHW11CollectCell"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo27UIGestureRecognizerDelegate"
+- "CSo11UIResponder"
+- "CSo15UITableViewCell"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/OCContainerHeader.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/JSDropDownMenu.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/JSDropDownMenu.m"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/PayInfo.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/AlipayMethod.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/./AlipaySDK.framework/Headers/AlipaySDK.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/./AlipaySDK.framework/Headers/APayAuthInfo.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.0.sdk/usr/include/CommonCrypto/CommonDigest.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMapKit.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKBaseComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGeneralDelegate.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKMapManager.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKTypes.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKUserLocation.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKVersion.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKMapComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKAnnotation.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKAnnotationView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKActionPaopaoView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKMapView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOverlayView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOverlay.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKMapStatus.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKLocationViewDisplayParam.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKHeatMap.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGradient.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOfflineMap.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOfflineMapType.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKShape.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPointAnnotation.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPinAnnotationView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKMultiPoint.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKArcline.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPolyline.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPolygon.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCircle.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOverlayPathView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOverlayGLBasicView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPolygonView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPolylineView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCircleView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKArclineView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGroundOverlay.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGroundOverlayView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKSearchComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPoiSearchType.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGeocodeType.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKRouteSearchType.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPoiSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPoiSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGeocodeSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGeocodeSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKShareURLSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKShareUrlSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKSuggestionSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKSuggestionSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKBusLineSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKBusLineSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKRouteSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKRouteSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCloudSearchComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCloudPOIList.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCloudSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCloudSearchInfo.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKLocationComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKLocationService.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKUtilsComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGeometry.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKNavigation.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/NSString+URL.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/NSString+URL.m"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+interface-hash: "6bfc227083bbdf232d34902893f239bf"

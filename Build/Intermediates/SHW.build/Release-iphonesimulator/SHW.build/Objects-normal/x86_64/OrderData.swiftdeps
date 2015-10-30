@@ -1,0 +1,354 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "getOrderData"
+- "QureyDeclare"
+provides-nominal:
+provides-member:
+provides-dynamic-lookup:
+depends-top-level:
+- "Finishinfo"
+- !private "+"
+- !private "print"
+- !private "Float"
+- !private "NSJSONSerialization"
+- !private "!="
+- !private "=="
+- !private "NSString"
+- !private "NSMutableURLRequest"
+- !private "AnyObject"
+- !private "NSData"
+- !private "NSURLResponse"
+- !private "NSURLConnection"
+- !private "HttpData"
+- !private "NSJSONReadingOptions"
+- !private "BooleanLiteralType"
+- !private "NSURL"
+- !private "NSURLRequestCachePolicy"
+- !private "Int"
+- "QureyDeclare"
+- !private "NSUTF8StringEncoding"
+- "String"
+- "getOrderData"
+- !private "NSError"
+depends-member:
+- !private ["PSs9AnyObject", "HTTPBody"]
+- !private ["PSs9AnyObject", "HTTPMethod"]
+- !private ["PSs9AnyObject", "JSONObjectWithData"]
+- !private ["PSs9AnyObject", "code"]
+- !private ["PSs9AnyObject", "dataUsingEncoding"]
+- !private ["PSs9AnyObject", "deinit"]
+- !private ["PSs9AnyObject", "description"]
+- !private ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "objectForKey"]
+- !private ["PSs9AnyObject", "sendSynchronousRequest"]
+- !private ["PSs23ArrayLiteralConvertible", "AllowFragments"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "HTTPBody"]
+- !private ["PSs11CVarArgType", "HTTPMethod"]
+- !private ["PSs11CVarArgType", "JSONObjectWithData"]
+- !private ["PSs11CVarArgType", "code"]
+- !private ["PSs11CVarArgType", "dataUsingEncoding"]
+- !private ["PSs11CVarArgType", "description"]
+- !private ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "sendSynchronousRequest"]
+- !private ["VSs9Character", "deinit"]
+- !private ["PSs10Comparable", "dataUsingEncoding"]
+- !private ["PSs10Comparable", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "dataUsingEncoding"]
+- !private ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "HTTPBody"]
+- !private ["PSs23CustomStringConvertible", "HTTPMethod"]
+- !private ["PSs23CustomStringConvertible", "JSONObjectWithData"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "code"]
+- !private ["PSs23CustomStringConvertible", "dataUsingEncoding"]
+- !private ["PSs23CustomStringConvertible", "description"]
+- !private ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "sendSynchronousRequest"]
+- !private ["Sd", "deinit"]
+- !private ["PSs9Equatable", "AllowFragments"]
+- !private ["PSs9Equatable", "HTTPBody"]
+- !private ["PSs9Equatable", "HTTPMethod"]
+- !private ["PSs9Equatable", "JSONObjectWithData"]
+- !private ["PSs9Equatable", "UseProtocolCachePolicy"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "code"]
+- !private ["PSs9Equatable", "dataUsingEncoding"]
+- !private ["PSs9Equatable", "description"]
+- !private ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "sendSynchronousRequest"]
+- !private ["PSs9ErrorType", "code"]
+- !private ["PSs9ErrorType", "description"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["C3SHW10Finishinfo", "init"]
+- !private ["Sf", "deinit"]
+- !private ["PSs8Hashable", "HTTPBody"]
+- !private ["PSs8Hashable", "HTTPMethod"]
+- !private ["PSs8Hashable", "JSONObjectWithData"]
+- !private ["PSs8Hashable", "UseProtocolCachePolicy"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "code"]
+- !private ["PSs8Hashable", "dataUsingEncoding"]
+- !private ["PSs8Hashable", "description"]
+- !private ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "sendSynchronousRequest"]
+- !private ["V3SHW8HttpData", "http"]
+- !private ["Si", "deinit"]
+- !private ["VSs5Int16", "deinit"]
+- !private ["VSs5Int32", "deinit"]
+- !private ["VSs5Int64", "deinit"]
+- !private ["VSs4Int8", "deinit"]
+- !private ["PSs14MirrorPathType", "dataUsingEncoding"]
+- !private ["PSs14MirrorPathType", "init"]
+- !private ["PSo8NSCoding", "HTTPBody"]
+- !private ["PSo8NSCoding", "HTTPMethod"]
+- !private ["PSo8NSCoding", "code"]
+- !private ["PSo8NSCoding", "dataUsingEncoding"]
+- !private ["PSo8NSCoding", "description"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "HTTPBody"]
+- !private ["PSo9NSCopying", "HTTPMethod"]
+- !private ["PSo9NSCopying", "code"]
+- !private ["PSo9NSCopying", "dataUsingEncoding"]
+- !private ["PSo9NSCopying", "description"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["CSo7NSError", "code"]
+- !private ["CSo7NSError", "description"]
+- !private ["VSC20NSJSONReadingOptions", "AllowFragments"]
+- !private ["CSo19NSJSONSerialization", "JSONObjectWithData"]
+- !private ["PSo16NSMutableCopying", "HTTPBody"]
+- !private ["PSo16NSMutableCopying", "HTTPMethod"]
+- !private ["PSo16NSMutableCopying", "dataUsingEncoding"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo19NSMutableURLRequest", "HTTPBody"]
+- !private ["CSo19NSMutableURLRequest", "HTTPMethod"]
+- !private ["CSo19NSMutableURLRequest", "init"]
+- !private ["CSo8NSObject", "HTTPBody"]
+- !private ["CSo8NSObject", "HTTPMethod"]
+- !private ["CSo8NSObject", "JSONObjectWithData"]
+- !private ["CSo8NSObject", "code"]
+- !private ["CSo8NSObject", "dataUsingEncoding"]
+- !private ["CSo8NSObject", "description"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "sendSynchronousRequest"]
+- !private ["PSo16NSObjectProtocol", "HTTPBody"]
+- !private ["PSo16NSObjectProtocol", "HTTPMethod"]
+- !private ["PSo16NSObjectProtocol", "JSONObjectWithData"]
+- !private ["PSo16NSObjectProtocol", "code"]
+- !private ["PSo16NSObjectProtocol", "dataUsingEncoding"]
+- !private ["PSo16NSObjectProtocol", "description"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "sendSynchronousRequest"]
+- !private ["PSo14NSSecureCoding", "HTTPBody"]
+- !private ["PSo14NSSecureCoding", "HTTPMethod"]
+- !private ["PSo14NSSecureCoding", "code"]
+- !private ["PSo14NSSecureCoding", "dataUsingEncoding"]
+- !private ["PSo14NSSecureCoding", "description"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "dataUsingEncoding"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo5NSURL", "init"]
+- !private ["CSo15NSURLConnection", "sendSynchronousRequest"]
+- !private ["CSo12NSURLRequest", "HTTPBody"]
+- !private ["CSo12NSURLRequest", "HTTPMethod"]
+- !private ["CSo12NSURLRequest", "init"]
+- !private ["OSC23NSURLRequestCachePolicy", "UseProtocolCachePolicy"]
+- !private ["PSs13OptionSetType", "AllowFragments"]
+- !private ["Sq", "deinit"]
+- !private ["PSs16OutputStreamType", "dataUsingEncoding"]
+- !private ["PSs16OutputStreamType", "init"]
+- !private ["PSs16RawRepresentable", "AllowFragments"]
+- !private ["PSs16RawRepresentable", "UseProtocolCachePolicy"]
+- !private ["PSs14SetAlgebraType", "AllowFragments"]
+- !private ["PSs10Streamable", "dataUsingEncoding"]
+- !private ["PSs10Streamable", "init"]
+- !private ["SS", "dataUsingEncoding"]
+- !private ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["PSs30StringInterpolationConvertible", "dataUsingEncoding"]
+- !private ["PSs30StringInterpolationConvertible", "init"]
+- !private ["PSs24StringLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["Su", "deinit"]
+- !private ["VSs6UInt16", "deinit"]
+- !private ["VSs6UInt32", "deinit"]
+- !private ["VSs6UInt64", "deinit"]
+- !private ["VSs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs16_CocoaStringType", "dataUsingEncoding"]
+- !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "dataUsingEncoding"]
+- !private ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "dataUsingEncoding"]
+- !private ["PSs12_Reflectable", "init"]
+depends-nominal:
+- !private "PSs9AnyObject"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- !private "PSs11CVarArgType"
+- !private "VSs9Character"
+- !private "PSs10Comparable"
+- !private "PSs28CustomDebugStringConvertible"
+- !private "PSs23CustomStringConvertible"
+- !private "Sd"
+- !private "PSs9Equatable"
+- !private "PSs9ErrorType"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "C3SHW10Finishinfo"
+- !private "Sf"
+- !private "PSs8Hashable"
+- !private "V3SHW8HttpData"
+- !private "Si"
+- !private "VSs5Int16"
+- !private "VSs5Int32"
+- !private "VSs5Int64"
+- !private "VSs4Int8"
+- !private "PSs14MirrorPathType"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo7NSError"
+- !private "VSC20NSJSONReadingOptions"
+- !private "CSo19NSJSONSerialization"
+- !private "PSo16NSMutableCopying"
+- !private "CSo19NSMutableURLRequest"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "CSo5NSURL"
+- !private "CSo15NSURLConnection"
+- !private "CSo12NSURLRequest"
+- !private "OSC23NSURLRequestCachePolicy"
+- !private "PSs13OptionSetType"
+- !private "Sq"
+- !private "PSs16OutputStreamType"
+- !private "PSs16RawRepresentable"
+- !private "PSs14SetAlgebraType"
+- !private "PSs10Streamable"
+- !private "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
+- !private "Su"
+- !private "VSs6UInt16"
+- !private "VSs6UInt32"
+- !private "VSs6UInt64"
+- !private "VSs5UInt8"
+- !private "Sc"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- !private "PSs12_Reflectable"
+depends-dynamic-lookup:
+- !private "objectForKey"
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/OCContainerHeader.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/JSDropDownMenu.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/JSDropDownMenu.m"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/PayInfo.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/AlipayMethod.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/./AlipaySDK.framework/Headers/AlipaySDK.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/./AlipaySDK.framework/Headers/APayAuthInfo.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.0.sdk/usr/include/CommonCrypto/CommonDigest.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMapKit.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKBaseComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGeneralDelegate.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKMapManager.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKTypes.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKUserLocation.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKVersion.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKMapComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKAnnotation.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKAnnotationView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKActionPaopaoView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKMapView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOverlayView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOverlay.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKMapStatus.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKLocationViewDisplayParam.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKHeatMap.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGradient.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOfflineMap.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOfflineMapType.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKShape.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPointAnnotation.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPinAnnotationView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKMultiPoint.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKArcline.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPolyline.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPolygon.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCircle.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOverlayPathView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOverlayGLBasicView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPolygonView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPolylineView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCircleView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKArclineView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGroundOverlay.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGroundOverlayView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKSearchComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPoiSearchType.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGeocodeType.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKRouteSearchType.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPoiSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPoiSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGeocodeSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGeocodeSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKShareURLSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKShareUrlSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKSuggestionSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKSuggestionSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKBusLineSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKBusLineSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKRouteSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKRouteSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCloudSearchComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCloudPOIList.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCloudSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCloudSearchInfo.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKLocationComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKLocationService.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKUtilsComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGeometry.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKNavigation.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/NSString+URL.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/NSString+URL.m"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+interface-hash: "ff7f70dc3d542819987a0fc8d4cca69f"

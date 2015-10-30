@@ -1,0 +1,555 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "HYBImageLoadingCompletion"
+- "HYBImageCompletion"
+- "HYBLoadingImageView"
+provides-nominal:
+- "C3SHW19HYBLoadingImageView"
+provides-member:
+- ["C3SHW19HYBLoadingImageView", ""]
+provides-dynamic-lookup:
+- "loadImage"
+- "loadImage"
+- "loadImage"
+- "loadImage"
+depends-top-level:
+- "HYBImageLoadingCompletion"
+- !private "CGRectZero"
+- "HYBLoadingImageView"
+- !private "!"
+- !private "UIViewContentMode"
+- !private "BooleanLiteralType"
+- !private "HYBImageLoader"
+- !private "kCATransitionFade"
+- "CGRect"
+- "NSCoder"
+- "Bool"
+- "HYBImageCompletion"
+- !private "CATransition"
+- "UIImageView"
+- !private "StringLiteralType"
+- "UIImage"
+- "String"
+- !private "=="
+depends-member:
+- !private ["PSs9AnyObject", "CATransition"]
+- !private ["PSs9AnyObject", "CGRectZero"]
+- !private ["PSs9AnyObject", "HYBImageLoader"]
+- !private ["PSs9AnyObject", "UIImage"]
+- !private ["PSs9AnyObject", "UIViewContentMode"]
+- !private ["PSs9AnyObject", "addAnimation"]
+- !private ["PSs9AnyObject", "clipsToBounds"]
+- !private ["PSs9AnyObject", "contentMode"]
+- !private ["PSs9AnyObject", "duration"]
+- !private ["PSs9AnyObject", "image"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "isEmpty"]
+- !private ["PSs9AnyObject", "kCATransitionFade"]
+- !private ["PSs9AnyObject", "layer"]
+- ["PSs9AnyObject", "loadImage"]
+- !private ["PSs9AnyObject", "masksToBounds"]
+- !private ["PSs9AnyObject", "removedOnCompletion"]
+- !private ["PSs9AnyObject", "sharedInstance"]
+- !private ["PSs9AnyObject", "type"]
+- ["PSs9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSo8CAAction", "duration"]
+- !private ["PSo8CAAction", "init"]
+- !private ["PSo8CAAction", "removedOnCompletion"]
+- !private ["PSo8CAAction", "type"]
+- !private ["CSo11CAAnimation", "duration"]
+- !private ["CSo11CAAnimation", "init"]
+- !private ["CSo11CAAnimation", "removedOnCompletion"]
+- !private ["CSo11CAAnimation", "type"]
+- !private ["CSo7CALayer", "addAnimation"]
+- !private ["CSo7CALayer", "masksToBounds"]
+- !private ["PSo13CAMediaTiming", "addAnimation"]
+- !private ["PSo13CAMediaTiming", "duration"]
+- !private ["PSo13CAMediaTiming", "init"]
+- !private ["PSo13CAMediaTiming", "masksToBounds"]
+- !private ["PSo13CAMediaTiming", "removedOnCompletion"]
+- !private ["PSo13CAMediaTiming", "type"]
+- !private ["CSo12CATransition", "duration"]
+- !private ["CSo12CATransition", "init"]
+- !private ["CSo12CATransition", "removedOnCompletion"]
+- !private ["CSo12CATransition", "type"]
+- !private ["PSs11CVarArgType", "CATransition"]
+- !private ["PSs11CVarArgType", "CGRectZero"]
+- !private ["PSs11CVarArgType", "HYBImageLoader"]
+- !private ["PSs11CVarArgType", "UIImage"]
+- !private ["PSs11CVarArgType", "UIViewContentMode"]
+- !private ["PSs11CVarArgType", "addAnimation"]
+- !private ["PSs11CVarArgType", "clipsToBounds"]
+- !private ["PSs11CVarArgType", "contentMode"]
+- !private ["PSs11CVarArgType", "duration"]
+- !private ["PSs11CVarArgType", "image"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "isEmpty"]
+- !private ["PSs11CVarArgType", "kCATransitionFade"]
+- !private ["PSs11CVarArgType", "layer"]
+- ["PSs11CVarArgType", "loadImage"]
+- !private ["PSs11CVarArgType", "masksToBounds"]
+- !private ["PSs11CVarArgType", "removedOnCompletion"]
+- !private ["PSs11CVarArgType", "type"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs10Comparable", "isEmpty"]
+- !private ["PSs28CustomDebugStringConvertible", "isEmpty"]
+- !private ["PSs23CustomStringConvertible", "CATransition"]
+- !private ["PSs23CustomStringConvertible", "CGRectZero"]
+- !private ["PSs23CustomStringConvertible", "HYBImageLoader"]
+- !private ["PSs23CustomStringConvertible", "UIImage"]
+- !private ["PSs23CustomStringConvertible", "UIViewContentMode"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "addAnimation"]
+- !private ["PSs23CustomStringConvertible", "clipsToBounds"]
+- !private ["PSs23CustomStringConvertible", "contentMode"]
+- !private ["PSs23CustomStringConvertible", "duration"]
+- !private ["PSs23CustomStringConvertible", "image"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "isEmpty"]
+- !private ["PSs23CustomStringConvertible", "kCATransitionFade"]
+- !private ["PSs23CustomStringConvertible", "layer"]
+- ["PSs23CustomStringConvertible", "loadImage"]
+- !private ["PSs23CustomStringConvertible", "masksToBounds"]
+- !private ["PSs23CustomStringConvertible", "removedOnCompletion"]
+- !private ["PSs23CustomStringConvertible", "type"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "CATransition"]
+- !private ["PSs9Equatable", "CGRectZero"]
+- !private ["PSs9Equatable", "HYBImageLoader"]
+- !private ["PSs9Equatable", "ScaleAspectFill"]
+- !private ["PSs9Equatable", "UIImage"]
+- !private ["PSs9Equatable", "UIViewContentMode"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "addAnimation"]
+- !private ["PSs9Equatable", "clipsToBounds"]
+- !private ["PSs9Equatable", "contentMode"]
+- !private ["PSs9Equatable", "duration"]
+- !private ["PSs9Equatable", "image"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "isEmpty"]
+- !private ["PSs9Equatable", "kCATransitionFade"]
+- !private ["PSs9Equatable", "layer"]
+- ["PSs9Equatable", "loadImage"]
+- !private ["PSs9Equatable", "masksToBounds"]
+- !private ["PSs9Equatable", "removedOnCompletion"]
+- !private ["PSs9Equatable", "type"]
+- ["PSs9Equatable", ""]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "isEmpty"]
+- !private ["C3SHW14HYBImageLoader", "loadImage"]
+- !private ["C3SHW14HYBImageLoader", "sharedInstance"]
+- !private ["C3SHW19HYBLoadingImageView", "CATransition"]
+- ["C3SHW19HYBLoadingImageView", "CGRect"]
+- !private ["C3SHW19HYBLoadingImageView", "CGRectZero"]
+- !private ["C3SHW19HYBLoadingImageView", "HYBImageLoader"]
+- ["C3SHW19HYBLoadingImageView", "HYBImageLoadingCompletion"]
+- ["C3SHW19HYBLoadingImageView", "NSCoder"]
+- ["C3SHW19HYBLoadingImageView", "String"]
+- !private ["C3SHW19HYBLoadingImageView", "UIImage"]
+- !private ["C3SHW19HYBLoadingImageView", "UIViewContentMode"]
+- !private ["C3SHW19HYBLoadingImageView", "clipsToBounds"]
+- !private ["C3SHW19HYBLoadingImageView", "contentMode"]
+- ["C3SHW19HYBLoadingImageView", "deinit"]
+- !private ["C3SHW19HYBLoadingImageView", "image"]
+- ["C3SHW19HYBLoadingImageView", "init"]
+- !private ["C3SHW19HYBLoadingImageView", "kCATransitionFade"]
+- !private ["C3SHW19HYBLoadingImageView", "layer"]
+- ["C3SHW19HYBLoadingImageView", "loadImage"]
+- !private ["PSs8Hashable", "CATransition"]
+- !private ["PSs8Hashable", "CGRectZero"]
+- !private ["PSs8Hashable", "HYBImageLoader"]
+- !private ["PSs8Hashable", "ScaleAspectFill"]
+- !private ["PSs8Hashable", "UIImage"]
+- !private ["PSs8Hashable", "UIViewContentMode"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "addAnimation"]
+- !private ["PSs8Hashable", "clipsToBounds"]
+- !private ["PSs8Hashable", "contentMode"]
+- !private ["PSs8Hashable", "duration"]
+- !private ["PSs8Hashable", "image"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "isEmpty"]
+- !private ["PSs8Hashable", "kCATransitionFade"]
+- !private ["PSs8Hashable", "layer"]
+- ["PSs8Hashable", "loadImage"]
+- !private ["PSs8Hashable", "masksToBounds"]
+- !private ["PSs8Hashable", "removedOnCompletion"]
+- !private ["PSs8Hashable", "type"]
+- ["PSs8Hashable", ""]
+- !private ["PSs14MirrorPathType", "isEmpty"]
+- !private ["PSo8NSCoding", "CATransition"]
+- !private ["PSo8NSCoding", "CGRectZero"]
+- !private ["PSo8NSCoding", "HYBImageLoader"]
+- !private ["PSo8NSCoding", "UIImage"]
+- !private ["PSo8NSCoding", "UIViewContentMode"]
+- !private ["PSo8NSCoding", "addAnimation"]
+- !private ["PSo8NSCoding", "clipsToBounds"]
+- !private ["PSo8NSCoding", "contentMode"]
+- !private ["PSo8NSCoding", "duration"]
+- !private ["PSo8NSCoding", "image"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "isEmpty"]
+- !private ["PSo8NSCoding", "kCATransitionFade"]
+- !private ["PSo8NSCoding", "layer"]
+- ["PSo8NSCoding", "loadImage"]
+- !private ["PSo8NSCoding", "masksToBounds"]
+- !private ["PSo8NSCoding", "removedOnCompletion"]
+- !private ["PSo8NSCoding", "type"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "duration"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "isEmpty"]
+- !private ["PSo9NSCopying", "removedOnCompletion"]
+- !private ["PSo9NSCopying", "type"]
+- !private ["PSo16NSMutableCopying", "isEmpty"]
+- !private ["CSo8NSObject", "CATransition"]
+- ["CSo8NSObject", "CGRect"]
+- !private ["CSo8NSObject", "CGRectZero"]
+- !private ["CSo8NSObject", "HYBImageLoader"]
+- ["CSo8NSObject", "HYBImageLoadingCompletion"]
+- ["CSo8NSObject", "NSCoder"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UIImage"]
+- !private ["CSo8NSObject", "UIViewContentMode"]
+- !private ["CSo8NSObject", "addAnimation"]
+- !private ["CSo8NSObject", "clipsToBounds"]
+- !private ["CSo8NSObject", "contentMode"]
+- !private ["CSo8NSObject", "duration"]
+- !private ["CSo8NSObject", "image"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "isEmpty"]
+- !private ["CSo8NSObject", "kCATransitionFade"]
+- !private ["CSo8NSObject", "layer"]
+- ["CSo8NSObject", "loadImage"]
+- !private ["CSo8NSObject", "masksToBounds"]
+- !private ["CSo8NSObject", "removedOnCompletion"]
+- !private ["CSo8NSObject", "type"]
+- !private ["PSo16NSObjectProtocol", "CATransition"]
+- !private ["PSo16NSObjectProtocol", "CGRectZero"]
+- !private ["PSo16NSObjectProtocol", "HYBImageLoader"]
+- !private ["PSo16NSObjectProtocol", "UIImage"]
+- !private ["PSo16NSObjectProtocol", "UIViewContentMode"]
+- !private ["PSo16NSObjectProtocol", "addAnimation"]
+- !private ["PSo16NSObjectProtocol", "clipsToBounds"]
+- !private ["PSo16NSObjectProtocol", "contentMode"]
+- !private ["PSo16NSObjectProtocol", "duration"]
+- !private ["PSo16NSObjectProtocol", "image"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "isEmpty"]
+- !private ["PSo16NSObjectProtocol", "kCATransitionFade"]
+- !private ["PSo16NSObjectProtocol", "layer"]
+- ["PSo16NSObjectProtocol", "loadImage"]
+- !private ["PSo16NSObjectProtocol", "masksToBounds"]
+- !private ["PSo16NSObjectProtocol", "removedOnCompletion"]
+- !private ["PSo16NSObjectProtocol", "type"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "isEmpty"]
+- !private ["CSo8NSString", "isEmpty"]
+- !private ["Sq", "deinit"]
+- !private ["PSs16OutputStreamType", "isEmpty"]
+- !private ["PSs16RawRepresentable", "ScaleAspectFill"]
+- !private ["VSs12StaticString", "deinit"]
+- !private ["PSs10Streamable", "isEmpty"]
+- !private ["SS", "isEmpty"]
+- !private ["PSs30StringInterpolationConvertible", "isEmpty"]
+- !private ["PSs24StringLiteralConvertible", "isEmpty"]
+- !private ["PSo29UIAccessibilityIdentification", "CATransition"]
+- !private ["PSo29UIAccessibilityIdentification", "CGRectZero"]
+- !private ["PSo29UIAccessibilityIdentification", "HYBImageLoader"]
+- !private ["PSo29UIAccessibilityIdentification", "UIImage"]
+- !private ["PSo29UIAccessibilityIdentification", "UIViewContentMode"]
+- !private ["PSo29UIAccessibilityIdentification", "clipsToBounds"]
+- !private ["PSo29UIAccessibilityIdentification", "contentMode"]
+- !private ["PSo29UIAccessibilityIdentification", "image"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "kCATransitionFade"]
+- !private ["PSo29UIAccessibilityIdentification", "layer"]
+- ["PSo29UIAccessibilityIdentification", "loadImage"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "CATransition"]
+- !private ["PSo12UIAppearance", "CGRectZero"]
+- !private ["PSo12UIAppearance", "HYBImageLoader"]
+- !private ["PSo12UIAppearance", "UIImage"]
+- !private ["PSo12UIAppearance", "UIViewContentMode"]
+- !private ["PSo12UIAppearance", "clipsToBounds"]
+- !private ["PSo12UIAppearance", "contentMode"]
+- !private ["PSo12UIAppearance", "image"]
+- ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "kCATransitionFade"]
+- !private ["PSo12UIAppearance", "layer"]
+- ["PSo12UIAppearance", "loadImage"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "CATransition"]
+- !private ["PSo21UIAppearanceContainer", "CGRectZero"]
+- !private ["PSo21UIAppearanceContainer", "HYBImageLoader"]
+- !private ["PSo21UIAppearanceContainer", "UIImage"]
+- !private ["PSo21UIAppearanceContainer", "UIViewContentMode"]
+- !private ["PSo21UIAppearanceContainer", "clipsToBounds"]
+- !private ["PSo21UIAppearanceContainer", "contentMode"]
+- !private ["PSo21UIAppearanceContainer", "image"]
+- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "kCATransitionFade"]
+- !private ["PSo21UIAppearanceContainer", "layer"]
+- ["PSo21UIAppearanceContainer", "loadImage"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo17UICoordinateSpace", "CATransition"]
+- !private ["PSo17UICoordinateSpace", "CGRectZero"]
+- !private ["PSo17UICoordinateSpace", "HYBImageLoader"]
+- !private ["PSo17UICoordinateSpace", "UIImage"]
+- !private ["PSo17UICoordinateSpace", "UIViewContentMode"]
+- !private ["PSo17UICoordinateSpace", "clipsToBounds"]
+- !private ["PSo17UICoordinateSpace", "contentMode"]
+- !private ["PSo17UICoordinateSpace", "image"]
+- ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "kCATransitionFade"]
+- !private ["PSo17UICoordinateSpace", "layer"]
+- ["PSo17UICoordinateSpace", "loadImage"]
+- ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "CATransition"]
+- !private ["PSo13UIDynamicItem", "CGRectZero"]
+- !private ["PSo13UIDynamicItem", "HYBImageLoader"]
+- !private ["PSo13UIDynamicItem", "UIImage"]
+- !private ["PSo13UIDynamicItem", "UIViewContentMode"]
+- !private ["PSo13UIDynamicItem", "clipsToBounds"]
+- !private ["PSo13UIDynamicItem", "contentMode"]
+- !private ["PSo13UIDynamicItem", "image"]
+- ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "kCATransitionFade"]
+- !private ["PSo13UIDynamicItem", "layer"]
+- ["PSo13UIDynamicItem", "loadImage"]
+- ["PSo13UIDynamicItem", ""]
+- !private ["CSo7UIImage", "init"]
+- !private ["CSo11UIImageView", "CATransition"]
+- ["CSo11UIImageView", "CGRect"]
+- !private ["CSo11UIImageView", "CGRectZero"]
+- !private ["CSo11UIImageView", "HYBImageLoader"]
+- ["CSo11UIImageView", "HYBImageLoadingCompletion"]
+- ["CSo11UIImageView", "NSCoder"]
+- ["CSo11UIImageView", "String"]
+- !private ["CSo11UIImageView", "UIImage"]
+- !private ["CSo11UIImageView", "UIViewContentMode"]
+- !private ["CSo11UIImageView", "clipsToBounds"]
+- !private ["CSo11UIImageView", "contentMode"]
+- !private ["CSo11UIImageView", "image"]
+- ["CSo11UIImageView", "init"]
+- !private ["CSo11UIImageView", "kCATransitionFade"]
+- !private ["CSo11UIImageView", "layer"]
+- ["CSo11UIImageView", "loadImage"]
+- ["CSo11UIImageView", ""]
+- !private ["CSo11UIResponder", "CATransition"]
+- ["CSo11UIResponder", "CGRect"]
+- !private ["CSo11UIResponder", "CGRectZero"]
+- !private ["CSo11UIResponder", "HYBImageLoader"]
+- ["CSo11UIResponder", "HYBImageLoadingCompletion"]
+- ["CSo11UIResponder", "NSCoder"]
+- ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "UIImage"]
+- !private ["CSo11UIResponder", "UIViewContentMode"]
+- !private ["CSo11UIResponder", "clipsToBounds"]
+- !private ["CSo11UIResponder", "contentMode"]
+- !private ["CSo11UIResponder", "image"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "kCATransitionFade"]
+- !private ["CSo11UIResponder", "layer"]
+- ["CSo11UIResponder", "loadImage"]
+- !private ["PSo18UITraitEnvironment", "CATransition"]
+- !private ["PSo18UITraitEnvironment", "CGRectZero"]
+- !private ["PSo18UITraitEnvironment", "HYBImageLoader"]
+- !private ["PSo18UITraitEnvironment", "UIImage"]
+- !private ["PSo18UITraitEnvironment", "UIViewContentMode"]
+- !private ["PSo18UITraitEnvironment", "clipsToBounds"]
+- !private ["PSo18UITraitEnvironment", "contentMode"]
+- !private ["PSo18UITraitEnvironment", "image"]
+- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "kCATransitionFade"]
+- !private ["PSo18UITraitEnvironment", "layer"]
+- ["PSo18UITraitEnvironment", "loadImage"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "CATransition"]
+- ["CSo6UIView", "CGRect"]
+- !private ["CSo6UIView", "CGRectZero"]
+- !private ["CSo6UIView", "HYBImageLoader"]
+- ["CSo6UIView", "HYBImageLoadingCompletion"]
+- ["CSo6UIView", "NSCoder"]
+- ["CSo6UIView", "String"]
+- !private ["CSo6UIView", "UIImage"]
+- !private ["CSo6UIView", "UIViewContentMode"]
+- !private ["CSo6UIView", "clipsToBounds"]
+- !private ["CSo6UIView", "contentMode"]
+- !private ["CSo6UIView", "image"]
+- ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "kCATransitionFade"]
+- !private ["CSo6UIView", "layer"]
+- ["CSo6UIView", "loadImage"]
+- !private ["OSC17UIViewContentMode", "ScaleAspectFill"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "isEmpty"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "isEmpty"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "isEmpty"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "isEmpty"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "isEmpty"]
+- !private ["PSs16_CocoaStringType", "isEmpty"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "isEmpty"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs12_Reflectable", "CATransition"]
+- !private ["PSs12_Reflectable", "CGRectZero"]
+- !private ["PSs12_Reflectable", "HYBImageLoader"]
+- !private ["PSs12_Reflectable", "UIImage"]
+- !private ["PSs12_Reflectable", "UIViewContentMode"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "clipsToBounds"]
+- !private ["PSs12_Reflectable", "contentMode"]
+- !private ["PSs12_Reflectable", "image"]
+- ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "isEmpty"]
+- !private ["PSs12_Reflectable", "kCATransitionFade"]
+- !private ["PSs12_Reflectable", "layer"]
+- ["PSs12_Reflectable", "loadImage"]
+- ["PSs12_Reflectable", ""]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- !private "PSo8CAAction"
+- !private "CSo11CAAnimation"
+- !private "CSo7CALayer"
+- !private "PSo13CAMediaTiming"
+- !private "CSo12CATransition"
+- "PSs11CVarArgType"
+- !private "PSs10Comparable"
+- !private "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "C3SHW14HYBImageLoader"
+- "C3SHW19HYBLoadingImageView"
+- "PSs8Hashable"
+- !private "PSs14MirrorPathType"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Sq"
+- !private "PSs16OutputStreamType"
+- !private "PSs16RawRepresentable"
+- !private "VSs12StaticString"
+- !private "PSs10Streamable"
+- !private "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- !private "CSo7UIImage"
+- "CSo11UIImageView"
+- "CSo11UIResponder"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- !private "OSC17UIViewContentMode"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/OCContainerHeader.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/JSDropDownMenu.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/JSDropDownMenu.m"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/PayInfo.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/AlipayMethod.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/./AlipaySDK.framework/Headers/AlipaySDK.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/./AlipaySDK.framework/Headers/APayAuthInfo.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.0.sdk/usr/include/CommonCrypto/CommonDigest.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMapKit.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKBaseComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGeneralDelegate.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKMapManager.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKTypes.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKUserLocation.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKVersion.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKMapComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKAnnotation.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKAnnotationView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKActionPaopaoView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKMapView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOverlayView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOverlay.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKMapStatus.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKLocationViewDisplayParam.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKHeatMap.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGradient.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOfflineMap.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOfflineMapType.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKShape.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPointAnnotation.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPinAnnotationView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKMultiPoint.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKArcline.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPolyline.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPolygon.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCircle.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOverlayPathView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOverlayGLBasicView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPolygonView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPolylineView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCircleView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKArclineView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGroundOverlay.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGroundOverlayView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKSearchComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPoiSearchType.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGeocodeType.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKRouteSearchType.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPoiSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPoiSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGeocodeSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGeocodeSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKShareURLSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKShareUrlSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKSuggestionSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKSuggestionSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKBusLineSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKBusLineSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKRouteSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKRouteSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCloudSearchComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCloudPOIList.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCloudSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCloudSearchInfo.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKLocationComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKLocationService.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKUtilsComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGeometry.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKNavigation.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/NSString+URL.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/NSString+URL.m"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+interface-hash: "e78a33cfdc6f5025c6f5a14932c219e2"

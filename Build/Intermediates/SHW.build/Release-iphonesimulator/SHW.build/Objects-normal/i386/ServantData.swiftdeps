@@ -1,0 +1,1006 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ServantInfo"
+- "refreshServant"
+- "GetServantCollect"
+- "deleteSCollection"
+- "addSCollection"
+- "CommentInfo"
+- "getSconmmentData"
+- "getResponse"
+provides-nominal:
+- "C3SHW11ServantInfo"
+- "C3SHW11CommentInfo"
+provides-member:
+- ["C3SHW11ServantInfo", ""]
+- ["C3SHW11CommentInfo", ""]
+provides-dynamic-lookup:
+- "servantCounty"
+- "registerDate"
+- "contactAddress"
+- "commentDate"
+- "isMarried"
+- "phoneNo"
+- "qqNumber"
+- "serviceItems"
+- "servantID"
+- "servantID"
+- "servantName"
+- "servantName"
+- "servantIntro"
+- "servantScore"
+- "servantAge"
+- "servantCategory"
+- "realLongitude"
+- "id"
+- "id"
+- "servantBirthday"
+- "servantNationality"
+- "customerID"
+- "servantState"
+- "servantHonors"
+- "registerLongitude"
+- "holidayInMonth"
+- "realLatitude"
+- "commentContent"
+- "servantMobil"
+- "clientClick"
+- "serviceArea"
+- "servantGender"
+- "idCardNo"
+- "servantProvince"
+- "careerType"
+- "workYears"
+- "trainingIntro"
+- "registerLatitude"
+- "emailAddress"
+- "servantStatus"
+- "customerName"
+- "educationLevel"
+- "headPicture"
+- "serviceCount"
+- "isStayHome"
+- "servantCity"
+depends-top-level:
+- !private "println"
+- "Int"
+- !private "BooleanLiteralType"
+- !private "NSJSONSerialization"
+- !private "AnyObject"
+- !private "print"
+- "Bool"
+- "deleteSCollection"
+- !private "+="
+- !private "NSString"
+- "CommentInfo"
+- !private "NSJSONReadingOptions"
+- "getResponse"
+- "ServantInfo"
+- !private "+"
+- !private "NSError"
+- !private "StringLiteralType"
+- !private "NSURL"
+- "NSObject"
+- "NSArray"
+- !private "NSURLRequestCachePolicy"
+- !private "HttpData"
+- !private "NSURLConnection"
+- "addSCollection"
+- "GetServantCollect"
+- !private "NSUTF8StringEncoding"
+- !private "Array"
+- "getSconmmentData"
+- !private "!="
+- "Float"
+- !private "NSMutableURLRequest"
+- !private "NSURLResponse"
+- !private "NSData"
+- !private "=="
+- "String"
+- "Double"
+- "refreshServant"
+depends-member:
+- !private ["PSs9AnyObject", "Element"]
+- !private ["PSs9AnyObject", "Generator"]
+- !private ["PSs9AnyObject", "HTTPBody"]
+- !private ["PSs9AnyObject", "HTTPMethod"]
+- !private ["PSs9AnyObject", "JSONObjectWithData"]
+- ["PSs9AnyObject", "careerType"]
+- ["PSs9AnyObject", "clientClick"]
+- !private ["PSs9AnyObject", "code"]
+- ["PSs9AnyObject", "commentContent"]
+- ["PSs9AnyObject", "commentDate"]
+- ["PSs9AnyObject", "contactAddress"]
+- !private ["PSs9AnyObject", "count"]
+- ["PSs9AnyObject", "customerID"]
+- ["PSs9AnyObject", "customerName"]
+- !private ["PSs9AnyObject", "dataUsingEncoding"]
+- !private ["PSs9AnyObject", "deinit"]
+- !private ["PSs9AnyObject", "description"]
+- ["PSs9AnyObject", "educationLevel"]
+- ["PSs9AnyObject", "emailAddress"]
+- ["PSs9AnyObject", "headPicture"]
+- ["PSs9AnyObject", "holidayInMonth"]
+- ["PSs9AnyObject", "id"]
+- ["PSs9AnyObject", "idCardNo"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "isMarried"]
+- ["PSs9AnyObject", "isStayHome"]
+- !private ["PSs9AnyObject", "objectForKey"]
+- ["PSs9AnyObject", "phoneNo"]
+- ["PSs9AnyObject", "qqNumber"]
+- ["PSs9AnyObject", "realLatitude"]
+- ["PSs9AnyObject", "realLongitude"]
+- ["PSs9AnyObject", "registerDate"]
+- ["PSs9AnyObject", "registerLatitude"]
+- ["PSs9AnyObject", "registerLongitude"]
+- !private ["PSs9AnyObject", "sendSynchronousRequest"]
+- ["PSs9AnyObject", "servantAge"]
+- ["PSs9AnyObject", "servantBirthday"]
+- ["PSs9AnyObject", "servantCategory"]
+- ["PSs9AnyObject", "servantCity"]
+- ["PSs9AnyObject", "servantCounty"]
+- ["PSs9AnyObject", "servantGender"]
+- ["PSs9AnyObject", "servantHonors"]
+- ["PSs9AnyObject", "servantID"]
+- ["PSs9AnyObject", "servantIntro"]
+- ["PSs9AnyObject", "servantMobil"]
+- ["PSs9AnyObject", "servantName"]
+- ["PSs9AnyObject", "servantNationality"]
+- ["PSs9AnyObject", "servantProvince"]
+- ["PSs9AnyObject", "servantScore"]
+- ["PSs9AnyObject", "servantState"]
+- ["PSs9AnyObject", "servantStatus"]
+- ["PSs9AnyObject", "serviceArea"]
+- ["PSs9AnyObject", "serviceCount"]
+- ["PSs9AnyObject", "serviceItems"]
+- ["PSs9AnyObject", "trainingIntro"]
+- ["PSs9AnyObject", "workYears"]
+- ["PSs9AnyObject", ""]
+- !private ["Sa", "Element"]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "_Buffer"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "deinit"]
+- !private ["PSs23ArrayLiteralConvertible", "AllowFragments"]
+- !private ["PSs23ArrayLiteralConvertible", "Element"]
+- !private ["PSs23ArrayLiteralConvertible", "Generator"]
+- !private ["PSs23ArrayLiteralConvertible", "Index"]
+- !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
+- !private ["PSs23ArrayLiteralConvertible", "_Buffer"]
+- !private ["PSs23ArrayLiteralConvertible", "_Element"]
+- !private ["PSs23ArrayLiteralConvertible", "count"]
+- !private ["VSs10ArraySlice", "Generator"]
+- !private ["VSs10ArraySlice", "Index"]
+- !private ["PSs22BidirectionalIndexType", "Distance"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "Distance"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "Distance"]
+- !private ["PSs11CVarArgType", "Generator"]
+- !private ["PSs11CVarArgType", "HTTPBody"]
+- !private ["PSs11CVarArgType", "HTTPMethod"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "JSONObjectWithData"]
+- ["PSs11CVarArgType", "careerType"]
+- ["PSs11CVarArgType", "clientClick"]
+- !private ["PSs11CVarArgType", "code"]
+- ["PSs11CVarArgType", "commentContent"]
+- ["PSs11CVarArgType", "commentDate"]
+- ["PSs11CVarArgType", "contactAddress"]
+- !private ["PSs11CVarArgType", "count"]
+- ["PSs11CVarArgType", "customerID"]
+- ["PSs11CVarArgType", "customerName"]
+- !private ["PSs11CVarArgType", "dataUsingEncoding"]
+- !private ["PSs11CVarArgType", "description"]
+- ["PSs11CVarArgType", "educationLevel"]
+- ["PSs11CVarArgType", "emailAddress"]
+- ["PSs11CVarArgType", "headPicture"]
+- ["PSs11CVarArgType", "holidayInMonth"]
+- ["PSs11CVarArgType", "id"]
+- ["PSs11CVarArgType", "idCardNo"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "isMarried"]
+- ["PSs11CVarArgType", "isStayHome"]
+- ["PSs11CVarArgType", "phoneNo"]
+- ["PSs11CVarArgType", "qqNumber"]
+- ["PSs11CVarArgType", "realLatitude"]
+- ["PSs11CVarArgType", "realLongitude"]
+- ["PSs11CVarArgType", "registerDate"]
+- ["PSs11CVarArgType", "registerLatitude"]
+- ["PSs11CVarArgType", "registerLongitude"]
+- !private ["PSs11CVarArgType", "sendSynchronousRequest"]
+- ["PSs11CVarArgType", "servantAge"]
+- ["PSs11CVarArgType", "servantBirthday"]
+- ["PSs11CVarArgType", "servantCategory"]
+- ["PSs11CVarArgType", "servantCity"]
+- ["PSs11CVarArgType", "servantCounty"]
+- ["PSs11CVarArgType", "servantGender"]
+- ["PSs11CVarArgType", "servantHonors"]
+- ["PSs11CVarArgType", "servantID"]
+- ["PSs11CVarArgType", "servantIntro"]
+- ["PSs11CVarArgType", "servantMobil"]
+- ["PSs11CVarArgType", "servantName"]
+- ["PSs11CVarArgType", "servantNationality"]
+- ["PSs11CVarArgType", "servantProvince"]
+- ["PSs11CVarArgType", "servantScore"]
+- ["PSs11CVarArgType", "servantState"]
+- ["PSs11CVarArgType", "servantStatus"]
+- ["PSs11CVarArgType", "serviceArea"]
+- ["PSs11CVarArgType", "serviceCount"]
+- ["PSs11CVarArgType", "serviceItems"]
+- ["PSs11CVarArgType", "trainingIntro"]
+- ["PSs11CVarArgType", "workYears"]
+- ["PSs11CVarArgType", ""]
+- !private ["VSs9Character", "deinit"]
+- !private ["PSs14CollectionType", "Element"]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "_Buffer"]
+- !private ["PSs14CollectionType", "_Element"]
+- ["C3SHW11CommentInfo", "Int"]
+- ["C3SHW11CommentInfo", "String"]
+- ["C3SHW11CommentInfo", "commentContent"]
+- ["C3SHW11CommentInfo", "commentDate"]
+- ["C3SHW11CommentInfo", "customerID"]
+- ["C3SHW11CommentInfo", "customerName"]
+- ["C3SHW11CommentInfo", "deinit"]
+- ["C3SHW11CommentInfo", "id"]
+- ["C3SHW11CommentInfo", "init"]
+- ["C3SHW11CommentInfo", "servantID"]
+- ["C3SHW11CommentInfo", "servantName"]
+- !private ["PSs10Comparable", "Distance"]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs10Comparable", "dataUsingEncoding"]
+- !private ["PSs10Comparable", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "Element"]
+- !private ["PSs28CustomDebugStringConvertible", "Generator"]
+- !private ["PSs28CustomDebugStringConvertible", "Index"]
+- !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
+- !private ["PSs28CustomDebugStringConvertible", "_Buffer"]
+- !private ["PSs28CustomDebugStringConvertible", "_Element"]
+- !private ["PSs28CustomDebugStringConvertible", "dataUsingEncoding"]
+- !private ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "Distance"]
+- !private ["PSs23CustomStringConvertible", "Element"]
+- !private ["PSs23CustomStringConvertible", "Generator"]
+- !private ["PSs23CustomStringConvertible", "HTTPBody"]
+- !private ["PSs23CustomStringConvertible", "HTTPMethod"]
+- !private ["PSs23CustomStringConvertible", "Index"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["PSs23CustomStringConvertible", "JSONObjectWithData"]
+- !private ["PSs23CustomStringConvertible", "SubSequence"]
+- !private ["PSs23CustomStringConvertible", "_Buffer"]
+- !private ["PSs23CustomStringConvertible", "_Element"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["PSs23CustomStringConvertible", "careerType"]
+- ["PSs23CustomStringConvertible", "clientClick"]
+- !private ["PSs23CustomStringConvertible", "code"]
+- ["PSs23CustomStringConvertible", "commentContent"]
+- ["PSs23CustomStringConvertible", "commentDate"]
+- ["PSs23CustomStringConvertible", "contactAddress"]
+- !private ["PSs23CustomStringConvertible", "count"]
+- ["PSs23CustomStringConvertible", "customerID"]
+- ["PSs23CustomStringConvertible", "customerName"]
+- !private ["PSs23CustomStringConvertible", "dataUsingEncoding"]
+- !private ["PSs23CustomStringConvertible", "description"]
+- ["PSs23CustomStringConvertible", "educationLevel"]
+- ["PSs23CustomStringConvertible", "emailAddress"]
+- ["PSs23CustomStringConvertible", "headPicture"]
+- ["PSs23CustomStringConvertible", "holidayInMonth"]
+- ["PSs23CustomStringConvertible", "id"]
+- ["PSs23CustomStringConvertible", "idCardNo"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "isMarried"]
+- ["PSs23CustomStringConvertible", "isStayHome"]
+- ["PSs23CustomStringConvertible", "phoneNo"]
+- ["PSs23CustomStringConvertible", "qqNumber"]
+- ["PSs23CustomStringConvertible", "realLatitude"]
+- ["PSs23CustomStringConvertible", "realLongitude"]
+- ["PSs23CustomStringConvertible", "registerDate"]
+- ["PSs23CustomStringConvertible", "registerLatitude"]
+- ["PSs23CustomStringConvertible", "registerLongitude"]
+- !private ["PSs23CustomStringConvertible", "sendSynchronousRequest"]
+- ["PSs23CustomStringConvertible", "servantAge"]
+- ["PSs23CustomStringConvertible", "servantBirthday"]
+- ["PSs23CustomStringConvertible", "servantCategory"]
+- ["PSs23CustomStringConvertible", "servantCity"]
+- ["PSs23CustomStringConvertible", "servantCounty"]
+- ["PSs23CustomStringConvertible", "servantGender"]
+- ["PSs23CustomStringConvertible", "servantHonors"]
+- ["PSs23CustomStringConvertible", "servantID"]
+- ["PSs23CustomStringConvertible", "servantIntro"]
+- ["PSs23CustomStringConvertible", "servantMobil"]
+- ["PSs23CustomStringConvertible", "servantName"]
+- ["PSs23CustomStringConvertible", "servantNationality"]
+- ["PSs23CustomStringConvertible", "servantProvince"]
+- ["PSs23CustomStringConvertible", "servantScore"]
+- ["PSs23CustomStringConvertible", "servantState"]
+- ["PSs23CustomStringConvertible", "servantStatus"]
+- ["PSs23CustomStringConvertible", "serviceArea"]
+- ["PSs23CustomStringConvertible", "serviceCount"]
+- ["PSs23CustomStringConvertible", "serviceItems"]
+- ["PSs23CustomStringConvertible", "trainingIntro"]
+- ["PSs23CustomStringConvertible", "workYears"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["Sd", "deinit"]
+- !private ["PSs9Equatable", "AllowFragments"]
+- !private ["PSs9Equatable", "Distance"]
+- !private ["PSs9Equatable", "Generator"]
+- !private ["PSs9Equatable", "HTTPBody"]
+- !private ["PSs9Equatable", "HTTPMethod"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
+- !private ["PSs9Equatable", "JSONObjectWithData"]
+- !private ["PSs9Equatable", "UseProtocolCachePolicy"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- ["PSs9Equatable", "careerType"]
+- ["PSs9Equatable", "clientClick"]
+- !private ["PSs9Equatable", "code"]
+- ["PSs9Equatable", "commentContent"]
+- ["PSs9Equatable", "commentDate"]
+- ["PSs9Equatable", "contactAddress"]
+- !private ["PSs9Equatable", "count"]
+- ["PSs9Equatable", "customerID"]
+- ["PSs9Equatable", "customerName"]
+- !private ["PSs9Equatable", "dataUsingEncoding"]
+- !private ["PSs9Equatable", "description"]
+- ["PSs9Equatable", "educationLevel"]
+- ["PSs9Equatable", "emailAddress"]
+- ["PSs9Equatable", "headPicture"]
+- ["PSs9Equatable", "holidayInMonth"]
+- ["PSs9Equatable", "id"]
+- ["PSs9Equatable", "idCardNo"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "isMarried"]
+- ["PSs9Equatable", "isStayHome"]
+- ["PSs9Equatable", "phoneNo"]
+- ["PSs9Equatable", "qqNumber"]
+- ["PSs9Equatable", "realLatitude"]
+- ["PSs9Equatable", "realLongitude"]
+- ["PSs9Equatable", "registerDate"]
+- ["PSs9Equatable", "registerLatitude"]
+- ["PSs9Equatable", "registerLongitude"]
+- !private ["PSs9Equatable", "sendSynchronousRequest"]
+- ["PSs9Equatable", "servantAge"]
+- ["PSs9Equatable", "servantBirthday"]
+- ["PSs9Equatable", "servantCategory"]
+- ["PSs9Equatable", "servantCity"]
+- ["PSs9Equatable", "servantCounty"]
+- ["PSs9Equatable", "servantGender"]
+- ["PSs9Equatable", "servantHonors"]
+- ["PSs9Equatable", "servantID"]
+- ["PSs9Equatable", "servantIntro"]
+- ["PSs9Equatable", "servantMobil"]
+- ["PSs9Equatable", "servantName"]
+- ["PSs9Equatable", "servantNationality"]
+- ["PSs9Equatable", "servantProvince"]
+- ["PSs9Equatable", "servantScore"]
+- ["PSs9Equatable", "servantState"]
+- ["PSs9Equatable", "servantStatus"]
+- ["PSs9Equatable", "serviceArea"]
+- ["PSs9Equatable", "serviceCount"]
+- ["PSs9Equatable", "serviceItems"]
+- ["PSs9Equatable", "trainingIntro"]
+- ["PSs9Equatable", "workYears"]
+- ["PSs9Equatable", ""]
+- !private ["PSs9ErrorType", "code"]
+- !private ["PSs9ErrorType", "description"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
+- !private ["PSs16ForwardIndexType", "Distance"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs13GeneratorType", "Element"]
+- !private ["PSs8Hashable", "Distance"]
+- !private ["PSs8Hashable", "Generator"]
+- !private ["PSs8Hashable", "HTTPBody"]
+- !private ["PSs8Hashable", "HTTPMethod"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "JSONObjectWithData"]
+- !private ["PSs8Hashable", "UseProtocolCachePolicy"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- ["PSs8Hashable", "careerType"]
+- ["PSs8Hashable", "clientClick"]
+- !private ["PSs8Hashable", "code"]
+- ["PSs8Hashable", "commentContent"]
+- ["PSs8Hashable", "commentDate"]
+- ["PSs8Hashable", "contactAddress"]
+- !private ["PSs8Hashable", "count"]
+- ["PSs8Hashable", "customerID"]
+- ["PSs8Hashable", "customerName"]
+- !private ["PSs8Hashable", "dataUsingEncoding"]
+- !private ["PSs8Hashable", "description"]
+- ["PSs8Hashable", "educationLevel"]
+- ["PSs8Hashable", "emailAddress"]
+- ["PSs8Hashable", "headPicture"]
+- ["PSs8Hashable", "holidayInMonth"]
+- ["PSs8Hashable", "id"]
+- ["PSs8Hashable", "idCardNo"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "isMarried"]
+- ["PSs8Hashable", "isStayHome"]
+- ["PSs8Hashable", "phoneNo"]
+- ["PSs8Hashable", "qqNumber"]
+- ["PSs8Hashable", "realLatitude"]
+- ["PSs8Hashable", "realLongitude"]
+- ["PSs8Hashable", "registerDate"]
+- ["PSs8Hashable", "registerLatitude"]
+- ["PSs8Hashable", "registerLongitude"]
+- !private ["PSs8Hashable", "sendSynchronousRequest"]
+- ["PSs8Hashable", "servantAge"]
+- ["PSs8Hashable", "servantBirthday"]
+- ["PSs8Hashable", "servantCategory"]
+- ["PSs8Hashable", "servantCity"]
+- ["PSs8Hashable", "servantCounty"]
+- ["PSs8Hashable", "servantGender"]
+- ["PSs8Hashable", "servantHonors"]
+- ["PSs8Hashable", "servantID"]
+- ["PSs8Hashable", "servantIntro"]
+- ["PSs8Hashable", "servantMobil"]
+- ["PSs8Hashable", "servantName"]
+- ["PSs8Hashable", "servantNationality"]
+- ["PSs8Hashable", "servantProvince"]
+- ["PSs8Hashable", "servantScore"]
+- ["PSs8Hashable", "servantState"]
+- ["PSs8Hashable", "servantStatus"]
+- ["PSs8Hashable", "serviceArea"]
+- ["PSs8Hashable", "serviceCount"]
+- ["PSs8Hashable", "serviceItems"]
+- ["PSs8Hashable", "trainingIntro"]
+- ["PSs8Hashable", "workYears"]
+- ["PSs8Hashable", ""]
+- !private ["V3SHW8HttpData", "http"]
+- !private ["PSs9Indexable", "Element"]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "_Buffer"]
+- !private ["PSs9Indexable", "_Element"]
+- !private ["VSs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "deinit"]
+- !private ["VSs5Int16", "deinit"]
+- !private ["VSs5Int32", "deinit"]
+- !private ["VSs5Int64", "deinit"]
+- !private ["VSs4Int8", "deinit"]
+- !private ["PSs21IntegerArithmeticType", "Distance"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "Distance"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "Distance"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "Distance"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "dataUsingEncoding"]
+- !private ["PSs14MirrorPathType", "init"]
+- !private ["PSs21MutableCollectionType", "Element"]
+- !private ["PSs21MutableCollectionType", "Generator"]
+- !private ["PSs21MutableCollectionType", "Index"]
+- !private ["PSs21MutableCollectionType", "SubSequence"]
+- !private ["PSs21MutableCollectionType", "_Buffer"]
+- !private ["PSs21MutableCollectionType", "_Element"]
+- !private ["PSs16MutableIndexable", "Element"]
+- !private ["PSs16MutableIndexable", "Generator"]
+- !private ["PSs16MutableIndexable", "Index"]
+- !private ["PSs16MutableIndexable", "SubSequence"]
+- !private ["PSs16MutableIndexable", "_Buffer"]
+- !private ["PSs16MutableIndexable", "_Element"]
+- !private ["PSs16MutableSliceable", "Element"]
+- !private ["PSs16MutableSliceable", "Generator"]
+- !private ["PSs16MutableSliceable", "Index"]
+- !private ["PSs16MutableSliceable", "SubSequence"]
+- !private ["PSs16MutableSliceable", "_Buffer"]
+- !private ["PSs16MutableSliceable", "_Element"]
+- !private ["CSo7NSArray", "Generator"]
+- !private ["CSo7NSArray", "count"]
+- !private ["PSo8NSCoding", "Generator"]
+- !private ["PSo8NSCoding", "HTTPBody"]
+- !private ["PSo8NSCoding", "HTTPMethod"]
+- !private ["PSo8NSCoding", "code"]
+- !private ["PSo8NSCoding", "count"]
+- !private ["PSo8NSCoding", "dataUsingEncoding"]
+- !private ["PSo8NSCoding", "description"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "Generator"]
+- !private ["PSo9NSCopying", "HTTPBody"]
+- !private ["PSo9NSCopying", "HTTPMethod"]
+- !private ["PSo9NSCopying", "code"]
+- !private ["PSo9NSCopying", "count"]
+- !private ["PSo9NSCopying", "dataUsingEncoding"]
+- !private ["PSo9NSCopying", "description"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["CSo7NSError", "code"]
+- !private ["CSo7NSError", "description"]
+- !private ["PSo17NSFastEnumeration", "Generator"]
+- !private ["PSo17NSFastEnumeration", "count"]
+- !private ["C10Foundation15NSFastGenerator", "Element"]
+- !private ["VSC20NSJSONReadingOptions", "AllowFragments"]
+- !private ["CSo19NSJSONSerialization", "JSONObjectWithData"]
+- !private ["PSo16NSMutableCopying", "Generator"]
+- !private ["PSo16NSMutableCopying", "HTTPBody"]
+- !private ["PSo16NSMutableCopying", "HTTPMethod"]
+- !private ["PSo16NSMutableCopying", "count"]
+- !private ["PSo16NSMutableCopying", "dataUsingEncoding"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo19NSMutableURLRequest", "HTTPBody"]
+- !private ["CSo19NSMutableURLRequest", "HTTPMethod"]
+- !private ["CSo19NSMutableURLRequest", "init"]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "Double"]
+- ["CSo8NSObject", "Float"]
+- !private ["CSo8NSObject", "Generator"]
+- !private ["CSo8NSObject", "HTTPBody"]
+- !private ["CSo8NSObject", "HTTPMethod"]
+- ["CSo8NSObject", "Int"]
+- !private ["CSo8NSObject", "JSONObjectWithData"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "careerType"]
+- ["CSo8NSObject", "clientClick"]
+- !private ["CSo8NSObject", "code"]
+- ["CSo8NSObject", "commentContent"]
+- ["CSo8NSObject", "commentDate"]
+- ["CSo8NSObject", "contactAddress"]
+- !private ["CSo8NSObject", "count"]
+- ["CSo8NSObject", "customerID"]
+- ["CSo8NSObject", "customerName"]
+- !private ["CSo8NSObject", "dataUsingEncoding"]
+- !private ["CSo8NSObject", "description"]
+- ["CSo8NSObject", "educationLevel"]
+- ["CSo8NSObject", "emailAddress"]
+- ["CSo8NSObject", "headPicture"]
+- ["CSo8NSObject", "holidayInMonth"]
+- ["CSo8NSObject", "id"]
+- ["CSo8NSObject", "idCardNo"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "isMarried"]
+- ["CSo8NSObject", "isStayHome"]
+- ["CSo8NSObject", "phoneNo"]
+- ["CSo8NSObject", "qqNumber"]
+- ["CSo8NSObject", "realLatitude"]
+- ["CSo8NSObject", "realLongitude"]
+- ["CSo8NSObject", "registerDate"]
+- ["CSo8NSObject", "registerLatitude"]
+- ["CSo8NSObject", "registerLongitude"]
+- !private ["CSo8NSObject", "sendSynchronousRequest"]
+- ["CSo8NSObject", "servantAge"]
+- ["CSo8NSObject", "servantBirthday"]
+- ["CSo8NSObject", "servantCategory"]
+- ["CSo8NSObject", "servantCity"]
+- ["CSo8NSObject", "servantCounty"]
+- ["CSo8NSObject", "servantGender"]
+- ["CSo8NSObject", "servantHonors"]
+- ["CSo8NSObject", "servantID"]
+- ["CSo8NSObject", "servantIntro"]
+- ["CSo8NSObject", "servantMobil"]
+- ["CSo8NSObject", "servantName"]
+- ["CSo8NSObject", "servantNationality"]
+- ["CSo8NSObject", "servantProvince"]
+- ["CSo8NSObject", "servantScore"]
+- ["CSo8NSObject", "servantState"]
+- ["CSo8NSObject", "servantStatus"]
+- ["CSo8NSObject", "serviceArea"]
+- ["CSo8NSObject", "serviceCount"]
+- ["CSo8NSObject", "serviceItems"]
+- ["CSo8NSObject", "trainingIntro"]
+- ["CSo8NSObject", "workYears"]
+- ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "Generator"]
+- !private ["PSo16NSObjectProtocol", "HTTPBody"]
+- !private ["PSo16NSObjectProtocol", "HTTPMethod"]
+- !private ["PSo16NSObjectProtocol", "JSONObjectWithData"]
+- ["PSo16NSObjectProtocol", "careerType"]
+- ["PSo16NSObjectProtocol", "clientClick"]
+- !private ["PSo16NSObjectProtocol", "code"]
+- ["PSo16NSObjectProtocol", "commentContent"]
+- ["PSo16NSObjectProtocol", "commentDate"]
+- ["PSo16NSObjectProtocol", "contactAddress"]
+- !private ["PSo16NSObjectProtocol", "count"]
+- ["PSo16NSObjectProtocol", "customerID"]
+- ["PSo16NSObjectProtocol", "customerName"]
+- !private ["PSo16NSObjectProtocol", "dataUsingEncoding"]
+- !private ["PSo16NSObjectProtocol", "description"]
+- ["PSo16NSObjectProtocol", "educationLevel"]
+- ["PSo16NSObjectProtocol", "emailAddress"]
+- ["PSo16NSObjectProtocol", "headPicture"]
+- ["PSo16NSObjectProtocol", "holidayInMonth"]
+- ["PSo16NSObjectProtocol", "id"]
+- ["PSo16NSObjectProtocol", "idCardNo"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "isMarried"]
+- ["PSo16NSObjectProtocol", "isStayHome"]
+- ["PSo16NSObjectProtocol", "phoneNo"]
+- ["PSo16NSObjectProtocol", "qqNumber"]
+- ["PSo16NSObjectProtocol", "realLatitude"]
+- ["PSo16NSObjectProtocol", "realLongitude"]
+- ["PSo16NSObjectProtocol", "registerDate"]
+- ["PSo16NSObjectProtocol", "registerLatitude"]
+- ["PSo16NSObjectProtocol", "registerLongitude"]
+- !private ["PSo16NSObjectProtocol", "sendSynchronousRequest"]
+- ["PSo16NSObjectProtocol", "servantAge"]
+- ["PSo16NSObjectProtocol", "servantBirthday"]
+- ["PSo16NSObjectProtocol", "servantCategory"]
+- ["PSo16NSObjectProtocol", "servantCity"]
+- ["PSo16NSObjectProtocol", "servantCounty"]
+- ["PSo16NSObjectProtocol", "servantGender"]
+- ["PSo16NSObjectProtocol", "servantHonors"]
+- ["PSo16NSObjectProtocol", "servantID"]
+- ["PSo16NSObjectProtocol", "servantIntro"]
+- ["PSo16NSObjectProtocol", "servantMobil"]
+- ["PSo16NSObjectProtocol", "servantName"]
+- ["PSo16NSObjectProtocol", "servantNationality"]
+- ["PSo16NSObjectProtocol", "servantProvince"]
+- ["PSo16NSObjectProtocol", "servantScore"]
+- ["PSo16NSObjectProtocol", "servantState"]
+- ["PSo16NSObjectProtocol", "servantStatus"]
+- ["PSo16NSObjectProtocol", "serviceArea"]
+- ["PSo16NSObjectProtocol", "serviceCount"]
+- ["PSo16NSObjectProtocol", "serviceItems"]
+- ["PSo16NSObjectProtocol", "trainingIntro"]
+- ["PSo16NSObjectProtocol", "workYears"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "Generator"]
+- !private ["PSo14NSSecureCoding", "HTTPBody"]
+- !private ["PSo14NSSecureCoding", "HTTPMethod"]
+- !private ["PSo14NSSecureCoding", "code"]
+- !private ["PSo14NSSecureCoding", "count"]
+- !private ["PSo14NSSecureCoding", "dataUsingEncoding"]
+- !private ["PSo14NSSecureCoding", "description"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "dataUsingEncoding"]
+- !private ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo5NSURL", "init"]
+- !private ["CSo15NSURLConnection", "sendSynchronousRequest"]
+- !private ["CSo12NSURLRequest", "HTTPBody"]
+- !private ["CSo12NSURLRequest", "HTTPMethod"]
+- !private ["CSo12NSURLRequest", "init"]
+- !private ["OSC23NSURLRequestCachePolicy", "UseProtocolCachePolicy"]
+- !private ["PSs13OptionSetType", "AllowFragments"]
+- !private ["Sq", "deinit"]
+- !private ["PSs16OutputStreamType", "dataUsingEncoding"]
+- !private ["PSs16OutputStreamType", "init"]
+- !private ["PSs21RandomAccessIndexType", "Distance"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["PSs30RangeReplaceableCollectionType", "Element"]
+- !private ["PSs30RangeReplaceableCollectionType", "Generator"]
+- !private ["PSs30RangeReplaceableCollectionType", "Index"]
+- !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["PSs30RangeReplaceableCollectionType", "_Buffer"]
+- !private ["PSs30RangeReplaceableCollectionType", "_Element"]
+- !private ["PSs16RawRepresentable", "AllowFragments"]
+- !private ["PSs16RawRepresentable", "UseProtocolCachePolicy"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "_Buffer"]
+- !private ["PSs12SequenceType", "_Element"]
+- !private ["PSs12SequenceType", "count"]
+- ["C3SHW11ServantInfo", "Bool"]
+- ["C3SHW11ServantInfo", "Double"]
+- ["C3SHW11ServantInfo", "Float"]
+- ["C3SHW11ServantInfo", "Int"]
+- ["C3SHW11ServantInfo", "String"]
+- ["C3SHW11ServantInfo", "careerType"]
+- ["C3SHW11ServantInfo", "clientClick"]
+- ["C3SHW11ServantInfo", "contactAddress"]
+- ["C3SHW11ServantInfo", "deinit"]
+- ["C3SHW11ServantInfo", "educationLevel"]
+- ["C3SHW11ServantInfo", "emailAddress"]
+- ["C3SHW11ServantInfo", "headPicture"]
+- ["C3SHW11ServantInfo", "holidayInMonth"]
+- ["C3SHW11ServantInfo", "id"]
+- ["C3SHW11ServantInfo", "idCardNo"]
+- ["C3SHW11ServantInfo", "init"]
+- ["C3SHW11ServantInfo", "isMarried"]
+- ["C3SHW11ServantInfo", "isStayHome"]
+- ["C3SHW11ServantInfo", "phoneNo"]
+- ["C3SHW11ServantInfo", "qqNumber"]
+- ["C3SHW11ServantInfo", "realLatitude"]
+- ["C3SHW11ServantInfo", "realLongitude"]
+- ["C3SHW11ServantInfo", "registerDate"]
+- ["C3SHW11ServantInfo", "registerLatitude"]
+- ["C3SHW11ServantInfo", "registerLongitude"]
+- ["C3SHW11ServantInfo", "servantAge"]
+- ["C3SHW11ServantInfo", "servantBirthday"]
+- ["C3SHW11ServantInfo", "servantCategory"]
+- ["C3SHW11ServantInfo", "servantCity"]
+- ["C3SHW11ServantInfo", "servantCounty"]
+- ["C3SHW11ServantInfo", "servantGender"]
+- ["C3SHW11ServantInfo", "servantHonors"]
+- ["C3SHW11ServantInfo", "servantID"]
+- ["C3SHW11ServantInfo", "servantIntro"]
+- ["C3SHW11ServantInfo", "servantMobil"]
+- ["C3SHW11ServantInfo", "servantName"]
+- ["C3SHW11ServantInfo", "servantNationality"]
+- ["C3SHW11ServantInfo", "servantProvince"]
+- ["C3SHW11ServantInfo", "servantScore"]
+- ["C3SHW11ServantInfo", "servantState"]
+- ["C3SHW11ServantInfo", "servantStatus"]
+- ["C3SHW11ServantInfo", "serviceArea"]
+- ["C3SHW11ServantInfo", "serviceCount"]
+- ["C3SHW11ServantInfo", "serviceItems"]
+- ["C3SHW11ServantInfo", "trainingIntro"]
+- ["C3SHW11ServantInfo", "workYears"]
+- !private ["PSs14SetAlgebraType", "AllowFragments"]
+- !private ["PSs17SignedIntegerType", "Distance"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "Distance"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["VSs12StaticString", "deinit"]
+- !private ["PSs10Streamable", "dataUsingEncoding"]
+- !private ["PSs10Streamable", "init"]
+- !private ["PSs10Strideable", "Distance"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["SS", "dataUsingEncoding"]
+- !private ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["PSs30StringInterpolationConvertible", "dataUsingEncoding"]
+- !private ["PSs30StringInterpolationConvertible", "init"]
+- !private ["PSs24StringLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["Su", "deinit"]
+- !private ["VSs6UInt16", "deinit"]
+- !private ["VSs6UInt32", "deinit"]
+- !private ["VSs6UInt64", "deinit"]
+- !private ["VSs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs10_ArrayType", "Element"]
+- !private ["PSs10_ArrayType", "Generator"]
+- !private ["PSs10_ArrayType", "Index"]
+- !private ["PSs10_ArrayType", "SubSequence"]
+- !private ["PSs10_ArrayType", "_Buffer"]
+- !private ["PSs10_ArrayType", "_Element"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs16_CocoaStringType", "dataUsingEncoding"]
+- !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs24_DestructorSafeContainer", "Element"]
+- !private ["PSs24_DestructorSafeContainer", "Generator"]
+- !private ["PSs24_DestructorSafeContainer", "Index"]
+- !private ["PSs24_DestructorSafeContainer", "SubSequence"]
+- !private ["PSs24_DestructorSafeContainer", "_Buffer"]
+- !private ["PSs24_DestructorSafeContainer", "_Element"]
+- !private ["PSs14_Incrementable", "Distance"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "Distance"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "Distance"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Distance"]
+- !private ["PSs21_ObjectiveCBridgeable", "Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "Generator"]
+- !private ["PSs21_ObjectiveCBridgeable", "Index"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["PSs21_ObjectiveCBridgeable", "_Buffer"]
+- !private ["PSs21_ObjectiveCBridgeable", "_Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "dataUsingEncoding"]
+- !private ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs22_RandomAccessAmbiguity", "Distance"]
+- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Distance"]
+- !private ["PSs12_Reflectable", "Element"]
+- !private ["PSs12_Reflectable", "Generator"]
+- !private ["PSs12_Reflectable", "Index"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "SubSequence"]
+- !private ["PSs12_Reflectable", "_Buffer"]
+- !private ["PSs12_Reflectable", "_Element"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "count"]
+- !private ["PSs12_Reflectable", "dataUsingEncoding"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs18_SignedIntegerType", "Distance"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "Distance"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "Sa"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "VSs10ArraySlice"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- "PSs11CVarArgType"
+- !private "VSs9Character"
+- !private "PSs14CollectionType"
+- "C3SHW11CommentInfo"
+- !private "PSs10Comparable"
+- !private "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- !private "Sd"
+- "PSs9Equatable"
+- !private "PSs9ErrorType"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
+- !private "PSs16ForwardIndexType"
+- !private "PSs13GeneratorType"
+- "PSs8Hashable"
+- !private "V3SHW8HttpData"
+- !private "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
+- !private "Si"
+- !private "VSs5Int16"
+- !private "VSs5Int32"
+- !private "VSs5Int64"
+- !private "VSs4Int8"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "PSs14MirrorPathType"
+- !private "PSs21MutableCollectionType"
+- !private "PSs16MutableIndexable"
+- !private "PSs16MutableSliceable"
+- !private "CSo7NSArray"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo7NSError"
+- !private "PSo17NSFastEnumeration"
+- !private "C10Foundation15NSFastGenerator"
+- !private "VSC20NSJSONReadingOptions"
+- !private "CSo19NSJSONSerialization"
+- !private "PSo16NSMutableCopying"
+- !private "CSo19NSMutableURLRequest"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "CSo5NSURL"
+- !private "CSo15NSURLConnection"
+- !private "CSo12NSURLRequest"
+- !private "OSC23NSURLRequestCachePolicy"
+- !private "PSs13OptionSetType"
+- !private "Sq"
+- !private "PSs16OutputStreamType"
+- !private "PSs21RandomAccessIndexType"
+- !private "PSs30RangeReplaceableCollectionType"
+- !private "PSs16RawRepresentable"
+- !private "PSs12SequenceType"
+- "C3SHW11ServantInfo"
+- !private "PSs14SetAlgebraType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "VSs12StaticString"
+- !private "PSs10Streamable"
+- !private "PSs10Strideable"
+- !private "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
+- !private "Su"
+- !private "VSs6UInt16"
+- !private "VSs6UInt32"
+- !private "VSs6UInt64"
+- !private "VSs5UInt8"
+- !private "Sc"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- !private "PSs10_ArrayType"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- !private "PSs24_DestructorSafeContainer"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- !private "PSs22_RandomAccessAmbiguity"
+- !private "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+- !private "objectForKey"
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/SHW/OCContainerHeader.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/SHW/JSDropDownMenu.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/SHW/JSDropDownMenu.m"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/SHW/PayInfo.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/SHW/AlipayMethod.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/./AlipaySDK.framework/Headers/AlipaySDK.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/./AlipaySDK.framework/Headers/APayAuthInfo.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.0.sdk/usr/include/CommonCrypto/CommonDigest.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMapKit.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKBaseComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGeneralDelegate.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKMapManager.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKTypes.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreLocation.swiftmodule"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKUserLocation.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKVersion.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKMapComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKAnnotation.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKAnnotationView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKActionPaopaoView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKMapView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOverlayView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOverlay.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKMapStatus.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKLocationViewDisplayParam.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKHeatMap.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGradient.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOfflineMap.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOfflineMapType.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKShape.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPointAnnotation.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPinAnnotationView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKMultiPoint.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKArcline.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPolyline.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPolygon.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCircle.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOverlayPathView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOverlayGLBasicView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPolygonView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPolylineView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCircleView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKArclineView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGroundOverlay.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGroundOverlayView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKSearchComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPoiSearchType.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGeocodeType.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKRouteSearchType.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPoiSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPoiSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGeocodeSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGeocodeSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKShareURLSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKShareUrlSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKSuggestionSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKSuggestionSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKBusLineSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKBusLineSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKRouteSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKRouteSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCloudSearchComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCloudPOIList.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCloudSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCloudSearchInfo.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKLocationComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKLocationService.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKUtilsComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGeometry.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKNavigation.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/SHW/NSString+URL.h"
+- "/Users/zhang/Desktop/HouseKeeping 2 2/SHW/NSString+URL.m"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreAudio.swiftmodule"
+interface-hash: "304acff25e6158ece3e4bdcb030fb342"

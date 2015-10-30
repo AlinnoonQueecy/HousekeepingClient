@@ -1,0 +1,8 @@
+[
+ {
+  "file": "/Users/zhang/Desktop/HouseKeeping 2/SHW/erweimaViewController.swift",
+  "offset": 1012,
+  "remove": 230,
+  "text": "\n        do {\n            input = try AVCaptureDeviceInput.deviceInputWithDevice(captureDevice)\n        } catch let error1 as NSError {\n            error = error1\n            input = nil\n        }\n        \n        if (error != nil) {\n            // If any error occurs, simply log the description of it and don't continue any more.\n            print",
+ }
+]

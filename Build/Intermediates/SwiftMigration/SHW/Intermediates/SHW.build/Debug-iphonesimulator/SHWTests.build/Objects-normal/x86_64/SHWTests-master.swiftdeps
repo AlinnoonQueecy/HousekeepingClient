@@ -1,0 +1,5 @@
+version: "Apple Swift version 2.0 (swiftlang-700.0.59 clang-700.0.72)"
+options: "8183f6b5a298634b4efdad9f86843536"
+build_time: [498534975, 770896000]
+inputs: 
+	"/Users/zhang/Desktop/HouseKeeping 2/SHWTests/SHWTests.swift": [485147054, 0]

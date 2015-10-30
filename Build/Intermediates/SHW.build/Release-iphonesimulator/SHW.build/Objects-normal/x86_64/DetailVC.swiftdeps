@@ -1,0 +1,555 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DetailVC"
+provides-nominal:
+- "C3SHW8DetailVC"
+provides-member:
+- ["C3SHW8DetailVC", ""]
+provides-dynamic-lookup:
+- "viewDidLoad"
+- "level"
+- "facilitatorName"
+- "didReceiveMemoryWarning"
+- "levelImg"
+- "facilitatorID"
+depends-top-level:
+- "UIViewController"
+- !private "UIColor"
+- "UIImageView"
+- "UILabel"
+- !private "CGSizeMake"
+- !private "BooleanLiteralType"
+- "DetailVC"
+- !private "*"
+- !private "CGRectMake"
+- !private "UIScrollView"
+- !private "UIScrollViewIndicatorStyle"
+- !private "UIView"
+depends-member:
+- !private ["PSs9AnyObject", "CGRectMake"]
+- !private ["PSs9AnyObject", "CGSizeMake"]
+- !private ["PSs9AnyObject", "UIColor"]
+- !private ["PSs9AnyObject", "UIScrollView"]
+- !private ["PSs9AnyObject", "UIScrollViewIndicatorStyle"]
+- !private ["PSs9AnyObject", "UIView"]
+- !private ["PSs9AnyObject", "addSubview"]
+- !private ["PSs9AnyObject", "backgroundColor"]
+- !private ["PSs9AnyObject", "blueColor"]
+- !private ["PSs9AnyObject", "contentSize"]
+- ["PSs9AnyObject", "didReceiveMemoryWarning"]
+- ["PSs9AnyObject", "facilitatorID"]
+- ["PSs9AnyObject", "facilitatorName"]
+- !private ["PSs9AnyObject", "grayColor"]
+- !private ["PSs9AnyObject", "indicatorStyle"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "level"]
+- ["PSs9AnyObject", "levelImg"]
+- !private ["PSs9AnyObject", "redColor"]
+- !private ["PSs9AnyObject", "showsHorizontalScrollIndicator"]
+- !private ["PSs9AnyObject", "showsVerticalScrollIndicator"]
+- !private ["PSs9AnyObject", "view"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- !private ["PSs9AnyObject", "whiteColor"]
+- ["PSs9AnyObject", ""]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["PSs11CVarArgType", "CGRectMake"]
+- !private ["PSs11CVarArgType", "CGSizeMake"]
+- !private ["PSs11CVarArgType", "UIColor"]
+- !private ["PSs11CVarArgType", "UIScrollView"]
+- !private ["PSs11CVarArgType", "UIScrollViewIndicatorStyle"]
+- !private ["PSs11CVarArgType", "UIView"]
+- !private ["PSs11CVarArgType", "addSubview"]
+- !private ["PSs11CVarArgType", "backgroundColor"]
+- !private ["PSs11CVarArgType", "blueColor"]
+- !private ["PSs11CVarArgType", "contentSize"]
+- ["PSs11CVarArgType", "didReceiveMemoryWarning"]
+- ["PSs11CVarArgType", "facilitatorID"]
+- ["PSs11CVarArgType", "facilitatorName"]
+- !private ["PSs11CVarArgType", "grayColor"]
+- !private ["PSs11CVarArgType", "indicatorStyle"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "level"]
+- ["PSs11CVarArgType", "levelImg"]
+- !private ["PSs11CVarArgType", "redColor"]
+- !private ["PSs11CVarArgType", "showsHorizontalScrollIndicator"]
+- !private ["PSs11CVarArgType", "showsVerticalScrollIndicator"]
+- !private ["PSs11CVarArgType", "view"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- !private ["PSs11CVarArgType", "whiteColor"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs23CustomStringConvertible", "CGRectMake"]
+- !private ["PSs23CustomStringConvertible", "CGSizeMake"]
+- !private ["PSs23CustomStringConvertible", "UIColor"]
+- !private ["PSs23CustomStringConvertible", "UIScrollView"]
+- !private ["PSs23CustomStringConvertible", "UIScrollViewIndicatorStyle"]
+- !private ["PSs23CustomStringConvertible", "UIView"]
+- !private ["PSs23CustomStringConvertible", "addSubview"]
+- !private ["PSs23CustomStringConvertible", "backgroundColor"]
+- !private ["PSs23CustomStringConvertible", "blueColor"]
+- !private ["PSs23CustomStringConvertible", "contentSize"]
+- ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
+- ["PSs23CustomStringConvertible", "facilitatorID"]
+- ["PSs23CustomStringConvertible", "facilitatorName"]
+- !private ["PSs23CustomStringConvertible", "grayColor"]
+- !private ["PSs23CustomStringConvertible", "indicatorStyle"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "level"]
+- ["PSs23CustomStringConvertible", "levelImg"]
+- !private ["PSs23CustomStringConvertible", "redColor"]
+- !private ["PSs23CustomStringConvertible", "showsHorizontalScrollIndicator"]
+- !private ["PSs23CustomStringConvertible", "showsVerticalScrollIndicator"]
+- !private ["PSs23CustomStringConvertible", "view"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- !private ["PSs23CustomStringConvertible", "whiteColor"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["C3SHW8DetailVC", "CGRectMake"]
+- !private ["C3SHW8DetailVC", "CGSizeMake"]
+- !private ["C3SHW8DetailVC", "UIColor"]
+- ["C3SHW8DetailVC", "UIImageView"]
+- ["C3SHW8DetailVC", "UILabel"]
+- !private ["C3SHW8DetailVC", "UIScrollView"]
+- !private ["C3SHW8DetailVC", "UIScrollViewIndicatorStyle"]
+- !private ["C3SHW8DetailVC", "UIView"]
+- ["C3SHW8DetailVC", "deinit"]
+- ["C3SHW8DetailVC", "didReceiveMemoryWarning"]
+- ["C3SHW8DetailVC", "facilitatorID"]
+- ["C3SHW8DetailVC", "facilitatorName"]
+- ["C3SHW8DetailVC", "init"]
+- ["C3SHW8DetailVC", "level"]
+- ["C3SHW8DetailVC", "levelImg"]
+- !private ["C3SHW8DetailVC", "view"]
+- ["C3SHW8DetailVC", "viewDidLoad"]
+- !private ["PSs9Equatable", "CGRectMake"]
+- !private ["PSs9Equatable", "CGSizeMake"]
+- !private ["PSs9Equatable", "UIColor"]
+- !private ["PSs9Equatable", "UIScrollView"]
+- !private ["PSs9Equatable", "UIScrollViewIndicatorStyle"]
+- !private ["PSs9Equatable", "UIView"]
+- !private ["PSs9Equatable", "White"]
+- !private ["PSs9Equatable", "addSubview"]
+- !private ["PSs9Equatable", "backgroundColor"]
+- !private ["PSs9Equatable", "blueColor"]
+- !private ["PSs9Equatable", "contentSize"]
+- ["PSs9Equatable", "didReceiveMemoryWarning"]
+- ["PSs9Equatable", "facilitatorID"]
+- ["PSs9Equatable", "facilitatorName"]
+- !private ["PSs9Equatable", "grayColor"]
+- !private ["PSs9Equatable", "indicatorStyle"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "level"]
+- ["PSs9Equatable", "levelImg"]
+- !private ["PSs9Equatable", "redColor"]
+- !private ["PSs9Equatable", "showsHorizontalScrollIndicator"]
+- !private ["PSs9Equatable", "showsVerticalScrollIndicator"]
+- !private ["PSs9Equatable", "view"]
+- ["PSs9Equatable", "viewDidLoad"]
+- !private ["PSs9Equatable", "whiteColor"]
+- ["PSs9Equatable", ""]
+- !private ["PSs8Hashable", "CGRectMake"]
+- !private ["PSs8Hashable", "CGSizeMake"]
+- !private ["PSs8Hashable", "UIColor"]
+- !private ["PSs8Hashable", "UIScrollView"]
+- !private ["PSs8Hashable", "UIScrollViewIndicatorStyle"]
+- !private ["PSs8Hashable", "UIView"]
+- !private ["PSs8Hashable", "White"]
+- !private ["PSs8Hashable", "addSubview"]
+- !private ["PSs8Hashable", "backgroundColor"]
+- !private ["PSs8Hashable", "blueColor"]
+- !private ["PSs8Hashable", "contentSize"]
+- ["PSs8Hashable", "didReceiveMemoryWarning"]
+- ["PSs8Hashable", "facilitatorID"]
+- ["PSs8Hashable", "facilitatorName"]
+- !private ["PSs8Hashable", "grayColor"]
+- !private ["PSs8Hashable", "indicatorStyle"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "level"]
+- ["PSs8Hashable", "levelImg"]
+- !private ["PSs8Hashable", "redColor"]
+- !private ["PSs8Hashable", "showsHorizontalScrollIndicator"]
+- !private ["PSs8Hashable", "showsVerticalScrollIndicator"]
+- !private ["PSs8Hashable", "view"]
+- ["PSs8Hashable", "viewDidLoad"]
+- !private ["PSs8Hashable", "whiteColor"]
+- ["PSs8Hashable", ""]
+- !private ["PSo8NSCoding", "CGRectMake"]
+- !private ["PSo8NSCoding", "CGSizeMake"]
+- !private ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "UIScrollView"]
+- !private ["PSo8NSCoding", "UIScrollViewIndicatorStyle"]
+- !private ["PSo8NSCoding", "UIView"]
+- !private ["PSo8NSCoding", "addSubview"]
+- !private ["PSo8NSCoding", "backgroundColor"]
+- !private ["PSo8NSCoding", "blueColor"]
+- !private ["PSo8NSCoding", "contentSize"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- ["PSo8NSCoding", "facilitatorID"]
+- ["PSo8NSCoding", "facilitatorName"]
+- !private ["PSo8NSCoding", "grayColor"]
+- !private ["PSo8NSCoding", "indicatorStyle"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "level"]
+- ["PSo8NSCoding", "levelImg"]
+- !private ["PSo8NSCoding", "redColor"]
+- !private ["PSo8NSCoding", "showsHorizontalScrollIndicator"]
+- !private ["PSo8NSCoding", "showsVerticalScrollIndicator"]
+- !private ["PSo8NSCoding", "view"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- !private ["PSo8NSCoding", "whiteColor"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "blueColor"]
+- !private ["PSo9NSCopying", "grayColor"]
+- !private ["PSo9NSCopying", "redColor"]
+- !private ["PSo9NSCopying", "whiteColor"]
+- !private ["PSo26NSExtensionRequestHandling", "CGRectMake"]
+- !private ["PSo26NSExtensionRequestHandling", "CGSizeMake"]
+- !private ["PSo26NSExtensionRequestHandling", "UIColor"]
+- !private ["PSo26NSExtensionRequestHandling", "UIScrollView"]
+- !private ["PSo26NSExtensionRequestHandling", "UIScrollViewIndicatorStyle"]
+- !private ["PSo26NSExtensionRequestHandling", "UIView"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "facilitatorID"]
+- ["PSo26NSExtensionRequestHandling", "facilitatorName"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "level"]
+- ["PSo26NSExtensionRequestHandling", "levelImg"]
+- !private ["PSo26NSExtensionRequestHandling", "view"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["CSo8NSObject", "CGRectMake"]
+- !private ["CSo8NSObject", "CGSizeMake"]
+- !private ["CSo8NSObject", "UIColor"]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UILabel"]
+- !private ["CSo8NSObject", "UIScrollView"]
+- !private ["CSo8NSObject", "UIScrollViewIndicatorStyle"]
+- !private ["CSo8NSObject", "UIView"]
+- !private ["CSo8NSObject", "addSubview"]
+- !private ["CSo8NSObject", "backgroundColor"]
+- !private ["CSo8NSObject", "blueColor"]
+- !private ["CSo8NSObject", "contentSize"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "facilitatorID"]
+- ["CSo8NSObject", "facilitatorName"]
+- !private ["CSo8NSObject", "grayColor"]
+- !private ["CSo8NSObject", "indicatorStyle"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "level"]
+- ["CSo8NSObject", "levelImg"]
+- !private ["CSo8NSObject", "redColor"]
+- !private ["CSo8NSObject", "showsHorizontalScrollIndicator"]
+- !private ["CSo8NSObject", "showsVerticalScrollIndicator"]
+- !private ["CSo8NSObject", "view"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["CSo8NSObject", "whiteColor"]
+- !private ["PSo16NSObjectProtocol", "CGRectMake"]
+- !private ["PSo16NSObjectProtocol", "CGSizeMake"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "UIScrollView"]
+- !private ["PSo16NSObjectProtocol", "UIScrollViewIndicatorStyle"]
+- !private ["PSo16NSObjectProtocol", "UIView"]
+- !private ["PSo16NSObjectProtocol", "addSubview"]
+- !private ["PSo16NSObjectProtocol", "backgroundColor"]
+- !private ["PSo16NSObjectProtocol", "blueColor"]
+- !private ["PSo16NSObjectProtocol", "contentSize"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "facilitatorID"]
+- ["PSo16NSObjectProtocol", "facilitatorName"]
+- !private ["PSo16NSObjectProtocol", "grayColor"]
+- !private ["PSo16NSObjectProtocol", "indicatorStyle"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "level"]
+- ["PSo16NSObjectProtocol", "levelImg"]
+- !private ["PSo16NSObjectProtocol", "redColor"]
+- !private ["PSo16NSObjectProtocol", "showsHorizontalScrollIndicator"]
+- !private ["PSo16NSObjectProtocol", "showsVerticalScrollIndicator"]
+- !private ["PSo16NSObjectProtocol", "view"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "whiteColor"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "blueColor"]
+- !private ["PSo14NSSecureCoding", "grayColor"]
+- !private ["PSo14NSSecureCoding", "redColor"]
+- !private ["PSo14NSSecureCoding", "whiteColor"]
+- !private ["PSs16RawRepresentable", "White"]
+- !private ["PSo29UIAccessibilityIdentification", "addSubview"]
+- !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
+- !private ["PSo29UIAccessibilityIdentification", "contentSize"]
+- !private ["PSo29UIAccessibilityIdentification", "indicatorStyle"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "showsHorizontalScrollIndicator"]
+- !private ["PSo29UIAccessibilityIdentification", "showsVerticalScrollIndicator"]
+- !private ["PSo12UIAppearance", "addSubview"]
+- !private ["PSo12UIAppearance", "backgroundColor"]
+- !private ["PSo12UIAppearance", "contentSize"]
+- !private ["PSo12UIAppearance", "indicatorStyle"]
+- !private ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "showsHorizontalScrollIndicator"]
+- !private ["PSo12UIAppearance", "showsVerticalScrollIndicator"]
+- !private ["PSo21UIAppearanceContainer", "CGRectMake"]
+- !private ["PSo21UIAppearanceContainer", "CGSizeMake"]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
+- !private ["PSo21UIAppearanceContainer", "UIScrollView"]
+- !private ["PSo21UIAppearanceContainer", "UIScrollViewIndicatorStyle"]
+- !private ["PSo21UIAppearanceContainer", "UIView"]
+- !private ["PSo21UIAppearanceContainer", "addSubview"]
+- !private ["PSo21UIAppearanceContainer", "backgroundColor"]
+- !private ["PSo21UIAppearanceContainer", "contentSize"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- ["PSo21UIAppearanceContainer", "facilitatorID"]
+- ["PSo21UIAppearanceContainer", "facilitatorName"]
+- !private ["PSo21UIAppearanceContainer", "indicatorStyle"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "level"]
+- ["PSo21UIAppearanceContainer", "levelImg"]
+- !private ["PSo21UIAppearanceContainer", "showsHorizontalScrollIndicator"]
+- !private ["PSo21UIAppearanceContainer", "showsVerticalScrollIndicator"]
+- !private ["PSo21UIAppearanceContainer", "view"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo7UIColor", "blueColor"]
+- !private ["CSo7UIColor", "grayColor"]
+- !private ["CSo7UIColor", "redColor"]
+- !private ["CSo7UIColor", "whiteColor"]
+- !private ["PSo18UIContentContainer", "CGRectMake"]
+- !private ["PSo18UIContentContainer", "CGSizeMake"]
+- !private ["PSo18UIContentContainer", "UIColor"]
+- !private ["PSo18UIContentContainer", "UIScrollView"]
+- !private ["PSo18UIContentContainer", "UIScrollViewIndicatorStyle"]
+- !private ["PSo18UIContentContainer", "UIView"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "facilitatorID"]
+- ["PSo18UIContentContainer", "facilitatorName"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "level"]
+- ["PSo18UIContentContainer", "levelImg"]
+- !private ["PSo18UIContentContainer", "view"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "addSubview"]
+- !private ["PSo17UICoordinateSpace", "backgroundColor"]
+- !private ["PSo17UICoordinateSpace", "contentSize"]
+- !private ["PSo17UICoordinateSpace", "indicatorStyle"]
+- !private ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "showsHorizontalScrollIndicator"]
+- !private ["PSo17UICoordinateSpace", "showsVerticalScrollIndicator"]
+- !private ["PSo13UIDynamicItem", "addSubview"]
+- !private ["PSo13UIDynamicItem", "backgroundColor"]
+- !private ["PSo13UIDynamicItem", "contentSize"]
+- !private ["PSo13UIDynamicItem", "indicatorStyle"]
+- !private ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "showsHorizontalScrollIndicator"]
+- !private ["PSo13UIDynamicItem", "showsVerticalScrollIndicator"]
+- !private ["CSo11UIResponder", "CGRectMake"]
+- !private ["CSo11UIResponder", "CGSizeMake"]
+- !private ["CSo11UIResponder", "UIColor"]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UILabel"]
+- !private ["CSo11UIResponder", "UIScrollView"]
+- !private ["CSo11UIResponder", "UIScrollViewIndicatorStyle"]
+- !private ["CSo11UIResponder", "UIView"]
+- !private ["CSo11UIResponder", "addSubview"]
+- !private ["CSo11UIResponder", "backgroundColor"]
+- !private ["CSo11UIResponder", "contentSize"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "facilitatorID"]
+- ["CSo11UIResponder", "facilitatorName"]
+- !private ["CSo11UIResponder", "indicatorStyle"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "level"]
+- ["CSo11UIResponder", "levelImg"]
+- !private ["CSo11UIResponder", "showsHorizontalScrollIndicator"]
+- !private ["CSo11UIResponder", "showsVerticalScrollIndicator"]
+- !private ["CSo11UIResponder", "view"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["CSo12UIScrollView", "addSubview"]
+- !private ["CSo12UIScrollView", "backgroundColor"]
+- !private ["CSo12UIScrollView", "contentSize"]
+- !private ["CSo12UIScrollView", "indicatorStyle"]
+- !private ["CSo12UIScrollView", "init"]
+- !private ["CSo12UIScrollView", "showsHorizontalScrollIndicator"]
+- !private ["CSo12UIScrollView", "showsVerticalScrollIndicator"]
+- !private ["OSC26UIScrollViewIndicatorStyle", "White"]
+- !private ["PSo16UIStateRestoring", "CGRectMake"]
+- !private ["PSo16UIStateRestoring", "CGSizeMake"]
+- !private ["PSo16UIStateRestoring", "UIColor"]
+- !private ["PSo16UIStateRestoring", "UIScrollView"]
+- !private ["PSo16UIStateRestoring", "UIScrollViewIndicatorStyle"]
+- !private ["PSo16UIStateRestoring", "UIView"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "facilitatorID"]
+- ["PSo16UIStateRestoring", "facilitatorName"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "level"]
+- ["PSo16UIStateRestoring", "levelImg"]
+- !private ["PSo16UIStateRestoring", "view"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "CGRectMake"]
+- !private ["PSo18UITraitEnvironment", "CGSizeMake"]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
+- !private ["PSo18UITraitEnvironment", "UIScrollView"]
+- !private ["PSo18UITraitEnvironment", "UIScrollViewIndicatorStyle"]
+- !private ["PSo18UITraitEnvironment", "UIView"]
+- !private ["PSo18UITraitEnvironment", "addSubview"]
+- !private ["PSo18UITraitEnvironment", "backgroundColor"]
+- !private ["PSo18UITraitEnvironment", "contentSize"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UITraitEnvironment", "facilitatorID"]
+- ["PSo18UITraitEnvironment", "facilitatorName"]
+- !private ["PSo18UITraitEnvironment", "indicatorStyle"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "level"]
+- ["PSo18UITraitEnvironment", "levelImg"]
+- !private ["PSo18UITraitEnvironment", "showsHorizontalScrollIndicator"]
+- !private ["PSo18UITraitEnvironment", "showsVerticalScrollIndicator"]
+- !private ["PSo18UITraitEnvironment", "view"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "addSubview"]
+- !private ["CSo6UIView", "backgroundColor"]
+- !private ["CSo6UIView", "contentSize"]
+- !private ["CSo6UIView", "indicatorStyle"]
+- !private ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "showsHorizontalScrollIndicator"]
+- !private ["CSo6UIView", "showsVerticalScrollIndicator"]
+- !private ["CSo16UIViewController", "CGRectMake"]
+- !private ["CSo16UIViewController", "CGSizeMake"]
+- !private ["CSo16UIViewController", "UIColor"]
+- ["CSo16UIViewController", "UIImageView"]
+- ["CSo16UIViewController", "UILabel"]
+- !private ["CSo16UIViewController", "UIScrollView"]
+- !private ["CSo16UIViewController", "UIScrollViewIndicatorStyle"]
+- !private ["CSo16UIViewController", "UIView"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "facilitatorID"]
+- ["CSo16UIViewController", "facilitatorName"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "level"]
+- ["CSo16UIViewController", "levelImg"]
+- !private ["CSo16UIViewController", "view"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["PSs12_Reflectable", "addSubview"]
+- !private ["PSs12_Reflectable", "backgroundColor"]
+- !private ["PSs12_Reflectable", "contentSize"]
+- !private ["PSs12_Reflectable", "indicatorStyle"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "showsHorizontalScrollIndicator"]
+- !private ["PSs12_Reflectable", "showsVerticalScrollIndicator"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "V12CoreGraphics7CGFloat"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "C3SHW8DetailVC"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "PSs16RawRepresentable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "CSo7UIColor"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "CSo11UIResponder"
+- !private "CSo12UIScrollView"
+- !private "OSC26UIScrollViewIndicatorStyle"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/OCContainerHeader.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/JSDropDownMenu.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/JSDropDownMenu.m"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/PayInfo.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/AlipayMethod.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/./AlipaySDK.framework/Headers/AlipaySDK.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/./AlipaySDK.framework/Headers/APayAuthInfo.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.0.sdk/usr/include/CommonCrypto/CommonDigest.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMapKit.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKBaseComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGeneralDelegate.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKMapManager.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKTypes.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKUserLocation.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKVersion.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKMapComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKAnnotation.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKAnnotationView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKActionPaopaoView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKMapView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOverlayView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOverlay.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKMapStatus.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKLocationViewDisplayParam.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKHeatMap.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGradient.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOfflineMap.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOfflineMapType.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKShape.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPointAnnotation.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPinAnnotationView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKMultiPoint.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKArcline.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPolyline.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPolygon.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCircle.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOverlayPathView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOverlayGLBasicView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPolygonView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPolylineView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCircleView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKArclineView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGroundOverlay.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGroundOverlayView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKSearchComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPoiSearchType.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGeocodeType.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKRouteSearchType.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPoiSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPoiSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGeocodeSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGeocodeSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKShareURLSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKShareUrlSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKSuggestionSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKSuggestionSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKBusLineSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKBusLineSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKRouteSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKRouteSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCloudSearchComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCloudPOIList.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCloudSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCloudSearchInfo.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKLocationComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKLocationService.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKUtilsComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGeometry.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKNavigation.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/NSString+URL.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/NSString+URL.m"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+interface-hash: "989539946fed303de3c16e85e4acec63"

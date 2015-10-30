@@ -1,0 +1,8 @@
+[
+ {
+  "file": "/Users/zhang/Desktop/HouseKeeping 2/SHW/DetailVC.swift",
+  "offset": 379,
+  "remove": 625,
+  "text": "let scrollView: UIScrollView = UIScrollView(frame : CGRectMake(0, 0, 300, 400))\n        //设置背景\n      scrollView.backgroundColor = UIColor.grayColor()\n        //添加到视图上\n        self.view.addSubview(scrollView)\n        //创建3个视图，添加到Scrollview上\n        let view1:UIView = UIView(frame:CGRectMake(0, 0, 300, 400))\n        view1.backgroundColor = UIColor.whiteColor()\n        scrollView.addSubview(view1)\n        \n        let view2:UIView = UIView(frame:CGRectMake(300, 0, 300, 400))\n        view1.backgroundColor = UIColor.redColor()\n        scrollView.addSubview(view2)\n        \n        let",
+ }
+]

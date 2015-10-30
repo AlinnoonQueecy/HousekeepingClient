@@ -1,0 +1,8 @@
+[
+ {
+  "file": "/Users/zhang/Desktop/HouseKeeping 2/SHW/ZYHWebImage.swift",
+  "offset": 652,
+  "remove": 691,
+  "text": "let data:NSData?=ZYHWebImageChcheCenter.readCacheFromUrl(url!)\n            if data != nil {\n                print(\"读缓存1\")\n                ZYHImage=UIImage(data: data!)\n               self.image=ZYHImage\n            }else{\n                  //获取异步线程\n               let dispath=dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0)\n                dispatch_async(dispath, { () -> Void in\n                    let URL:NSURL = NSURL(string: url! )!\n                    let data:NSData?=NSData(contentsOfURL: URL)\n                    if data != nil {\n                        ZYHImage=UIImage(data: data!)\n                        //写缓存\n                        print",
+ }
+]

@@ -1,0 +1,985 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CityHandle"
+provides-nominal:
+- "C3SHW10CityHandle"
+provides-member:
+- ["C3SHW10CityHandle", ""]
+provides-dynamic-lookup:
+- "shareCityList"
+- "shareIndexList"
+- "dataForSection"
+- "s_sectionCityList"
+- "QueryCovered"
+- "s_indexList"
+- "getProvinceIndexWithCityID"
+- "s_cityList"
+- "getCityList"
+- "getCityIndexWithCityID"
+- "s_provinceList"
+- "shareSectionCityList"
+- "sortCityList"
+- "tableViewIndex"
+- "getProvinceList"
+- "getCityNameWithCityID"
+- "shareProvinceList"
+depends-top-level:
+- !private "NSUTF8StringEncoding"
+- "NSArray"
+- !private "<="
+- "CityHandle"
+- !private "NSJSONReadingOptions"
+- !private "&&"
+- !private "UnicodeScalarType"
+- !private "dispatch_once_t"
+- !private "NSError"
+- !private "HttpData"
+- !private "NSURLResponse"
+- !private "AnyObject"
+- !private "BooleanLiteralType"
+- !private "NSDictionary"
+- !private "NSMutableArray"
+- !private "NSURLConnection"
+- !private "CityModel"
+- !private "NSJSONSerialization"
+- !private "NSSortDescriptor"
+- !private "NSURL"
+- !private "!="
+- !private "=="
+- !private "NSBundle"
+- !private "<"
+- "String"
+- !private "ExtendedGraphemeClusterType"
+- "NSInteger"
+- !private "NSData"
+- !private ">="
+- !private "NSMutableURLRequest"
+- !private "print"
+- !private "+"
+- !private "Character"
+- "NSObject"
+- "NSString"
+- !private "++"
+- !private "dispatch_once"
+- !private "NSFileManager"
+- !private "NSURLRequestCachePolicy"
+- !private "StringLiteralType"
+depends-member:
+- !private ["PSs9AnyObject", "Character"]
+- !private ["PSs9AnyObject", "CityModel"]
+- !private ["PSs9AnyObject", "Element"]
+- !private ["PSs9AnyObject", "Generator"]
+- !private ["PSs9AnyObject", "HTTPBody"]
+- !private ["PSs9AnyObject", "HTTPMethod"]
+- !private ["PSs9AnyObject", "HttpData"]
+- !private ["PSs9AnyObject", "JSONObjectWithData"]
+- ["PSs9AnyObject", "NSArray"]
+- !private ["PSs9AnyObject", "NSBundle"]
+- !private ["PSs9AnyObject", "NSFileManager"]
+- !private ["PSs9AnyObject", "NSJSONReadingOptions"]
+- !private ["PSs9AnyObject", "NSJSONSerialization"]
+- !private ["PSs9AnyObject", "NSMutableArray"]
+- !private ["PSs9AnyObject", "NSMutableURLRequest"]
+- !private ["PSs9AnyObject", "NSSortDescriptor"]
+- !private ["PSs9AnyObject", "NSString"]
+- !private ["PSs9AnyObject", "NSURL"]
+- !private ["PSs9AnyObject", "NSURLConnection"]
+- !private ["PSs9AnyObject", "NSURLRequestCachePolicy"]
+- !private ["PSs9AnyObject", "NSUTF8StringEncoding"]
+- ["PSs9AnyObject", "QueryCovered"]
+- !private ["PSs9AnyObject", "addObject"]
+- !private ["PSs9AnyObject", "arrayByAddingObject"]
+- !private ["PSs9AnyObject", "cityID"]
+- !private ["PSs9AnyObject", "cityName"]
+- !private ["PSs9AnyObject", "cityPinYin"]
+- !private ["PSs9AnyObject", "code"]
+- !private ["PSs9AnyObject", "contentsAtPath"]
+- !private ["PSs9AnyObject", "count"]
+- ["PSs9AnyObject", "dataForSection"]
+- !private ["PSs9AnyObject", "dataUsingEncoding"]
+- !private ["PSs9AnyObject", "defaultManager"]
+- !private ["PSs9AnyObject", "deinit"]
+- !private ["PSs9AnyObject", "description"]
+- !private ["PSs9AnyObject", "dispatch_once"]
+- ["PSs9AnyObject", "getCityIndexWithCityID"]
+- ["PSs9AnyObject", "getCityList"]
+- ["PSs9AnyObject", "getCityNameWithCityID"]
+- ["PSs9AnyObject", "getProvinceIndexWithCityID"]
+- ["PSs9AnyObject", "getProvinceList"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "isEqualToString"]
+- !private ["PSs9AnyObject", "length"]
+- !private ["PSs9AnyObject", "mainBundle"]
+- !private ["PSs9AnyObject", "objectAtIndex"]
+- !private ["PSs9AnyObject", "objectForKey"]
+- !private ["PSs9AnyObject", "parentID"]
+- !private ["PSs9AnyObject", "pathForResource"]
+- !private ["PSs9AnyObject", "print"]
+- ["PSs9AnyObject", "s_cityList"]
+- ["PSs9AnyObject", "s_indexList"]
+- ["PSs9AnyObject", "s_provinceList"]
+- ["PSs9AnyObject", "s_sectionCityList"]
+- !private ["PSs9AnyObject", "sendSynchronousRequest"]
+- ["PSs9AnyObject", "shareCityList"]
+- ["PSs9AnyObject", "shareIndexList"]
+- ["PSs9AnyObject", "shareProvinceList"]
+- ["PSs9AnyObject", "shareSectionCityList"]
+- ["PSs9AnyObject", "sortCityList"]
+- !private ["PSs9AnyObject", "sortedArrayUsingDescriptors"]
+- !private ["PSs9AnyObject", "substringToIndex"]
+- ["PSs9AnyObject", "tableViewIndex"]
+- !private ["PSs9AnyObject", "uppercaseString"]
+- ["PSs9AnyObject", ""]
+- !private ["Sa", "deinit"]
+- !private ["PSs23ArrayLiteralConvertible", "AllowFragments"]
+- !private ["PSs23ArrayLiteralConvertible", "Generator"]
+- !private ["PSs23ArrayLiteralConvertible", "MutableLeaves"]
+- !private ["PSs23ArrayLiteralConvertible", "addObject"]
+- !private ["PSs23ArrayLiteralConvertible", "arrayByAddingObject"]
+- !private ["PSs23ArrayLiteralConvertible", "count"]
+- ["PSs23ArrayLiteralConvertible", "init"]
+- !private ["PSs23ArrayLiteralConvertible", "objectAtIndex"]
+- !private ["PSs23ArrayLiteralConvertible", "sortedArrayUsingDescriptors"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "Character"]
+- !private ["PSs11CVarArgType", "CityModel"]
+- !private ["PSs11CVarArgType", "Generator"]
+- !private ["PSs11CVarArgType", "HTTPBody"]
+- !private ["PSs11CVarArgType", "HTTPMethod"]
+- !private ["PSs11CVarArgType", "HttpData"]
+- !private ["PSs11CVarArgType", "JSONObjectWithData"]
+- ["PSs11CVarArgType", "NSArray"]
+- !private ["PSs11CVarArgType", "NSBundle"]
+- !private ["PSs11CVarArgType", "NSFileManager"]
+- !private ["PSs11CVarArgType", "NSJSONReadingOptions"]
+- !private ["PSs11CVarArgType", "NSJSONSerialization"]
+- !private ["PSs11CVarArgType", "NSMutableArray"]
+- !private ["PSs11CVarArgType", "NSMutableURLRequest"]
+- !private ["PSs11CVarArgType", "NSSortDescriptor"]
+- !private ["PSs11CVarArgType", "NSString"]
+- !private ["PSs11CVarArgType", "NSURL"]
+- !private ["PSs11CVarArgType", "NSURLConnection"]
+- !private ["PSs11CVarArgType", "NSURLRequestCachePolicy"]
+- !private ["PSs11CVarArgType", "NSUTF8StringEncoding"]
+- ["PSs11CVarArgType", "QueryCovered"]
+- !private ["PSs11CVarArgType", "addObject"]
+- !private ["PSs11CVarArgType", "arrayByAddingObject"]
+- !private ["PSs11CVarArgType", "cityID"]
+- !private ["PSs11CVarArgType", "cityName"]
+- !private ["PSs11CVarArgType", "cityPinYin"]
+- !private ["PSs11CVarArgType", "code"]
+- !private ["PSs11CVarArgType", "contentsAtPath"]
+- !private ["PSs11CVarArgType", "count"]
+- ["PSs11CVarArgType", "dataForSection"]
+- !private ["PSs11CVarArgType", "dataUsingEncoding"]
+- !private ["PSs11CVarArgType", "defaultManager"]
+- !private ["PSs11CVarArgType", "description"]
+- !private ["PSs11CVarArgType", "dispatch_once"]
+- ["PSs11CVarArgType", "getCityIndexWithCityID"]
+- ["PSs11CVarArgType", "getCityList"]
+- ["PSs11CVarArgType", "getCityNameWithCityID"]
+- ["PSs11CVarArgType", "getProvinceIndexWithCityID"]
+- ["PSs11CVarArgType", "getProvinceList"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "isEqualToString"]
+- !private ["PSs11CVarArgType", "length"]
+- !private ["PSs11CVarArgType", "mainBundle"]
+- !private ["PSs11CVarArgType", "objectAtIndex"]
+- !private ["PSs11CVarArgType", "objectForKey"]
+- !private ["PSs11CVarArgType", "parentID"]
+- !private ["PSs11CVarArgType", "pathForResource"]
+- !private ["PSs11CVarArgType", "print"]
+- ["PSs11CVarArgType", "s_cityList"]
+- ["PSs11CVarArgType", "s_indexList"]
+- ["PSs11CVarArgType", "s_provinceList"]
+- ["PSs11CVarArgType", "s_sectionCityList"]
+- !private ["PSs11CVarArgType", "sendSynchronousRequest"]
+- ["PSs11CVarArgType", "shareCityList"]
+- ["PSs11CVarArgType", "shareIndexList"]
+- ["PSs11CVarArgType", "shareProvinceList"]
+- ["PSs11CVarArgType", "shareSectionCityList"]
+- ["PSs11CVarArgType", "sortCityList"]
+- !private ["PSs11CVarArgType", "sortedArrayUsingDescriptors"]
+- !private ["PSs11CVarArgType", "substringToIndex"]
+- ["PSs11CVarArgType", "tableViewIndex"]
+- !private ["PSs11CVarArgType", "uppercaseString"]
+- ["PSs11CVarArgType", ""]
+- !private ["VSs9Character", "deinit"]
+- !private ["VSs9Character", "init"]
+- !private ["C3SHW10CityHandle", "AnyObject"]
+- !private ["C3SHW10CityHandle", "Character"]
+- !private ["C3SHW10CityHandle", "CityModel"]
+- !private ["C3SHW10CityHandle", "HttpData"]
+- ["C3SHW10CityHandle", "NSArray"]
+- !private ["C3SHW10CityHandle", "NSBundle"]
+- !private ["C3SHW10CityHandle", "NSData"]
+- !private ["C3SHW10CityHandle", "NSDictionary"]
+- !private ["C3SHW10CityHandle", "NSError"]
+- !private ["C3SHW10CityHandle", "NSFileManager"]
+- ["C3SHW10CityHandle", "NSInteger"]
+- !private ["C3SHW10CityHandle", "NSJSONReadingOptions"]
+- !private ["C3SHW10CityHandle", "NSJSONSerialization"]
+- !private ["C3SHW10CityHandle", "NSMutableArray"]
+- !private ["C3SHW10CityHandle", "NSMutableURLRequest"]
+- !private ["C3SHW10CityHandle", "NSSortDescriptor"]
+- ["C3SHW10CityHandle", "NSString"]
+- !private ["C3SHW10CityHandle", "NSURL"]
+- !private ["C3SHW10CityHandle", "NSURLConnection"]
+- !private ["C3SHW10CityHandle", "NSURLRequestCachePolicy"]
+- !private ["C3SHW10CityHandle", "NSURLResponse"]
+- !private ["C3SHW10CityHandle", "NSUTF8StringEncoding"]
+- ["C3SHW10CityHandle", "QueryCovered"]
+- ["C3SHW10CityHandle", "String"]
+- ["C3SHW10CityHandle", "dataForSection"]
+- ["C3SHW10CityHandle", "deinit"]
+- !private ["C3SHW10CityHandle", "dispatch_once"]
+- !private ["C3SHW10CityHandle", "dispatch_once_t"]
+- ["C3SHW10CityHandle", "getCityIndexWithCityID"]
+- ["C3SHW10CityHandle", "getCityList"]
+- ["C3SHW10CityHandle", "getCityNameWithCityID"]
+- ["C3SHW10CityHandle", "getProvinceIndexWithCityID"]
+- ["C3SHW10CityHandle", "getProvinceList"]
+- ["C3SHW10CityHandle", "init"]
+- !private ["C3SHW10CityHandle", "print"]
+- ["C3SHW10CityHandle", "s_cityList"]
+- ["C3SHW10CityHandle", "s_indexList"]
+- ["C3SHW10CityHandle", "s_provinceList"]
+- ["C3SHW10CityHandle", "s_sectionCityList"]
+- ["C3SHW10CityHandle", "shareCityList"]
+- ["C3SHW10CityHandle", "shareIndexList"]
+- ["C3SHW10CityHandle", "shareProvinceList"]
+- ["C3SHW10CityHandle", "shareSectionCityList"]
+- ["C3SHW10CityHandle", "sortCityList"]
+- ["C3SHW10CityHandle", "tableViewIndex"]
+- !private ["C3SHW9CityModel", "cityID"]
+- !private ["C3SHW9CityModel", "cityName"]
+- !private ["C3SHW9CityModel", "cityPinYin"]
+- !private ["C3SHW9CityModel", "init"]
+- !private ["C3SHW9CityModel", "parentID"]
+- !private ["PSs10Comparable", "dataUsingEncoding"]
+- !private ["PSs10Comparable", "init"]
+- !private ["PSs10Comparable", "uppercaseString"]
+- !private ["PSs28CustomDebugStringConvertible", "dataUsingEncoding"]
+- !private ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "uppercaseString"]
+- !private ["PSs23CustomStringConvertible", "Character"]
+- !private ["PSs23CustomStringConvertible", "CityModel"]
+- !private ["PSs23CustomStringConvertible", "Generator"]
+- !private ["PSs23CustomStringConvertible", "HTTPBody"]
+- !private ["PSs23CustomStringConvertible", "HTTPMethod"]
+- !private ["PSs23CustomStringConvertible", "HttpData"]
+- !private ["PSs23CustomStringConvertible", "JSONObjectWithData"]
+- ["PSs23CustomStringConvertible", "NSArray"]
+- !private ["PSs23CustomStringConvertible", "NSBundle"]
+- !private ["PSs23CustomStringConvertible", "NSFileManager"]
+- !private ["PSs23CustomStringConvertible", "NSJSONReadingOptions"]
+- !private ["PSs23CustomStringConvertible", "NSJSONSerialization"]
+- !private ["PSs23CustomStringConvertible", "NSMutableArray"]
+- !private ["PSs23CustomStringConvertible", "NSMutableURLRequest"]
+- !private ["PSs23CustomStringConvertible", "NSSortDescriptor"]
+- !private ["PSs23CustomStringConvertible", "NSString"]
+- !private ["PSs23CustomStringConvertible", "NSURL"]
+- !private ["PSs23CustomStringConvertible", "NSURLConnection"]
+- !private ["PSs23CustomStringConvertible", "NSURLRequestCachePolicy"]
+- !private ["PSs23CustomStringConvertible", "NSUTF8StringEncoding"]
+- ["PSs23CustomStringConvertible", "QueryCovered"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "addObject"]
+- !private ["PSs23CustomStringConvertible", "arrayByAddingObject"]
+- !private ["PSs23CustomStringConvertible", "cityID"]
+- !private ["PSs23CustomStringConvertible", "cityName"]
+- !private ["PSs23CustomStringConvertible", "cityPinYin"]
+- !private ["PSs23CustomStringConvertible", "code"]
+- !private ["PSs23CustomStringConvertible", "contentsAtPath"]
+- !private ["PSs23CustomStringConvertible", "count"]
+- ["PSs23CustomStringConvertible", "dataForSection"]
+- !private ["PSs23CustomStringConvertible", "dataUsingEncoding"]
+- !private ["PSs23CustomStringConvertible", "defaultManager"]
+- !private ["PSs23CustomStringConvertible", "description"]
+- !private ["PSs23CustomStringConvertible", "dispatch_once"]
+- ["PSs23CustomStringConvertible", "getCityIndexWithCityID"]
+- ["PSs23CustomStringConvertible", "getCityList"]
+- ["PSs23CustomStringConvertible", "getCityNameWithCityID"]
+- ["PSs23CustomStringConvertible", "getProvinceIndexWithCityID"]
+- ["PSs23CustomStringConvertible", "getProvinceList"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "isEqualToString"]
+- !private ["PSs23CustomStringConvertible", "length"]
+- !private ["PSs23CustomStringConvertible", "mainBundle"]
+- !private ["PSs23CustomStringConvertible", "objectAtIndex"]
+- !private ["PSs23CustomStringConvertible", "objectForKey"]
+- !private ["PSs23CustomStringConvertible", "parentID"]
+- !private ["PSs23CustomStringConvertible", "pathForResource"]
+- !private ["PSs23CustomStringConvertible", "print"]
+- ["PSs23CustomStringConvertible", "s_cityList"]
+- ["PSs23CustomStringConvertible", "s_indexList"]
+- ["PSs23CustomStringConvertible", "s_provinceList"]
+- ["PSs23CustomStringConvertible", "s_sectionCityList"]
+- !private ["PSs23CustomStringConvertible", "sendSynchronousRequest"]
+- ["PSs23CustomStringConvertible", "shareCityList"]
+- ["PSs23CustomStringConvertible", "shareIndexList"]
+- ["PSs23CustomStringConvertible", "shareProvinceList"]
+- ["PSs23CustomStringConvertible", "shareSectionCityList"]
+- ["PSs23CustomStringConvertible", "sortCityList"]
+- !private ["PSs23CustomStringConvertible", "sortedArrayUsingDescriptors"]
+- !private ["PSs23CustomStringConvertible", "substringToIndex"]
+- ["PSs23CustomStringConvertible", "tableViewIndex"]
+- !private ["PSs23CustomStringConvertible", "uppercaseString"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs28DictionaryLiteralConvertible", "objectForKey"]
+- !private ["Sd", "deinit"]
+- !private ["PSs9Equatable", "AllowFragments"]
+- !private ["PSs9Equatable", "Character"]
+- !private ["PSs9Equatable", "CityModel"]
+- !private ["PSs9Equatable", "Generator"]
+- !private ["PSs9Equatable", "HTTPBody"]
+- !private ["PSs9Equatable", "HTTPMethod"]
+- !private ["PSs9Equatable", "HttpData"]
+- !private ["PSs9Equatable", "JSONObjectWithData"]
+- !private ["PSs9Equatable", "MutableLeaves"]
+- ["PSs9Equatable", "NSArray"]
+- !private ["PSs9Equatable", "NSBundle"]
+- !private ["PSs9Equatable", "NSFileManager"]
+- !private ["PSs9Equatable", "NSJSONReadingOptions"]
+- !private ["PSs9Equatable", "NSJSONSerialization"]
+- !private ["PSs9Equatable", "NSMutableArray"]
+- !private ["PSs9Equatable", "NSMutableURLRequest"]
+- !private ["PSs9Equatable", "NSSortDescriptor"]
+- !private ["PSs9Equatable", "NSString"]
+- !private ["PSs9Equatable", "NSURL"]
+- !private ["PSs9Equatable", "NSURLConnection"]
+- !private ["PSs9Equatable", "NSURLRequestCachePolicy"]
+- !private ["PSs9Equatable", "NSUTF8StringEncoding"]
+- ["PSs9Equatable", "QueryCovered"]
+- !private ["PSs9Equatable", "UseProtocolCachePolicy"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "addObject"]
+- !private ["PSs9Equatable", "arrayByAddingObject"]
+- !private ["PSs9Equatable", "cityID"]
+- !private ["PSs9Equatable", "cityName"]
+- !private ["PSs9Equatable", "cityPinYin"]
+- !private ["PSs9Equatable", "code"]
+- !private ["PSs9Equatable", "contentsAtPath"]
+- !private ["PSs9Equatable", "count"]
+- ["PSs9Equatable", "dataForSection"]
+- !private ["PSs9Equatable", "dataUsingEncoding"]
+- !private ["PSs9Equatable", "defaultManager"]
+- !private ["PSs9Equatable", "description"]
+- !private ["PSs9Equatable", "dispatch_once"]
+- ["PSs9Equatable", "getCityIndexWithCityID"]
+- ["PSs9Equatable", "getCityList"]
+- ["PSs9Equatable", "getCityNameWithCityID"]
+- ["PSs9Equatable", "getProvinceIndexWithCityID"]
+- ["PSs9Equatable", "getProvinceList"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "isEqualToString"]
+- !private ["PSs9Equatable", "length"]
+- !private ["PSs9Equatable", "mainBundle"]
+- !private ["PSs9Equatable", "objectAtIndex"]
+- !private ["PSs9Equatable", "objectForKey"]
+- !private ["PSs9Equatable", "parentID"]
+- !private ["PSs9Equatable", "pathForResource"]
+- !private ["PSs9Equatable", "print"]
+- ["PSs9Equatable", "s_cityList"]
+- ["PSs9Equatable", "s_indexList"]
+- ["PSs9Equatable", "s_provinceList"]
+- ["PSs9Equatable", "s_sectionCityList"]
+- !private ["PSs9Equatable", "sendSynchronousRequest"]
+- ["PSs9Equatable", "shareCityList"]
+- ["PSs9Equatable", "shareIndexList"]
+- ["PSs9Equatable", "shareProvinceList"]
+- ["PSs9Equatable", "shareSectionCityList"]
+- ["PSs9Equatable", "sortCityList"]
+- !private ["PSs9Equatable", "sortedArrayUsingDescriptors"]
+- !private ["PSs9Equatable", "substringToIndex"]
+- ["PSs9Equatable", "tableViewIndex"]
+- !private ["PSs9Equatable", "uppercaseString"]
+- ["PSs9Equatable", ""]
+- !private ["PSs9ErrorType", "code"]
+- !private ["PSs9ErrorType", "description"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "isEqualToString"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "length"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "substringToIndex"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "uppercaseString"]
+- !private ["Sf", "deinit"]
+- !private ["PSs13GeneratorType", "Element"]
+- !private ["PSs8Hashable", "Character"]
+- !private ["PSs8Hashable", "CityModel"]
+- !private ["PSs8Hashable", "Generator"]
+- !private ["PSs8Hashable", "HTTPBody"]
+- !private ["PSs8Hashable", "HTTPMethod"]
+- !private ["PSs8Hashable", "HttpData"]
+- !private ["PSs8Hashable", "JSONObjectWithData"]
+- ["PSs8Hashable", "NSArray"]
+- !private ["PSs8Hashable", "NSBundle"]
+- !private ["PSs8Hashable", "NSFileManager"]
+- !private ["PSs8Hashable", "NSJSONReadingOptions"]
+- !private ["PSs8Hashable", "NSJSONSerialization"]
+- !private ["PSs8Hashable", "NSMutableArray"]
+- !private ["PSs8Hashable", "NSMutableURLRequest"]
+- !private ["PSs8Hashable", "NSSortDescriptor"]
+- !private ["PSs8Hashable", "NSString"]
+- !private ["PSs8Hashable", "NSURL"]
+- !private ["PSs8Hashable", "NSURLConnection"]
+- !private ["PSs8Hashable", "NSURLRequestCachePolicy"]
+- !private ["PSs8Hashable", "NSUTF8StringEncoding"]
+- ["PSs8Hashable", "QueryCovered"]
+- !private ["PSs8Hashable", "UseProtocolCachePolicy"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "addObject"]
+- !private ["PSs8Hashable", "arrayByAddingObject"]
+- !private ["PSs8Hashable", "cityID"]
+- !private ["PSs8Hashable", "cityName"]
+- !private ["PSs8Hashable", "cityPinYin"]
+- !private ["PSs8Hashable", "code"]
+- !private ["PSs8Hashable", "contentsAtPath"]
+- !private ["PSs8Hashable", "count"]
+- ["PSs8Hashable", "dataForSection"]
+- !private ["PSs8Hashable", "dataUsingEncoding"]
+- !private ["PSs8Hashable", "defaultManager"]
+- !private ["PSs8Hashable", "description"]
+- !private ["PSs8Hashable", "dispatch_once"]
+- ["PSs8Hashable", "getCityIndexWithCityID"]
+- ["PSs8Hashable", "getCityList"]
+- ["PSs8Hashable", "getCityNameWithCityID"]
+- ["PSs8Hashable", "getProvinceIndexWithCityID"]
+- ["PSs8Hashable", "getProvinceList"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "isEqualToString"]
+- !private ["PSs8Hashable", "length"]
+- !private ["PSs8Hashable", "mainBundle"]
+- !private ["PSs8Hashable", "objectAtIndex"]
+- !private ["PSs8Hashable", "objectForKey"]
+- !private ["PSs8Hashable", "parentID"]
+- !private ["PSs8Hashable", "pathForResource"]
+- !private ["PSs8Hashable", "print"]
+- ["PSs8Hashable", "s_cityList"]
+- ["PSs8Hashable", "s_indexList"]
+- ["PSs8Hashable", "s_provinceList"]
+- ["PSs8Hashable", "s_sectionCityList"]
+- !private ["PSs8Hashable", "sendSynchronousRequest"]
+- ["PSs8Hashable", "shareCityList"]
+- ["PSs8Hashable", "shareIndexList"]
+- ["PSs8Hashable", "shareProvinceList"]
+- ["PSs8Hashable", "shareSectionCityList"]
+- ["PSs8Hashable", "sortCityList"]
+- !private ["PSs8Hashable", "sortedArrayUsingDescriptors"]
+- !private ["PSs8Hashable", "substringToIndex"]
+- ["PSs8Hashable", "tableViewIndex"]
+- !private ["PSs8Hashable", "uppercaseString"]
+- ["PSs8Hashable", ""]
+- !private ["V3SHW8HttpData", "http"]
+- !private ["SQ", "deinit"]
+- !private ["Si", "deinit"]
+- !private ["VSs5Int16", "deinit"]
+- !private ["VSs5Int32", "deinit"]
+- !private ["VSs5Int64", "deinit"]
+- !private ["VSs4Int8", "deinit"]
+- !private ["PSs14MirrorPathType", "dataUsingEncoding"]
+- !private ["PSs14MirrorPathType", "init"]
+- !private ["PSs14MirrorPathType", "uppercaseString"]
+- !private ["CSo7NSArray", "Generator"]
+- !private ["CSo7NSArray", "addObject"]
+- !private ["CSo7NSArray", "arrayByAddingObject"]
+- !private ["CSo7NSArray", "count"]
+- ["CSo7NSArray", "init"]
+- !private ["CSo7NSArray", "objectAtIndex"]
+- !private ["CSo7NSArray", "sortedArrayUsingDescriptors"]
+- !private ["CSo8NSBundle", "mainBundle"]
+- !private ["CSo8NSBundle", "pathForResource"]
+- !private ["PSo8NSCoding", "Generator"]
+- !private ["PSo8NSCoding", "HTTPBody"]
+- !private ["PSo8NSCoding", "HTTPMethod"]
+- !private ["PSo8NSCoding", "addObject"]
+- !private ["PSo8NSCoding", "arrayByAddingObject"]
+- !private ["PSo8NSCoding", "code"]
+- !private ["PSo8NSCoding", "count"]
+- !private ["PSo8NSCoding", "dataUsingEncoding"]
+- !private ["PSo8NSCoding", "description"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "isEqualToString"]
+- !private ["PSo8NSCoding", "length"]
+- !private ["PSo8NSCoding", "objectAtIndex"]
+- !private ["PSo8NSCoding", "objectForKey"]
+- !private ["PSo8NSCoding", "sortedArrayUsingDescriptors"]
+- !private ["PSo8NSCoding", "substringToIndex"]
+- !private ["PSo8NSCoding", "uppercaseString"]
+- !private ["PSo9NSCopying", "Generator"]
+- !private ["PSo9NSCopying", "HTTPBody"]
+- !private ["PSo9NSCopying", "HTTPMethod"]
+- !private ["PSo9NSCopying", "addObject"]
+- !private ["PSo9NSCopying", "arrayByAddingObject"]
+- !private ["PSo9NSCopying", "code"]
+- !private ["PSo9NSCopying", "count"]
+- !private ["PSo9NSCopying", "dataUsingEncoding"]
+- !private ["PSo9NSCopying", "description"]
+- ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "isEqualToString"]
+- !private ["PSo9NSCopying", "length"]
+- !private ["PSo9NSCopying", "objectAtIndex"]
+- !private ["PSo9NSCopying", "objectForKey"]
+- !private ["PSo9NSCopying", "sortedArrayUsingDescriptors"]
+- !private ["PSo9NSCopying", "substringToIndex"]
+- !private ["PSo9NSCopying", "uppercaseString"]
+- !private ["CSo12NSDictionary", "objectForKey"]
+- !private ["CSo7NSError", "code"]
+- !private ["CSo7NSError", "description"]
+- !private ["PSo17NSFastEnumeration", "Generator"]
+- !private ["PSo17NSFastEnumeration", "addObject"]
+- !private ["PSo17NSFastEnumeration", "arrayByAddingObject"]
+- !private ["PSo17NSFastEnumeration", "count"]
+- ["PSo17NSFastEnumeration", "init"]
+- !private ["PSo17NSFastEnumeration", "objectAtIndex"]
+- !private ["PSo17NSFastEnumeration", "objectForKey"]
+- !private ["PSo17NSFastEnumeration", "sortedArrayUsingDescriptors"]
+- !private ["C10Foundation15NSFastGenerator", "Element"]
+- !private ["CSo13NSFileManager", "contentsAtPath"]
+- !private ["CSo13NSFileManager", "defaultManager"]
+- !private ["VSC20NSJSONReadingOptions", "AllowFragments"]
+- !private ["VSC20NSJSONReadingOptions", "MutableLeaves"]
+- !private ["CSo19NSJSONSerialization", "JSONObjectWithData"]
+- !private ["CSo14NSMutableArray", "addObject"]
+- !private ["CSo14NSMutableArray", "init"]
+- !private ["PSo16NSMutableCopying", "Generator"]
+- !private ["PSo16NSMutableCopying", "HTTPBody"]
+- !private ["PSo16NSMutableCopying", "HTTPMethod"]
+- !private ["PSo16NSMutableCopying", "addObject"]
+- !private ["PSo16NSMutableCopying", "arrayByAddingObject"]
+- !private ["PSo16NSMutableCopying", "count"]
+- !private ["PSo16NSMutableCopying", "dataUsingEncoding"]
+- ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "isEqualToString"]
+- !private ["PSo16NSMutableCopying", "length"]
+- !private ["PSo16NSMutableCopying", "objectAtIndex"]
+- !private ["PSo16NSMutableCopying", "objectForKey"]
+- !private ["PSo16NSMutableCopying", "sortedArrayUsingDescriptors"]
+- !private ["PSo16NSMutableCopying", "substringToIndex"]
+- !private ["PSo16NSMutableCopying", "uppercaseString"]
+- !private ["CSo19NSMutableURLRequest", "HTTPBody"]
+- !private ["CSo19NSMutableURLRequest", "HTTPMethod"]
+- !private ["CSo19NSMutableURLRequest", "init"]
+- !private ["CSo8NSObject", "AnyObject"]
+- !private ["CSo8NSObject", "Character"]
+- !private ["CSo8NSObject", "CityModel"]
+- !private ["CSo8NSObject", "Generator"]
+- !private ["CSo8NSObject", "HTTPBody"]
+- !private ["CSo8NSObject", "HTTPMethod"]
+- !private ["CSo8NSObject", "HttpData"]
+- !private ["CSo8NSObject", "JSONObjectWithData"]
+- ["CSo8NSObject", "NSArray"]
+- !private ["CSo8NSObject", "NSBundle"]
+- !private ["CSo8NSObject", "NSData"]
+- !private ["CSo8NSObject", "NSDictionary"]
+- !private ["CSo8NSObject", "NSError"]
+- !private ["CSo8NSObject", "NSFileManager"]
+- ["CSo8NSObject", "NSInteger"]
+- !private ["CSo8NSObject", "NSJSONReadingOptions"]
+- !private ["CSo8NSObject", "NSJSONSerialization"]
+- !private ["CSo8NSObject", "NSMutableArray"]
+- !private ["CSo8NSObject", "NSMutableURLRequest"]
+- !private ["CSo8NSObject", "NSSortDescriptor"]
+- ["CSo8NSObject", "NSString"]
+- !private ["CSo8NSObject", "NSURL"]
+- !private ["CSo8NSObject", "NSURLConnection"]
+- !private ["CSo8NSObject", "NSURLRequestCachePolicy"]
+- !private ["CSo8NSObject", "NSURLResponse"]
+- !private ["CSo8NSObject", "NSUTF8StringEncoding"]
+- ["CSo8NSObject", "QueryCovered"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "addObject"]
+- !private ["CSo8NSObject", "arrayByAddingObject"]
+- !private ["CSo8NSObject", "cityID"]
+- !private ["CSo8NSObject", "cityName"]
+- !private ["CSo8NSObject", "cityPinYin"]
+- !private ["CSo8NSObject", "code"]
+- !private ["CSo8NSObject", "contentsAtPath"]
+- !private ["CSo8NSObject", "count"]
+- ["CSo8NSObject", "dataForSection"]
+- !private ["CSo8NSObject", "dataUsingEncoding"]
+- !private ["CSo8NSObject", "defaultManager"]
+- !private ["CSo8NSObject", "description"]
+- !private ["CSo8NSObject", "dispatch_once"]
+- !private ["CSo8NSObject", "dispatch_once_t"]
+- ["CSo8NSObject", "getCityIndexWithCityID"]
+- ["CSo8NSObject", "getCityList"]
+- ["CSo8NSObject", "getCityNameWithCityID"]
+- ["CSo8NSObject", "getProvinceIndexWithCityID"]
+- ["CSo8NSObject", "getProvinceList"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "isEqualToString"]
+- !private ["CSo8NSObject", "length"]
+- !private ["CSo8NSObject", "mainBundle"]
+- !private ["CSo8NSObject", "objectAtIndex"]
+- !private ["CSo8NSObject", "objectForKey"]
+- !private ["CSo8NSObject", "parentID"]
+- !private ["CSo8NSObject", "pathForResource"]
+- !private ["CSo8NSObject", "print"]
+- ["CSo8NSObject", "s_cityList"]
+- ["CSo8NSObject", "s_indexList"]
+- ["CSo8NSObject", "s_provinceList"]
+- ["CSo8NSObject", "s_sectionCityList"]
+- !private ["CSo8NSObject", "sendSynchronousRequest"]
+- ["CSo8NSObject", "shareCityList"]
+- ["CSo8NSObject", "shareIndexList"]
+- ["CSo8NSObject", "shareProvinceList"]
+- ["CSo8NSObject", "shareSectionCityList"]
+- ["CSo8NSObject", "sortCityList"]
+- !private ["CSo8NSObject", "sortedArrayUsingDescriptors"]
+- !private ["CSo8NSObject", "substringToIndex"]
+- ["CSo8NSObject", "tableViewIndex"]
+- !private ["CSo8NSObject", "uppercaseString"]
+- ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "Character"]
+- !private ["PSo16NSObjectProtocol", "CityModel"]
+- !private ["PSo16NSObjectProtocol", "Generator"]
+- !private ["PSo16NSObjectProtocol", "HTTPBody"]
+- !private ["PSo16NSObjectProtocol", "HTTPMethod"]
+- !private ["PSo16NSObjectProtocol", "HttpData"]
+- !private ["PSo16NSObjectProtocol", "JSONObjectWithData"]
+- ["PSo16NSObjectProtocol", "NSArray"]
+- !private ["PSo16NSObjectProtocol", "NSBundle"]
+- !private ["PSo16NSObjectProtocol", "NSFileManager"]
+- !private ["PSo16NSObjectProtocol", "NSJSONReadingOptions"]
+- !private ["PSo16NSObjectProtocol", "NSJSONSerialization"]
+- !private ["PSo16NSObjectProtocol", "NSMutableArray"]
+- !private ["PSo16NSObjectProtocol", "NSMutableURLRequest"]
+- !private ["PSo16NSObjectProtocol", "NSSortDescriptor"]
+- !private ["PSo16NSObjectProtocol", "NSString"]
+- !private ["PSo16NSObjectProtocol", "NSURL"]
+- !private ["PSo16NSObjectProtocol", "NSURLConnection"]
+- !private ["PSo16NSObjectProtocol", "NSURLRequestCachePolicy"]
+- !private ["PSo16NSObjectProtocol", "NSUTF8StringEncoding"]
+- ["PSo16NSObjectProtocol", "QueryCovered"]
+- !private ["PSo16NSObjectProtocol", "addObject"]
+- !private ["PSo16NSObjectProtocol", "arrayByAddingObject"]
+- !private ["PSo16NSObjectProtocol", "cityID"]
+- !private ["PSo16NSObjectProtocol", "cityName"]
+- !private ["PSo16NSObjectProtocol", "cityPinYin"]
+- !private ["PSo16NSObjectProtocol", "code"]
+- !private ["PSo16NSObjectProtocol", "contentsAtPath"]
+- !private ["PSo16NSObjectProtocol", "count"]
+- ["PSo16NSObjectProtocol", "dataForSection"]
+- !private ["PSo16NSObjectProtocol", "dataUsingEncoding"]
+- !private ["PSo16NSObjectProtocol", "defaultManager"]
+- !private ["PSo16NSObjectProtocol", "description"]
+- !private ["PSo16NSObjectProtocol", "dispatch_once"]
+- ["PSo16NSObjectProtocol", "getCityIndexWithCityID"]
+- ["PSo16NSObjectProtocol", "getCityList"]
+- ["PSo16NSObjectProtocol", "getCityNameWithCityID"]
+- ["PSo16NSObjectProtocol", "getProvinceIndexWithCityID"]
+- ["PSo16NSObjectProtocol", "getProvinceList"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "isEqualToString"]
+- !private ["PSo16NSObjectProtocol", "length"]
+- !private ["PSo16NSObjectProtocol", "mainBundle"]
+- !private ["PSo16NSObjectProtocol", "objectAtIndex"]
+- !private ["PSo16NSObjectProtocol", "objectForKey"]
+- !private ["PSo16NSObjectProtocol", "parentID"]
+- !private ["PSo16NSObjectProtocol", "pathForResource"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- ["PSo16NSObjectProtocol", "s_cityList"]
+- ["PSo16NSObjectProtocol", "s_indexList"]
+- ["PSo16NSObjectProtocol", "s_provinceList"]
+- ["PSo16NSObjectProtocol", "s_sectionCityList"]
+- !private ["PSo16NSObjectProtocol", "sendSynchronousRequest"]
+- ["PSo16NSObjectProtocol", "shareCityList"]
+- ["PSo16NSObjectProtocol", "shareIndexList"]
+- ["PSo16NSObjectProtocol", "shareProvinceList"]
+- ["PSo16NSObjectProtocol", "shareSectionCityList"]
+- ["PSo16NSObjectProtocol", "sortCityList"]
+- !private ["PSo16NSObjectProtocol", "sortedArrayUsingDescriptors"]
+- !private ["PSo16NSObjectProtocol", "substringToIndex"]
+- ["PSo16NSObjectProtocol", "tableViewIndex"]
+- !private ["PSo16NSObjectProtocol", "uppercaseString"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "Generator"]
+- !private ["PSo14NSSecureCoding", "HTTPBody"]
+- !private ["PSo14NSSecureCoding", "HTTPMethod"]
+- !private ["PSo14NSSecureCoding", "addObject"]
+- !private ["PSo14NSSecureCoding", "arrayByAddingObject"]
+- !private ["PSo14NSSecureCoding", "code"]
+- !private ["PSo14NSSecureCoding", "count"]
+- !private ["PSo14NSSecureCoding", "dataUsingEncoding"]
+- !private ["PSo14NSSecureCoding", "description"]
+- ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "isEqualToString"]
+- !private ["PSo14NSSecureCoding", "length"]
+- !private ["PSo14NSSecureCoding", "objectAtIndex"]
+- !private ["PSo14NSSecureCoding", "objectForKey"]
+- !private ["PSo14NSSecureCoding", "sortedArrayUsingDescriptors"]
+- !private ["PSo14NSSecureCoding", "substringToIndex"]
+- !private ["PSo14NSSecureCoding", "uppercaseString"]
+- !private ["CSo16NSSortDescriptor", "init"]
+- !private ["CSo8NSString", "dataUsingEncoding"]
+- !private ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo8NSString", "isEqualToString"]
+- !private ["CSo8NSString", "length"]
+- !private ["CSo8NSString", "substringToIndex"]
+- !private ["CSo8NSString", "uppercaseString"]
+- !private ["CSo5NSURL", "init"]
+- !private ["CSo15NSURLConnection", "sendSynchronousRequest"]
+- !private ["CSo12NSURLRequest", "HTTPBody"]
+- !private ["CSo12NSURLRequest", "HTTPMethod"]
+- !private ["CSo12NSURLRequest", "init"]
+- !private ["OSC23NSURLRequestCachePolicy", "UseProtocolCachePolicy"]
+- !private ["PSs13OptionSetType", "AllowFragments"]
+- !private ["PSs13OptionSetType", "MutableLeaves"]
+- !private ["Sq", "deinit"]
+- !private ["PSs16OutputStreamType", "dataUsingEncoding"]
+- !private ["PSs16OutputStreamType", "init"]
+- !private ["PSs16OutputStreamType", "uppercaseString"]
+- !private ["PSs16RawRepresentable", "AllowFragments"]
+- !private ["PSs16RawRepresentable", "MutableLeaves"]
+- !private ["PSs16RawRepresentable", "UseProtocolCachePolicy"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "addObject"]
+- !private ["PSs12SequenceType", "arrayByAddingObject"]
+- !private ["PSs12SequenceType", "count"]
+- ["PSs12SequenceType", "init"]
+- !private ["PSs12SequenceType", "objectAtIndex"]
+- !private ["PSs12SequenceType", "objectForKey"]
+- !private ["PSs12SequenceType", "sortedArrayUsingDescriptors"]
+- !private ["PSs14SetAlgebraType", "AllowFragments"]
+- !private ["PSs14SetAlgebraType", "MutableLeaves"]
+- !private ["PSs10Streamable", "dataUsingEncoding"]
+- !private ["PSs10Streamable", "init"]
+- !private ["PSs10Streamable", "uppercaseString"]
+- !private ["SS", "dataUsingEncoding"]
+- !private ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["SS", "uppercaseString"]
+- !private ["PSs30StringInterpolationConvertible", "dataUsingEncoding"]
+- !private ["PSs30StringInterpolationConvertible", "init"]
+- !private ["PSs30StringInterpolationConvertible", "uppercaseString"]
+- !private ["PSs24StringLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["PSs24StringLiteralConvertible", "isEqualToString"]
+- !private ["PSs24StringLiteralConvertible", "length"]
+- !private ["PSs24StringLiteralConvertible", "substringToIndex"]
+- !private ["PSs24StringLiteralConvertible", "uppercaseString"]
+- !private ["Su", "deinit"]
+- !private ["VSs6UInt16", "deinit"]
+- !private ["VSs6UInt32", "deinit"]
+- !private ["VSs6UInt64", "deinit"]
+- !private ["VSs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "isEqualToString"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "length"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "substringToIndex"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "uppercaseString"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "uppercaseString"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "uppercaseString"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "uppercaseString"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "uppercaseString"]
+- !private ["PSs16_CocoaStringType", "dataUsingEncoding"]
+- !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs16_CocoaStringType", "isEqualToString"]
+- !private ["PSs16_CocoaStringType", "length"]
+- !private ["PSs16_CocoaStringType", "substringToIndex"]
+- !private ["PSs16_CocoaStringType", "uppercaseString"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "dataUsingEncoding"]
+- !private ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "uppercaseString"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs12_Reflectable", "Generator"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "addObject"]
+- !private ["PSs12_Reflectable", "arrayByAddingObject"]
+- !private ["PSs12_Reflectable", "count"]
+- !private ["PSs12_Reflectable", "dataUsingEncoding"]
+- ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "isEqualToString"]
+- !private ["PSs12_Reflectable", "length"]
+- !private ["PSs12_Reflectable", "objectAtIndex"]
+- !private ["PSs12_Reflectable", "objectForKey"]
+- !private ["PSs12_Reflectable", "sortedArrayUsingDescriptors"]
+- !private ["PSs12_Reflectable", "substringToIndex"]
+- !private ["PSs12_Reflectable", "uppercaseString"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "Sa"
+- "PSs23ArrayLiteralConvertible"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- "PSs11CVarArgType"
+- !private "VSs9Character"
+- "C3SHW10CityHandle"
+- !private "C3SHW9CityModel"
+- !private "PSs10Comparable"
+- !private "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- !private "PSs28DictionaryLiteralConvertible"
+- !private "Sd"
+- "PSs9Equatable"
+- !private "PSs9ErrorType"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
+- !private "PSs13GeneratorType"
+- "PSs8Hashable"
+- !private "V3SHW8HttpData"
+- !private "SQ"
+- !private "Si"
+- !private "VSs5Int16"
+- !private "VSs5Int32"
+- !private "VSs5Int64"
+- !private "VSs4Int8"
+- !private "PSs14MirrorPathType"
+- "CSo7NSArray"
+- !private "CSo8NSBundle"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- !private "CSo12NSDictionary"
+- !private "CSo7NSError"
+- "PSo17NSFastEnumeration"
+- !private "C10Foundation15NSFastGenerator"
+- !private "CSo13NSFileManager"
+- !private "VSC20NSJSONReadingOptions"
+- !private "CSo19NSJSONSerialization"
+- !private "CSo14NSMutableArray"
+- "PSo16NSMutableCopying"
+- !private "CSo19NSMutableURLRequest"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- !private "CSo16NSSortDescriptor"
+- !private "CSo8NSString"
+- !private "CSo5NSURL"
+- !private "CSo15NSURLConnection"
+- !private "CSo12NSURLRequest"
+- !private "OSC23NSURLRequestCachePolicy"
+- !private "PSs13OptionSetType"
+- !private "Sq"
+- !private "PSs16OutputStreamType"
+- !private "PSs16RawRepresentable"
+- "PSs12SequenceType"
+- !private "PSs14SetAlgebraType"
+- !private "PSs10Streamable"
+- !private "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
+- !private "Su"
+- !private "VSs6UInt16"
+- !private "VSs6UInt32"
+- !private "VSs6UInt64"
+- !private "VSs5UInt8"
+- !private "Sc"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- "PSs12_Reflectable"
+depends-dynamic-lookup:
+- !private "cityPinYin"
+- !private "cityName"
+- !private "objectForKey"
+- !private "cityID"
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/OCContainerHeader.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/JSDropDownMenu.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/JSDropDownMenu.m"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/PayInfo.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/AlipayMethod.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/./AlipaySDK.framework/Headers/AlipaySDK.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/./AlipaySDK.framework/Headers/APayAuthInfo.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.0.sdk/usr/include/CommonCrypto/CommonDigest.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMapKit.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKBaseComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGeneralDelegate.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKMapManager.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKTypes.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKUserLocation.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKVersion.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKMapComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKAnnotation.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKAnnotationView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKActionPaopaoView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKMapView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOverlayView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOverlay.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKMapStatus.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKLocationViewDisplayParam.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKHeatMap.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGradient.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOfflineMap.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOfflineMapType.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKShape.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPointAnnotation.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPinAnnotationView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKMultiPoint.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKArcline.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPolyline.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPolygon.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCircle.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOverlayPathView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKOverlayGLBasicView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPolygonView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPolylineView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCircleView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKArclineView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGroundOverlay.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGroundOverlayView.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKSearchComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPoiSearchType.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGeocodeType.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKRouteSearchType.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPoiSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKPoiSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGeocodeSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGeocodeSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKShareURLSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKShareUrlSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKSuggestionSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKSuggestionSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKBusLineSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKBusLineSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKRouteSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKRouteSearchOption.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCloudSearchComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCloudPOIList.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCloudSearch.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKCloudSearchInfo.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKLocationComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKLocationService.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKUtilsComponent.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKGeometry.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/BaiduMapSDK/BaiduMapAPI.framework/Headers/BMKNavigation.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/NSString+URL.h"
+- "/Users/zhang/Desktop/HouseKeeping 2/SHW/NSString+URL.m"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+interface-hash: "44dc050c14f84169e3b9f9b1e1d0cb8d"

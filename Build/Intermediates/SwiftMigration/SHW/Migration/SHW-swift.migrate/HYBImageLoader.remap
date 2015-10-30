@@ -1,0 +1,8 @@
+[
+ {
+  "file": "/Users/zhang/Desktop/HouseKeeping 2/SHW/HYBImageLoader.swift",
+  "offset": 1735,
+  "remove": 993,
+  "text": "?, response: NSURLResponse?, error: NSError?) -> Void in\n        if (error != nil) {\n          completionHandler(image: nil, isFromCache: false);\n          return\n        }\n        \n        if data != nil {\n          let image = UIImage(data: data)\n          self.cache.setObject(data, forKey: url.md5ForLoader)\n          dispatch_async(dispatch_get_main_queue(), {() in\n            completionHandler(image: image, isFromCache: false)\n          })\n          return\n        }\n        \n      });\n      downloadTask.resume()\n    })\n  }\n}\n\n///\n/// String结构通用功能扩展\n///\nextension String {\n  ///\n  /// 获取自身md5加密后的字符串\n  ///\n  var md5ForLoader : String {\n    let str = self.cStringUsingEncoding(NSUTF8StringEncoding)\n    let strLen = CC_LONG(self.lengthOfBytesUsingEncoding(NSUTF8StringEncoding))\n    let digestLen = Int(CC_MD5_DIGEST_LENGTH)\n    let result = UnsafeMutablePointer<CUnsignedChar>.alloc(digestLen);\n    \n    CC_MD5(str!, strLen, result);\n    \n    let",
+ }
+]

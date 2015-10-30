@@ -1,0 +1,32 @@
+dependencies: \
+  /Users/zhang/Desktop/HouseKeeping/SHW/Util/openssl_wrapper.m \
+  /Users/zhang/Desktop/HouseKeeping/SHW/Util/openssl_wrapper.h \
+  /Users/zhang/Desktop/HouseKeeping/SHW/openssl/rsa.h \
+  /Users/zhang/Desktop/HouseKeeping/SHW/openssl/asn1.h \
+  /Users/zhang/Desktop/HouseKeeping/SHW/openssl/e_os2.h \
+  /Users/zhang/Desktop/HouseKeeping/SHW/openssl/opensslconf.h \
+  /Users/zhang/Desktop/HouseKeeping/SHW/openssl/bio.h \
+  /Users/zhang/Desktop/HouseKeeping/SHW/openssl/crypto.h \
+  /Users/zhang/Desktop/HouseKeeping/SHW/openssl/stack.h \
+  /Users/zhang/Desktop/HouseKeeping/SHW/openssl/safestack.h \
+  /Users/zhang/Desktop/HouseKeeping/SHW/openssl/opensslv.h \
+  /Users/zhang/Desktop/HouseKeeping/SHW/openssl/ossl_typ.h \
+  /Users/zhang/Desktop/HouseKeeping/SHW/openssl/symhacks.h \
+  /Users/zhang/Desktop/HouseKeeping/SHW/openssl/bn.h \
+  /Users/zhang/Desktop/HouseKeeping/SHW/openssl/pem.h \
+  /Users/zhang/Desktop/HouseKeeping/SHW/openssl/evp.h \
+  /Users/zhang/Desktop/HouseKeeping/SHW/openssl/objects.h \
+  /Users/zhang/Desktop/HouseKeeping/SHW/openssl/obj_mac.h \
+  /Users/zhang/Desktop/HouseKeeping/SHW/openssl/x509.h \
+  /Users/zhang/Desktop/HouseKeeping/SHW/openssl/buffer.h \
+  /Users/zhang/Desktop/HouseKeeping/SHW/openssl/ec.h \
+  /Users/zhang/Desktop/HouseKeeping/SHW/openssl/ecdsa.h \
+  /Users/zhang/Desktop/HouseKeeping/SHW/openssl/ecdh.h \
+  /Users/zhang/Desktop/HouseKeeping/SHW/openssl/dsa.h \
+  /Users/zhang/Desktop/HouseKeeping/SHW/openssl/dh.h \
+  /Users/zhang/Desktop/HouseKeeping/SHW/openssl/sha.h \
+  /Users/zhang/Desktop/HouseKeeping/SHW/openssl/x509_vfy.h \
+  /Users/zhang/Desktop/HouseKeeping/SHW/openssl/lhash.h \
+  /Users/zhang/Desktop/HouseKeeping/SHW/openssl/pkcs7.h \
+  /Users/zhang/Desktop/HouseKeeping/SHW/openssl/pem2.h \
+  /Users/zhang/Desktop/HouseKeeping/SHW/openssl/md5.h

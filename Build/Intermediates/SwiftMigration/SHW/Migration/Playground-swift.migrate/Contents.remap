@@ -1,0 +1,8 @@
+[
+ {
+  "file": "/Users/zhang/Desktop/HouseKeeping 2/SHW/Playground.playground/Contents.swift",
+  "offset": 747,
+  "remove": 347,
+  "text": ")\nif (error != nil)\n{\n    print(error?.code)\n    print(error?.description)\n}\nelse\n{\n    var jsonString = NSString(data:receiveData!, encoding: NSUTF8StringEncoding)\n    print(jsonString)\n    \n}\n\nlet json:AnyObject! = try? NSJSONSerialization.JSONObjectWithData(receiveData!, options: NSJSONReadingOptions.AllowFragments",
+ }
+]
