@@ -1,0 +1,32 @@
+dependencies: \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/Util/openssl_wrapper.m \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/Util/openssl_wrapper.h \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/openssl/rsa.h \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/openssl/asn1.h \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/openssl/e_os2.h \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/openssl/opensslconf.h \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/openssl/bio.h \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/openssl/crypto.h \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/openssl/stack.h \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/openssl/safestack.h \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/openssl/opensslv.h \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/openssl/ossl_typ.h \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/openssl/symhacks.h \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/openssl/bn.h \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/openssl/pem.h \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/openssl/evp.h \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/openssl/objects.h \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/openssl/obj_mac.h \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/openssl/x509.h \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/openssl/buffer.h \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/openssl/ec.h \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/openssl/ecdsa.h \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/openssl/ecdh.h \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/openssl/dsa.h \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/openssl/dh.h \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/openssl/sha.h \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/openssl/x509_vfy.h \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/openssl/lhash.h \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/openssl/pkcs7.h \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/openssl/pem2.h \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/openssl/md5.h
