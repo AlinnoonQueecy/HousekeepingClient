@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  SHW
+//  生活网
 //
-//  Created by star on 15/5/17.
-//  Copyright (c) 2015年 star. All rights reserved.
+//  Created by Zhang on 15/5/15.
+//  Copyright (c) 2015年 Zhang. All rights reserved.
 //
 
 import UIKit
