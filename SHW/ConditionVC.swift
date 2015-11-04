@@ -30,7 +30,7 @@ class ConditionVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
     var  width:CGFloat!
     var salary:String!
-      var ServiceType:String = ""
+    var ServiceType:String?
     
     override func viewWillAppear(animated: Bool) {
         HttpData.count = 0
@@ -42,8 +42,11 @@ class ConditionVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
         readNSUerDefaults ()
         //实例化导航条
         navigationBar = UINavigationBar(frame: CGRectMake(0, 0, width, 64))
-        
         navigationBar?.barTintColor = UIColor.orangeColor()
+        navigationBar?.translucent = false
+        navigationBar?.barStyle = UIBarStyle.Default
+        let navigationTitleAttribute: NSDictionary = NSDictionary(objectsAndKeys: UIColor.whiteColor(), NSForegroundColorAttributeName)
+        navigationBar?.titleTextAttributes =  navigationTitleAttribute as [NSObject: AnyObject]
         navigationBar?.translucent = false
         
         
@@ -113,7 +116,7 @@ class ConditionVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
             }
             println("selectIndex\(selectIndex)")
             
-            salary = getPrice(ServiceType, selectIndex)
+            salary = getPrice(ServiceType!, selectIndex)
             
             if salary == "-1"{
                 let alert =  UIAlertView(title: "", message: "组合条件错误!", delegate: self, cancelButtonTitle: "确定")
@@ -155,14 +158,7 @@ class ConditionVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
         var rightButton =  UIBarButtonItem(title: "确认", style: UIBarButtonItemStyle.Bordered, target: self, action: "confirm")
         rightButton.tintColor = UIColor.whiteColor()
         //导航栏的标题
-        let titleL = UILabel(frame: CGRectMake(0, 0, width, 30))
-        titleL.text = "条件选择"
-        titleL.textColor = UIColor.whiteColor()
-        titleL.textAlignment = NSTextAlignment.Center
-        navigationItem.titleView = titleL
-        navigationItem.titleView?.frame = CGRectMake(0, 0,width, 30)
-        
-        //        navigationItem.title = "条件选择"
+        navigationItem.title = "条件选择"
         
         //navigationItem.
         //设置导航栏左边按钮

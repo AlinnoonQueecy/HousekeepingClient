@@ -1,2 +1,2 @@
-dependencies: /Users/zhang/Desktop/HouseKeeping\ 2\ 2/SHW/NSString+URL.m \
-  /Users/zhang/Desktop/HouseKeeping\ 2\ 2/SHW/NSString+URL.h
+dependencies: /Users/zhang/Desktop/HousekeepingClient/SHW/NSString+URL.m \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/NSString+URL.h

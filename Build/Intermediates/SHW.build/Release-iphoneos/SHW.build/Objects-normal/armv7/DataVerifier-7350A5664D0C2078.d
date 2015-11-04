@@ -1,4 +1,4 @@
 dependencies: \
-  /Users/zhang/Desktop/HouseKeeping\ 2\ 2/SHW/Util/DataVerifier.m \
-  /Users/zhang/Desktop/HouseKeeping\ 2\ 2/SHW/Util/DataVerifier.h \
-  /Users/zhang/Desktop/HouseKeeping\ 2\ 2/SHW/Util/RSADataVerifier.h
+  /Users/zhang/Desktop/HousekeepingClient/SHW/Util/DataVerifier.m \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/Util/DataVerifier.h \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/Util/RSADataVerifier.h

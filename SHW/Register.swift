@@ -42,6 +42,11 @@ class Register: UIViewController,UITextFieldDelegate,UIAlertViewDelegate  {
         let pageHeight = self.view.frame.height
         //实例化导航条
         navigationBar = UINavigationBar(frame: CGRectMake(0, 0, self.view.frame.width, 64))
+        navigationBar?.barTintColor = UIColor.orangeColor()
+        navigationBar?.translucent = false
+        navigationBar?.barStyle = UIBarStyle.Default
+        let navigationTitleAttribute: NSDictionary = NSDictionary(objectsAndKeys: UIColor.whiteColor(), NSForegroundColorAttributeName)
+        navigationBar?.titleTextAttributes =  navigationTitleAttribute as [NSObject: AnyObject]
         self.view.addSubview(navigationBar!)
         print("创建导航条详情")
         onMakeNavitem()

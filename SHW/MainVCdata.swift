@@ -38,7 +38,7 @@ func refreshParentType(select:String) ->NSArray  {
     request.HTTPMethod = "POST"
     
     let param:String = "{\"typeName\":\"\(select)\"}"
-    print("typeName\(select)")
+    //print("typeName\(select)")
     let data:NSData = param.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true)!
     request.HTTPBody = data;
     var response:NSURLResponse?
@@ -52,7 +52,7 @@ func refreshParentType(select:String) ->NSArray  {
     else
     {
         var jsonString = NSString(data:receiveData!, encoding: NSUTF8StringEncoding)
-        println(jsonString)
+       // println(jsonString)
         
     }
     
@@ -72,7 +72,7 @@ func refreshParentType(select:String) ->NSArray  {
         
         }
     }
-     print("ServiceTypeData\(ServiceTypeData[0])")
+    // print("ServiceTypeData\(ServiceTypeData[0])")
     return ServiceTypeData
    
     
@@ -88,7 +88,7 @@ func refreshServiceType(select:String) ->NSArray  {
     request.HTTPMethod = "POST"
   
     let param:String = "{\"typeName\":\"\(select)\"}"
-    print("typeName\(select)")
+   // print("typeName\(select)")
     let data:NSData = param.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true)!
     request.HTTPBody = data;
     var response:NSURLResponse?
@@ -102,7 +102,7 @@ func refreshServiceType(select:String) ->NSArray  {
     else
     {
         var jsonString = NSString(data:receiveData!, encoding: NSUTF8StringEncoding)
-        println(jsonString)
+       // println(jsonString)
         
     }
     
@@ -265,12 +265,12 @@ func refreshAdvertise() ->NSArray  {
     else
     {
         var jsonString = NSString(data:receiveData!, encoding: NSUTF8StringEncoding)
-        println(jsonString)
+        //println(jsonString)
         
     }
     
     let json:AnyObject! = NSJSONSerialization.JSONObjectWithData(receiveData!, options: NSJSONReadingOptions.AllowFragments, error: nil)
-    print("json\(json)")
+//    print("json\(json)")
     let test1: AnyObject?=json?.objectForKey("serverResponse")
     let serverResponse:String = test1 as! String
     var AdvertiseData:[HomeAdvertise] = []
@@ -280,7 +280,7 @@ func refreshAdvertise() ->NSArray  {
     let jsonArray = test2 as? NSArray
  //   var count = jsonArray?.count
     
-    print("dsvcqgrdbwvr")
+   // print("dsvcqgrdbwvr")
     for value in jsonArray!{
         
         let id:Int=value.objectForKey("id") as! Int
@@ -302,7 +302,7 @@ func refreshAdvertise() ->NSArray  {
         
            AdvertiseData += [obj]
         
-        print(AdvertiseData)
+       // print(AdvertiseData)
         
        }
     }

@@ -37,6 +37,7 @@
 //
 //        //实例化导航条
 //        navigationBar = UINavigationBar(frame: CGRectMake(0, 0, self.view.frame.width, 64))
+
 //        self.view.addSubview(navigationBar!)
 //        println("创建导航条详情")
 //        onMakeNavitem()

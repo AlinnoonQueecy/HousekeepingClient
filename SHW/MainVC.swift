@@ -80,8 +80,8 @@ UIScrollViewDelegate,UIAlertViewDelegate,NSURLConnectionDelegate,NSURLConnection
         
         AdvertiseDatas = refreshAdvertise() as! [HomeAdvertise]
         let FirstTypeData = refreshParentType("")//1
-        print("FirstTypeData\(FirstTypeData.count)")
-        print("进入定位状态")
+//        print("FirstTypeData\(FirstTypeData.count)")
+//        print("进入定位状态")
         
         
       
@@ -123,7 +123,7 @@ UIScrollViewDelegate,UIAlertViewDelegate,NSURLConnectionDelegate,NSURLConnection
         
         print("图片")
         for var i = 0; i < AdvertiseDatas.count; i++ {
-            print("数目：\(AdvertiseDatas.count)")
+//            print("数目：\(AdvertiseDatas.count)")
             
             let imgView:UIButton = UIButton(frame: CGRect(x: self.view.bounds.width*CGFloat(i), y:0, width: self.view.bounds.width, height: self.view.bounds.width*0.45) )
             
@@ -134,7 +134,7 @@ UIScrollViewDelegate,UIAlertViewDelegate,NSURLConnectionDelegate,NSURLConnection
          
             //2.通过String类型，转换NSUrl对象
             
-            print("url:\(imageUrlString)")
+//            print("url:\(imageUrlString)")
            
             let url:NSString = imageUrlString!.URLEncodedString()
   
@@ -400,8 +400,8 @@ UIScrollViewDelegate,UIAlertViewDelegate,NSURLConnectionDelegate,NSURLConnection
             //println(destinationViewController.rootViewController)
             let object = titleOfState
             controller.FirstType = object
-            print(controller.FirstType)
-            print("fffffff")
+//            print(controller.FirstType)
+//            print("fffffff")
             
         }
     }
@@ -412,15 +412,15 @@ UIScrollViewDelegate,UIAlertViewDelegate,NSURLConnectionDelegate,NSURLConnection
         if  (userDefaultes.stringForKey("customerID")) != nil && (userDefaultes.stringForKey("loginPassword")) != nil{
             customerid = userDefaultes.stringForKey("customerID")!
             loginPassword = userDefaultes.stringForKey("loginPassword")!
-            println("mainVccustomerid\(customerid)")
-               println("mainVccustomerid\(customerid)")
+//            println("mainVccustomerid\(customerid)")
+//               println("mainVccustomerid\(customerid)")
             
         }
-        print("location")
+//        print("location")
         if  (userDefaultes.stringForKey("location")) != nil{
             location = userDefaultes.stringForKey("location")!
             
-            print(location)
+//            print(location)
         }
         
     }
@@ -435,13 +435,13 @@ UIScrollViewDelegate,UIAlertViewDelegate,NSURLConnectionDelegate,NSURLConnection
     func didUpdateBMKUserLocation(userLocation: BMKUserLocation!) {
         
         self.userLocation = userLocation
-        print("目前位置：\(userLocation.location.coordinate.longitude), \(userLocation.location.coordinate.latitude)")
+       // print("目前位置：\(userLocation.location.coordinate.longitude), \(userLocation.location.coordinate.latitude)")
         var  Longtitude = userLocation.location.coordinate.longitude
         let  Latitude = userLocation.location.coordinate.latitude
         la = Latitude
         lo = Longtitude
         let response = RefreshLocation(customerid, "\(Longtitude)", "\(Latitude)")
-        print("更新客户位置:\(response)")
+//        print("更新客户位置:\(response)")
         //为地理反编码准备
         var point = CLLocationCoordinate2DMake(0, 0)
         
@@ -451,9 +451,9 @@ UIScrollViewDelegate,UIAlertViewDelegate,NSURLConnectionDelegate,NSURLConnection
         unGeocodeSearchOption.reverseGeoPoint = point
         var flag = geocodeSearch.reverseGeoCode(unGeocodeSearchOption)
         if flag {
-            print("反 geo 检索发送成功")
+//            print("反 geo 检索发送成功")
         }else {
-            print("反 geo 检索发送失败")
+//            print("反 geo 检索发送失败")
         }
         
         locationService.stopUserLocationService()
@@ -482,11 +482,12 @@ UIScrollViewDelegate,UIAlertViewDelegate,NSURLConnectionDelegate,NSURLConnection
         if error.value == 0 {
             
             let city = result.addressDetail.city
-            print("city\(result.addressDetail.city)")
+//            print("city\(result.addressDetail.city)")
 //            var index = advance(city.endIndex, -1);
 //            let location = city.substringToIndex(index)
             let location = city
             saveNSUerDefaults ()
+            readNSUerDefaults()
             LocationB.setTitle(location, forState: UIControlState.Normal)
            
         }
@@ -518,7 +519,7 @@ UIScrollViewDelegate,UIAlertViewDelegate,NSURLConnectionDelegate,NSURLConnection
     override func viewWillDisappear(animated: Bool) {
         
         locationService.delegate = nil
-        print("定位结束")
+//        print("定位结束")
         geocodeSearch.delegate = nil
         ButtonScroll.delegate = nil
     }

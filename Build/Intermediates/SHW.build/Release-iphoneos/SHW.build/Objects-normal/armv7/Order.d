@@ -1,2 +1,2 @@
-dependencies: /Users/zhang/Desktop/HouseKeeping\ 2\ 2/SHW/Order.m \
-  /Users/zhang/Desktop/HouseKeeping\ 2\ 2/SHW/Order.h
+dependencies: /Users/zhang/Desktop/HousekeepingClient/SHW/Order.m \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/Order.h

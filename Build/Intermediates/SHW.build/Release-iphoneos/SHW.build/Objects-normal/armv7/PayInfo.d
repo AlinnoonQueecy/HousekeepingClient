@@ -1,2 +1,2 @@
-dependencies: /Users/zhang/Desktop/HouseKeeping\ 2\ 2/SHW/PayInfo.m \
-  /Users/zhang/Desktop/HouseKeeping\ 2\ 2/SHW/PayInfo.h
+dependencies: /Users/zhang/Desktop/HousekeepingClient/SHW/PayInfo.m \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/PayInfo.h

@@ -1,2 +1,2 @@
-dependencies: /Users/zhang/Desktop/HouseKeeping\ 2\ 2/SHW/Util/NSDataEx.m \
-  /Users/zhang/Desktop/HouseKeeping\ 2\ 2/SHW/Util/NSDataEx.h
+dependencies: /Users/zhang/Desktop/HousekeepingClient/SHW/Util/NSDataEx.m \
+  /Users/zhang/Desktop/HousekeepingClient/SHW/Util/NSDataEx.h

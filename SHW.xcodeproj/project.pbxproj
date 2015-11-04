@@ -33,7 +33,7 @@
 		1F46A1781B5B77E2000F455B /* ServantData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F46A1771B5B77E2000F455B /* ServantData.swift */; };
 		1F47814E1B59F86C002FFECD /* CollectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F47814D1B59F86C002FFECD /* CollectionData.swift */; };
 		1F483D801B5DD36B00E8A871 /* CommonItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F483D7F1B5DD36B00E8A871 /* CommonItemVC.swift */; };
-		1F49906A1B8492AA004B4733 /* OCContainerHeader.h in Sources */ = {isa = PBXBuildFile; fileRef = 1F380C611B69C9CD0076ABB7 /* OCContainerHeader.h */; };
+		1F49906A1B8492AA004B4733 /* SHW-Bridge-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 1F380C611B69C9CD0076ABB7 /* SHW-Bridge-Header.h */; };
 		1F4AE8D11B53FCA900E67C63 /* getLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4AE8D01B53FCA900E67C63 /* getLocationController.swift */; };
 		1F4B4B7F1B32AEE000265C6B /* reserveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4B4B7C1B32AEE000265C6B /* reserveTableViewCell.swift */; };
 		1F4B4B801B32AEE000265C6B /* reserveTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4B4B7D1B32AEE000265C6B /* reserveTableViewController.swift */; };
@@ -104,7 +104,6 @@
 		1FA104991B85AB4D00BD9AC5 /* NSDataEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA104901B85AB4D00BD9AC5 /* NSDataEx.m */; };
 		1FA1049A1B85AB4D00BD9AC5 /* openssl_wrapper.h in Sources */ = {isa = PBXBuildFile; fileRef = 1FA104911B85AB4D00BD9AC5 /* openssl_wrapper.h */; };
 		1FA1049B1B85AB4D00BD9AC5 /* openssl_wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA104921B85AB4D00BD9AC5 /* openssl_wrapper.m */; };
-		1FA6FC1A1BDB571600047931 /* libBPush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA6FC191BDB571600047931 /* libBPush.a */; };
 		1FA91D571B591D240093BE58 /* MainVCdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA91D561B591D240093BE58 /* MainVCdata.swift */; };
 		1FA91D5D1B593D280093BE58 /* reserveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA91D5C1B593D280093BE58 /* reserveData.swift */; };
 		1FAC76A61BA26F4F00ABCB6E /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC76A51BA26F4F00ABCB6E /* LeftViewController.swift */; };
@@ -138,6 +137,7 @@
 		1FC530811BAC267F006B1A7C /* AlterRefund.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC530801BAC267F006B1A7C /* AlterRefund.swift */; };
 		1FC530831BAC5FA8006B1A7C /* RefundDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC530821BAC5FA8006B1A7C /* RefundDetailVC.swift */; };
 		1FCA00D51B4BFA1800A5EE51 /* finishiorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA00D41B4BFA1800A5EE51 /* finishiorder.swift */; };
+		1FD2C0D71BE601F3009D7BB4 /* libBPush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD2C0D61BE601F3009D7BB4 /* libBPush.a */; };
 		F806DA6A1B083CAF00BA6DCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F806DA691B083CAF00BA6DCD /* AppDelegate.swift */; };
 		F806DA801B083CAF00BA6DCD /* SHWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F806DA7F1B083CAF00BA6DCD /* SHWTests.swift */; };
 		F862F2961B08A05A001093D3 /* CollectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F862F2921B08A05A001093D3 /* CollectCell.swift */; };
@@ -165,7 +165,7 @@
 		1F380C421B6901E40076ABB7 /* ChangeHeadPictureVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeHeadPictureVC.swift; sourceTree = "<group>"; };
 		1F380C441B6902000076ABB7 /* ChangePasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
 		1F380C4E1B69BD2A0076ABB7 /* ico_make.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_make.png; sourceTree = "<group>"; };
-		1F380C611B69C9CD0076ABB7 /* OCContainerHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCContainerHeader.h; sourceTree = "<group>"; };
+		1F380C611B69C9CD0076ABB7 /* SHW-Bridge-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SHW-Bridge-Header.h"; sourceTree = "<group>"; };
 		1F380C621B69CA430076ABB7 /* JSDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDropDownMenu.h; sourceTree = "<group>"; };
 		1F380C631B69CA430076ABB7 /* JSDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDropDownMenu.m; sourceTree = "<group>"; };
 		1F380C681B6A4E1A0076ABB7 /* testTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testTableViewController.swift; sourceTree = "<group>"; };
@@ -265,8 +265,6 @@
 		1FA104901B85AB4D00BD9AC5 /* NSDataEx.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NSDataEx.m; path = SHW/Util/NSDataEx.m; sourceTree = "<group>"; };
 		1FA104911B85AB4D00BD9AC5 /* openssl_wrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = openssl_wrapper.h; path = SHW/Util/openssl_wrapper.h; sourceTree = "<group>"; };
 		1FA104921B85AB4D00BD9AC5 /* openssl_wrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = openssl_wrapper.m; path = SHW/Util/openssl_wrapper.m; sourceTree = "<group>"; };
-		1FA6FC181BDB571600047931 /* BPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPush.h; sourceTree = "<group>"; };
-		1FA6FC191BDB571600047931 /* libBPush.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBPush.a; sourceTree = "<group>"; };
 		1FA91D561B591D240093BE58 /* MainVCdata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVCdata.swift; sourceTree = "<group>"; };
 		1FA91D5C1B593D280093BE58 /* reserveData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = reserveData.swift; sourceTree = "<group>"; };
 		1FAC76A51BA26F4F00ABCB6E /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
@@ -295,6 +293,8 @@
 		1FC530801BAC267F006B1A7C /* AlterRefund.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlterRefund.swift; sourceTree = "<group>"; };
 		1FC530821BAC5FA8006B1A7C /* RefundDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefundDetailVC.swift; sourceTree = "<group>"; };
 		1FCA00D41B4BFA1800A5EE51 /* finishiorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = finishiorder.swift; sourceTree = "<group>"; };
+		1FD2C0D51BE601F3009D7BB4 /* BPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPush.h; sourceTree = "<group>"; };
+		1FD2C0D61BE601F3009D7BB4 /* libBPush.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBPush.a; sourceTree = "<group>"; };
 		F806DA641B083CAF00BA6DCD /* SHW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F806DA681B083CAF00BA6DCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F806DA691B083CAF00BA6DCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -310,20 +310,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F68E1181B808598002DBE33 /* SystemConfiguration.framework in Frameworks */,
+				1F68E11C1B8085B1002DBE33 /* libz.dylib in Frameworks */,
+				1F68E1201B8085CB002DBE33 /* CoreTelephony.framework in Frameworks */,
+				1F68E1221B8085D7002DBE33 /* Foundation.framework in Frameworks */,
 				1FAE5FEB1BB24EB800C86F3A /* Security.framework in Frameworks */,
 				1FAE5FE71BB19F4700C86F3A /* BaiduMapAPI.framework in Frameworks */,
-				1FA6FC1A1BDB571600047931 /* libBPush.a in Frameworks */,
+				1FD2C0D71BE601F3009D7BB4 /* libBPush.a in Frameworks */,
 				1FA104691B85A9A100BD9AC5 /* AlipaySDK.framework in Frameworks */,
 				1FA1046B1B85A9B400BD9AC5 /* AlipaySDK.bundle in Frameworks */,
 				1FA1046F1B85A9F700BD9AC5 /* libssl.a in Frameworks */,
 				1F68E1261B8085F8002DBE33 /* UIKit.framework in Frameworks */,
 				1F68E1241B8085E4002DBE33 /* CoreGraphics.framework in Frameworks */,
-				1F68E1221B8085D7002DBE33 /* Foundation.framework in Frameworks */,
-				1F68E1201B8085CB002DBE33 /* CoreTelephony.framework in Frameworks */,
 				1F68E11E1B8085BF002DBE33 /* CoreText.framework in Frameworks */,
-				1F68E11C1B8085B1002DBE33 /* libz.dylib in Frameworks */,
 				1F68E11A1B8085A1002DBE33 /* QuartzCore.framework in Frameworks */,
-				1F68E1181B808598002DBE33 /* SystemConfiguration.framework in Frameworks */,
 				1FA1046E1B85A9F700BD9AC5 /* libcrypto.a in Frameworks */,
 				1F53AD441B7E2A0F007BA581 /* MapKit.framework in Frameworks */,
 				1F55B21B1B7D8FBE00B4D655 /* CoreLocation.framework in Frameworks */,
@@ -516,17 +516,26 @@
 		1FAE5FD61BB0E63900C86F3A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				1FD2C0D41BE601F3009D7BB4 /* BPush */,
 				1FAE5FE61BB19F4700C86F3A /* BaiduMapAPI.framework */,
 				1FAE5FE41BB19F2F00C86F3A /* mapapi.bundle */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
 		};
+		1FD2C0D41BE601F3009D7BB4 /* BPush */ = {
+			isa = PBXGroup;
+			children = (
+				1FD2C0D51BE601F3009D7BB4 /* BPush.h */,
+				1FD2C0D61BE601F3009D7BB4 /* libBPush.a */,
+			);
+			name = BPush;
+			path = SHW/BPush;
+			sourceTree = "<group>";
+		};
 		F806DA5B1B083CAF00BA6DCD = {
 			isa = PBXGroup;
 			children = (
-				1FA6FC181BDB571600047931 /* BPush.h */,
-				1FA6FC191BDB571600047931 /* libBPush.a */,
 				1FAE5FD61BB0E63900C86F3A /* Resource */,
 				1FAE5FC81BAF2A7400C86F3A /* picture */,
 				1FA104861B85AB4D00BD9AC5 /* base64.h */,
@@ -619,7 +628,7 @@
 				1F4478741B9E832E00ED8B8A /* CityModel.swift */,
 				1F4478701B9E831900ED8B8A /* city.js */,
 				1F4478711B9E831900ED8B8A /* CityHandle.swift */,
-				1F380C611B69C9CD0076ABB7 /* OCContainerHeader.h */,
+				1F380C611B69C9CD0076ABB7 /* SHW-Bridge-Header.h */,
 				1F380C4E1B69BD2A0076ABB7 /* ico_make.png */,
 				1F10BE0D1B65BB1F00F028CB /* New Group */,
 				F806DA681B083CAF00BA6DCD /* Info.plist */,
@@ -799,7 +808,7 @@
 				1FA104831B85AB0800BD9AC5 /* RSADataSigner.m in Sources */,
 				1FA104841B85AB0800BD9AC5 /* RSADataVerifier.h in Sources */,
 				1FA104851B85AB0800BD9AC5 /* RSADataVerifier.m in Sources */,
-				1F49906A1B8492AA004B4733 /* OCContainerHeader.h in Sources */,
+				1F49906A1B8492AA004B4733 /* SHW-Bridge-Header.h in Sources */,
 				1F90056F1B311A6900A63ED5 /* FinishTVController.swift in Sources */,
 				1FC530101BA96C7D006B1A7C /* ZYHWebImageChcheCenter.swift in Sources */,
 				F862F2961B08A05A001093D3 /* CollectCell.swift in Sources */,
@@ -965,7 +974,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PROVISIONING_PROFILE = "10b9e863-706d-42ea-a6eb-4222f7bf1cb7";
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = SHW/OCContainerHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/SHW/SHW-Bridge-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};
@@ -1019,7 +1028,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PROVISIONING_PROFILE = "10b9e863-706d-42ea-a6eb-4222f7bf1cb7";
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = SHW/OCContainerHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/SHW/SHW-Bridge-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = "armv7 armv7s arm64";
@@ -1030,8 +1039,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: shi zhou (Q5T6B3TCZZ)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)",
@@ -1048,12 +1057,13 @@
 					"$(PROJECT_DIR)/SHW",
 					"$(PROJECT_DIR)",
 					"$(SRCROOT)/SHW/BaiduMapSDK",
+					"$(PROJECT_DIR)/SHW/BPush",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "ab554c85-f79a-407b-93d0-06a12bd983cf";
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = SHW/OCContainerHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/SHW/SHW-Bridge-Header.h";
 				VALID_ARCHS = "armv7 armv7s ";
 			};
 			name = Debug;
@@ -1062,9 +1072,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: shi zhou (Q5T6B3TCZZ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: shi zhou (Q5T6B3TCZZ)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)",
@@ -1081,12 +1091,13 @@
 					"$(PROJECT_DIR)/SHW",
 					"$(PROJECT_DIR)",
 					"$(SRCROOT)/SHW/BaiduMapSDK",
+					"$(PROJECT_DIR)/SHW/BPush",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "ab554c85-f79a-407b-93d0-06a12bd983cf";
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = SHW/OCContainerHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/SHW/SHW-Bridge-Header.h";
 				VALID_ARCHS = "armv7 armv7s ";
 			};
 			name = Release;
@@ -1109,6 +1120,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/SHW/SHW-Bridge-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SHW.app/SHW";
 			};
 			name = Debug;
@@ -1127,6 +1139,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/SHW/SHW-Bridge-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SHW.app/SHW";
 			};
 			name = Release;

@@ -91,7 +91,7 @@ typedef struct _NSZone NSZone;
 @import AVFoundation;
 #endif
 
-#import "/Users/zhang/Desktop/HouseKeeping 2/SHW/OCContainerHeader.h"
+#import "/Users/zhang/Desktop/HousekeepingClient/SHW/SHW-Bridge-Header.h"
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
@@ -114,7 +114,6 @@ SWIFT_CLASS("_TtC3SHW22AnimatedAnnotationView")
 @class BMKMapManager;
 @class UIApplication;
 @class NSObject;
-@class UILocalNotification;
 @class NSData;
 @class NSError;
 @class UIUserNotificationSettings;
@@ -123,8 +122,9 @@ SWIFT_CLASS("_TtC3SHW11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic) UIWindow * __nullable window;
 @property (nonatomic) BMKMapManager * __nullable mapManager;
+@property (nonatomic, copy) NSString * __nonnull customerid;
+@property (nonatomic, copy) NSString * __nonnull loginPassword;
 - (BOOL)application:(UIApplication * __nonnull)application didFinishLaunchingWithOptions:(NSDictionary * __nullable)launchOptions;
-- (void)application:(UIApplication * __nonnull)application didReceiveLocalNotification:(UILocalNotification * __nonnull)notification;
 - (void)application:(UIApplication * __nonnull)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData * __nonnull)deviceToken;
 - (void)application:(UIApplication * __nonnull)application didFailToRegisterForRemoteNotificationsWithError:(NSError * __nonnull)error;
 - (void)application:(UIApplication * __nonnull)application didReceiveRemoteNotification:(NSDictionary * __nonnull)userInfo;
@@ -135,6 +135,7 @@ SWIFT_CLASS("_TtC3SHW11AppDelegate")
 - (void)applicationWillEnterForeground:(UIApplication * __nonnull)application;
 - (void)applicationDidBecomeActive:(UIApplication * __nonnull)application;
 - (void)applicationWillTerminate:(UIApplication * __nonnull)application;
+- (void)readNSUerDefaults;
 - (SWIFT_NULLABILITY(nonnull) instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -201,8 +202,6 @@ SWIFT_CLASS("_TtC3SHW10BaseInfoVC")
 - (NSString * __nullable)pickerView:(UIPickerView * __nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
 - (void)pickerView:(UIPickerView * __nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
 - (void)tapped:(UIButton * __nonnull)button;
-
-/// 响应 datePicker 事件
 - (void)datePickerValueChange:(UIDatePicker * __nonnull)sender;
 - (void)alertView:(UIAlertView * __nonnull)alertView clickedButtonAtIndex:(NSInteger)buttonIndex;
 - (void)viewWillAppear;
@@ -554,7 +553,7 @@ SWIFT_CLASS("_TtC3SHW11ConditionVC")
 @property (nonatomic) NSIndexPath * __nullable selectedIndexPath;
 @property (nonatomic) NSMutableArray * __nonnull selectedItems;
 @property (nonatomic, copy) NSString * __null_unspecified salary;
-@property (nonatomic, copy) NSString * __nonnull ServiceType;
+@property (nonatomic, copy) NSString * __nullable ServiceType;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)reply;
@@ -754,50 +753,14 @@ SWIFT_CLASS("_TtC3SHW10Finishinfo")
 @end
 
 
-
-/// 图片加载控件，所有需要到网络加载的图片，都需要使用此控件操作
-///
-/// 作者：黄仪标 
-///
-/// Email: 632840804@qq.com
-///
-/// github：https://github.com/632840804
-///
-/// CSDN Blog: http://blog.csdn.net/woaifen3344/
-///
-/// Note：有任何可以，可以通过Email反馈，会在空闲时间处理，谢谢！
 SWIFT_CLASS("_TtC3SHW19HYBLoadingImageView")
 @interface HYBLoadingImageView : UIImageView
 - (SWIFT_NULLABILITY(nonnull) instancetype)init;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-
-/// 加载图片
-///
-/// url 图片请求地址
 - (void)loadImage:(NSString * __nonnull)url;
-
-/// 加载图片
-///
-/// url 图片请求地址
-///
-/// holder 占位图片名称
 - (void)loadImage:(NSString * __nonnull)url holder:(NSString * __nonnull)holder;
-
-/// 加载图片
-///
-/// url 图片请求地址
-///
-/// completion 图片加载完成时的回调闭包
 - (void)loadImage:(NSString * __nonnull)url completion:(void (^ __nullable)(UIImage * __nullable))completion;
-
-/// 加载图片
-///
-/// url 图片请求地址
-///
-/// holder 占位图片名称
-///
-/// completion 图片加载完成时的回调闭包
 - (void)loadImage:(NSString * __nonnull)url holder:(NSString * __nonnull)holder completion:(void (^ __nullable)(UIImage * __nullable))completion;
 @end
 
@@ -967,16 +930,10 @@ SWIFT_CLASS("_TtC3SHW6MainVC")
 @property (nonatomic) NSData * __nullable _data;
 @property (nonatomic) NSString * __nullable imageUrlString;
 @property (nonatomic) UIImage * __nullable img;
-
-/// 定位服务
 @property (nonatomic) BMKLocationService * __null_unspecified locationService;
-
-/// 当前用户位置
 @property (nonatomic) BMKUserLocation * __null_unspecified userLocation;
 @property (nonatomic) CLLocationDegrees la;
 @property (nonatomic) CLLocationDegrees lo;
-
-/// 地理位置编码
 @property (nonatomic) BMKGeoCodeSearch * __null_unspecified geocodeSearch;
 - (void)viewDidLoad;
 - (void)viewDidLayoutSubviews;
@@ -1009,15 +966,9 @@ SWIFT_CLASS("_TtC3SHW6MainVC")
 SWIFT_CLASS("_TtC3SHW5MapVC")
 @interface MapVC : UIViewController <BMKMapViewDelegate, BMKLocationServiceDelegate>
 @property (nonatomic) UINavigationBar * __nullable navigationBar;
-
-/// 百度地图视图
 @property (nonatomic) BMKMapView * __null_unspecified mapView;
 @property (nonatomic) NSInteger i;
-
-/// 定位服务
 @property (nonatomic) BMKLocationService * __null_unspecified locationService;
-
-/// 当前用户位置
 @property (nonatomic) BMKUserLocation * __null_unspecified userLocation;
 @property (nonatomic) BMKPointAnnotation * __null_unspecified pointAnnotation;
 @property (nonatomic) BMKPointAnnotation * __null_unspecified animatedAnnotation;
@@ -1034,8 +985,6 @@ SWIFT_CLASS("_TtC3SHW5MapVC")
 - (void)reply;
 - (UINavigationItem * __nonnull)onMakeNavitem;
 - (void)addPointAnnotation;
-
-/// /    /// 添加动画标注
 - (void)addAnimatedAnnotation;
 - (BMKOverlayView * __null_unspecified)mapView:(BMKMapView * __null_unspecified)mapView viewForOverlay:(id <BMKOverlay> __null_unspecified)overlay;
 - (UIImage * __nonnull)getImageFromView:(UIView * __nonnull)view;
@@ -1115,8 +1064,6 @@ SWIFT_CLASS("_TtC3SHW13OrderDetailVC")
 @property (nonatomic) CGFloat orderY;
 @property (nonatomic) CGFloat customerInfoY;
 @property (nonatomic) CGFloat CBY;
-
-/// 地理位置编码
 @property (nonatomic) BMKGeoCodeSearch * __null_unspecified geocodeSearch;
 @property (nonatomic, copy) NSString * __null_unspecified selectprovince;
 @property (nonatomic, copy) NSString * __null_unspecified selectcity;
@@ -1188,8 +1135,6 @@ SWIFT_CLASS("_TtC3SHW7OrderVC")
 @property (nonatomic) CGFloat orderY;
 @property (nonatomic) CGFloat CBY;
 @property (nonatomic, copy) NSString * __null_unspecified isDirected;
-
-/// 地理位置编码
 @property (nonatomic) BMKGeoCodeSearch * __null_unspecified geocodeSearch;
 @property (nonatomic) NSArray * __nonnull root;
 @property (nonatomic) NSArray * __nonnull provinces;
@@ -1342,11 +1287,6 @@ SWIFT_CLASS("_TtC3SHW11ServiceType")
 
 
 @interface UIImageView (SWIFT_EXTENSION(SHW))
-
-/// *设置web图片
-/// *url:图片路径
-/// *defaultImage:默认缺省图片
-/// *isCache：是否进行缓存的读取
 - (void)setZYHWebImage:(NSString * __nullable)url defaultImage:(NSString * __nullable)defaultImage;
 @end
 

@@ -101,6 +101,11 @@ class OrderDetailVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NS
         
         //实例化导航条
         navigationBar = UINavigationBar(frame: CGRectMake(0, 0, width, 64))
+        navigationBar?.barTintColor = UIColor.orangeColor()
+        navigationBar?.translucent = false
+        navigationBar?.barStyle = UIBarStyle.Default
+        let navigationTitleAttribute: NSDictionary = NSDictionary(objectsAndKeys: UIColor.whiteColor(), NSForegroundColorAttributeName)
+        navigationBar?.titleTextAttributes =  navigationTitleAttribute as [NSObject: AnyObject]
         self.view.addSubview(navigationBar!)
         print("创建导航条详情")
         onMakeNavitem()
@@ -452,17 +457,17 @@ class OrderDetailVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NS
         if component == 0 {
             //return month[row]
             //return provinces.keys.array[row]
-            return root[row].objectForKey("state") as! String
+            return root[row].objectForKey("state") as? String
         }
         
         if component == 1{
             //return week[row]
-            return cities[row].objectForKey("city") as! String
+            return cities[row].objectForKey("city") as? String
             
         }
         if component == 2{
             //return week[row]
-            return areas[row] as! String
+            return areas[row] as? String
             
         }
         return nil

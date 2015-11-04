@@ -69,6 +69,11 @@ class BusinessVC:  UIViewController,UITableViewDataSource,UITableViewDelegate,JS
             businessTable.delegate = self
         //实例化导航条
         navigationBar = UINavigationBar(frame: CGRectMake(0, 0, width, 64))
+        navigationBar?.barTintColor = UIColor.orangeColor()
+        navigationBar?.translucent = false
+        navigationBar?.barStyle = UIBarStyle.Default
+        let navigationTitleAttribute: NSDictionary = NSDictionary(objectsAndKeys: UIColor.whiteColor(), NSForegroundColorAttributeName)
+        navigationBar?.titleTextAttributes =  navigationTitleAttribute as [NSObject: AnyObject]
         self.view.addSubview(navigationBar!)
         print("创建导航条详情B")
         onMakeNavitem()
@@ -197,14 +202,24 @@ class BusinessVC:  UIViewController,UITableViewDataSource,UITableViewDelegate,JS
         print("创建导航条step1b")
         //创建一个导航项
         let navigationItem = UINavigationItem()
+        
         //创建左边.右边按钮
         let leftButton =  UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Reply, target: self, action: "reply")
+          leftButton.tintColor = UIColor.whiteColor()
         
         
        
 //        rightButton =  UIBarButtonItem(title: "地图", style: UIBarButtonItemStyle.Bordered, target: self, action: "selection")
         //导航栏的标题
         navigationItem.title = "人员列表"
+        
+        //导航栏的标题
+//        let titleL = UILabel(frame: CGRectMake(0, 0, self.view.frame.width, 30))
+//        titleL.text = "人员列表"
+//        titleL.textColor = UIColor.whiteColor()
+//        titleL.textAlignment = NSTextAlignment.Center
+//        navigationItem.titleView = titleL
+//        navigationItem.titleView?.frame = CGRectMake(0, 0,self.view.frame.width, 30)
         //设置导航栏左边按钮
         navigationItem.setLeftBarButtonItem(leftButton, animated: true)
         navigationItem.setRightBarButtonItem(rightButton, animated: true)
