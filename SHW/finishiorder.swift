@@ -85,6 +85,7 @@ func refreshOrderData(customerID:String,orderStatus:String) ->NSArray  {
     request.HTTPMethod = "POST"
     //var param:String = "{\"customerAccount\":\"Alex\",\"Password\":\"a123\"}"
     let param:String = "{\"customerID\":\"\(customerID)\",\"orderStatus\":\"\(orderStatus)\"}"
+    println(param)
     let data:NSData = param.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true)!
     request.HTTPBody = data;
     var response:NSURLResponse?

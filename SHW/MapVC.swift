@@ -92,10 +92,14 @@ class MapVC: UIViewController,BMKMapViewDelegate,BMKLocationServiceDelegate{
         let navigationItem = UINavigationItem()
         //创建左边.右边按钮
         let leftButton =  UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Reply, target: self, action: "reply")
+        leftButton.tintColor = UIColor.whiteColor()
+
         
         
         
         let rightButton =  UIBarButtonItem(title: "返回列表", style: UIBarButtonItemStyle.Bordered, target: self, action: "reply")
+        rightButton.tintColor = UIColor.whiteColor()
+
         //导航栏的标题
         navigationItem.title = "找附近"
         //设置导航栏左边按钮

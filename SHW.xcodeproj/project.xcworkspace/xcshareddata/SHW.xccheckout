@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>78EA66A3-3F30-4203-897B-4F9A5C5B4F22</string>
 	<key>IDESourceControlProjectName</key>
-	<string>SHW</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>8C239B553D4B3220A29FB29FA28148655915E6E6</key>
 		<string>https://github.com/AlinnoonQueecy/HousekeepingClient.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SHW.xcodeproj</string>
+	<string>SHW.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>8C239B553D4B3220A29FB29FA28148655915E6E6</key>

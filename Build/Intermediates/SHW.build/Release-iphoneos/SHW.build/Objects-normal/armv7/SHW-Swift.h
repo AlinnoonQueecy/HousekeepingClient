@@ -1064,6 +1064,8 @@ SWIFT_CLASS("_TtC3SHW13OrderDetailVC")
 @property (nonatomic) CGFloat orderY;
 @property (nonatomic) CGFloat customerInfoY;
 @property (nonatomic) CGFloat CBY;
+
+/// 地理位置编码
 @property (nonatomic) BMKGeoCodeSearch * __null_unspecified geocodeSearch;
 @property (nonatomic, copy) NSString * __null_unspecified selectprovince;
 @property (nonatomic, copy) NSString * __null_unspecified selectcity;
@@ -1135,6 +1137,8 @@ SWIFT_CLASS("_TtC3SHW7OrderVC")
 @property (nonatomic) CGFloat orderY;
 @property (nonatomic) CGFloat CBY;
 @property (nonatomic, copy) NSString * __null_unspecified isDirected;
+
+/// 地理位置编码
 @property (nonatomic) BMKGeoCodeSearch * __null_unspecified geocodeSearch;
 @property (nonatomic) NSArray * __nonnull root;
 @property (nonatomic) NSArray * __nonnull provinces;

@@ -4,22 +4,22 @@ provides:
 nominals:
 - "C3SHW12CommentTCell"
 class-members:
-- "time"
-- "awakeFromNib"
 - "customer"
-- "setSelected"
 - "comment"
+- "awakeFromNib"
+- "time"
+- "setSelected"
 top-level:
+- "Bool"
 - "UILabel"
 - "UITableViewCell"
-- "Bool"
 member-access:
-- "CSo8NSObject"
-- "CSo6UIView"
-- "C3SHW12CommentTCell"
-- "CSo15UITableViewCell"
 - "PSs9AnyObject"
 - "CSo11UIResponder"
+- "CSo6UIView"
+- "CSo8NSObject"
+- "C3SHW12CommentTCell"
+- "CSo15UITableViewCell"
 dynamic-lookup:
 cross-module:
 - "/Volumes/Xcode/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/Swift.swiftmodule"

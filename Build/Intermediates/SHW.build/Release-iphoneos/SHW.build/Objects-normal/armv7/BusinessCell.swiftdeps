@@ -4,28 +4,28 @@ provides:
 nominals:
 - "C3SHW12BusinessCell"
 class-members:
-- "name"
 - "dizhi"
-- "awakeFromNib"
-- "businessArea"
-- "address"
 - "quyu"
+- "address"
 - "picture"
-- "officePhone"
+- "businessArea"
 - "dianhua"
+- "officePhone"
+- "name"
+- "awakeFromNib"
 - "setSelected"
 top-level:
 - "UITableViewCell"
 - "UIImageView"
-- "UILabel"
 - "Bool"
+- "UILabel"
 member-access:
-- "CSo11UIResponder"
 - "CSo8NSObject"
-- "CSo6UIView"
 - "C3SHW12BusinessCell"
-- "PSs9AnyObject"
+- "CSo11UIResponder"
+- "CSo6UIView"
 - "CSo15UITableViewCell"
+- "PSs9AnyObject"
 dynamic-lookup:
 cross-module:
 - "/Volumes/Xcode/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/Swift.swiftmodule"

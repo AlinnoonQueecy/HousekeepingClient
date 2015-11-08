@@ -68,6 +68,8 @@ class getLocationController: UIViewController,CLLocationManagerDelegate {
         let navigationItem = UINavigationItem()
         //创建左边.右边按钮
         let leftButton =  UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Reply, target: self, action: "reply")
+        leftButton.tintColor = UIColor.whiteColor()
+
 
         //rightButton.title = "好吧"
         //导航栏的标题

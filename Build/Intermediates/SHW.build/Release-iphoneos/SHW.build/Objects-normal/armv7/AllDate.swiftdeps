@@ -5,8 +5,8 @@ nominals:
 - "V3SHW8HttpData"
 class-members:
 top-level:
-- "IntegerLiteralType"
 - "UnicodeScalarType"
+- "IntegerLiteralType"
 - "FloatLiteralType"
 - "String"
 - "StringLiteralType"

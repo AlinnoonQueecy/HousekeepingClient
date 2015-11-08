@@ -296,6 +296,8 @@ class LocationViewController: UIViewController,UITableViewDelegate, UITableViewD
         var navigationItem = UINavigationItem()
         //创建左边按钮
         var leftButton =  UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Reply, target: self, action: "reply")
+        leftButton.tintColor = UIColor.whiteColor()
+
     
         //导航栏的标题
         navigationItem.title = "当前城市"

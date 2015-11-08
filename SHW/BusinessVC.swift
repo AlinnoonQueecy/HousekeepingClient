@@ -206,7 +206,12 @@ class BusinessVC:  UIViewController,UITableViewDataSource,UITableViewDelegate,JS
         //创建左边.右边按钮
         let leftButton =  UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Reply, target: self, action: "reply")
           leftButton.tintColor = UIColor.whiteColor()
-        
+        var btn = UIButton(frame:CGRectMake(0, 0, 40, 40))
+        btn.setBackgroundImage(UIImage(named: "map"), forState: UIControlState.Normal)
+        btn.addTarget(self, action: "map", forControlEvents: UIControlEvents.TouchUpInside)
+        //var rightButton =  UIBarButtonItem(image: image, style: UIBarButtonItemStyle.Bordered, target: self, action: "map")
+        var rightButton = UIBarButtonItem(customView: btn)
+
         
        
 //        rightButton =  UIBarButtonItem(title: "地图", style: UIBarButtonItemStyle.Bordered, target: self, action: "selection")

@@ -4,16 +4,16 @@ provides:
 nominals:
 - "C3SHW5WebVC"
 class-members:
-- "reply"
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "viewDidLoad"
+- "reply"
 top-level:
 - "AnyObject"
 - !private "BooleanLiteralType"
 - "UIViewController"
 member-access:
-- "CSo11UIResponder"
 - "CSo16UIViewController"
+- "CSo11UIResponder"
 - "C3SHW5WebVC"
 - "CSo8NSObject"
 - "PSs9AnyObject"

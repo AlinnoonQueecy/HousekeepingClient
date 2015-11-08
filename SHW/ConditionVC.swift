@@ -59,7 +59,7 @@ class ConditionVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
         tableView.delegate = self
         tableView.dataSource = self
         self.view.addSubview(tableView)
-        IndexSettingData =  refreshIndexSetting("月嫂")as! [IndexSetting]
+        IndexSettingData =  refreshIndexSetting(ServiceType!)as! [IndexSetting]
         
         println("IndexSettingData\(IndexSettingData.count)")
         

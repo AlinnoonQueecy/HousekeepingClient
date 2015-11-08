@@ -225,6 +225,8 @@ class reserveTViewController: UIViewController,UITableViewDataSource,UITableView
         let navigationItem = UINavigationItem()
         //创建左边按钮
         let leftButton =  UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Reply, target: self, action: "reply")
+        leftButton.tintColor = UIColor.whiteColor()
+
         //var leftButton =  UIBarButtonItem(title: "返回", style: UIBarButtonItemStyle.Bordered, target: self, action: "reply")
         //导航栏的标题
         navigationItem.title = "发布列表"
