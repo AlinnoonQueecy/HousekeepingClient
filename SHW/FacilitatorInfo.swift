@@ -407,20 +407,9 @@ func addCollection(n:String) ->String  {
         
     for value in jsonArray!{
         
-//          var id:Int=value.objectForKey("id") as! Int
-//          println("id")
-//        
-//          println("zenemhuishi")
-//        var cityCode:String=basic!.objectForKey("cityCode") as! String
-//        println("cityCode\(cityCode)")
-//        var cityName:String=basic!.objectForKey("cityName") as! String
-//        println("cityName\(cityName)")
+ 
        let countyName:String=value.objectForKey("countyName") as! String
-//        var isCovered:String=basic!.objectForKey("isCovered") as! String
-//        println("countyName:\(countyName)")
-//        
-//        let obj:CountyInfo = CountyInfo(id:id,cityCode:cityCode,cityName:cityName,countyName:countyName,isCovered:isCovered)
-//        detailData = obj
+ 
           
    
             countyData += [countyName]

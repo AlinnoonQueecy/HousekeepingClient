@@ -22,7 +22,8 @@ UIScrollViewDelegate,UIAlertViewDelegate,NSURLConnectionDelegate,NSURLConnection
     var AdvertiseDatas:[HomeAdvertise]=[]
 
     var range:NSArray = []
-    var location:String = "当前城市"
+    var locationS:String = "当前城市"
+    var location:String = ""
     
     var customerid:String =  ""
     var loginPassword:String = ""
@@ -64,6 +65,9 @@ UIScrollViewDelegate,UIAlertViewDelegate,NSURLConnectionDelegate,NSURLConnection
         super.viewDidLoad()
         //读取用户信息，如果不是第一次登录，则会自动登录
         readNSUerDefaults()
+        if locationS == "" {
+            locationS = "当前城市"
+        }
         
         // 定位功能初始化
         locationService = BMKLocationService()
@@ -113,7 +117,7 @@ UIScrollViewDelegate,UIAlertViewDelegate,NSURLConnectionDelegate,NSURLConnection
         LocationB = UIButton(frame: CGRect(x: 20, y: leadheight-30, width: 100, height:23))
         LocationB.titleLabel?.font = UIFont.systemFontOfSize(15)
         LocationB.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Left
-        LocationB.setTitle(location, forState: UIControlState.Normal)
+        LocationB.setTitle(locationS, forState: UIControlState.Normal)
         LocationB.addTarget(self, action: "toLocation:", forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(LocationB)
         
@@ -397,7 +401,7 @@ UIScrollViewDelegate,UIAlertViewDelegate,NSURLConnectionDelegate,NSURLConnection
             let controller = segue.destinationViewController as! BusinessVC
             //let controller = segue.destinationNavigationViewController as! Maintwo
             
-            //println(destinationViewController.rootViewController)
+        
             let object = titleOfState
             controller.FirstType = object
 //            print(controller.FirstType)
@@ -417,9 +421,9 @@ UIScrollViewDelegate,UIAlertViewDelegate,NSURLConnectionDelegate,NSURLConnection
             
         }
 //        print("location")
-        if  (userDefaultes.stringForKey("location")) != nil{
+        if  (userDefaultes.stringForKey("location")) != nil && (userDefaultes.stringForKey("location")) != "" {
             location = userDefaultes.stringForKey("location")!
-            
+             locationS = location
 //            print(location)
         }
         
@@ -485,10 +489,12 @@ UIScrollViewDelegate,UIAlertViewDelegate,NSURLConnectionDelegate,NSURLConnection
 //            print("city\(result.addressDetail.city)")
 //            var index = advance(city.endIndex, -1);
 //            let location = city.substringToIndex(index)
-            let location = city
+            location = city
+           
             saveNSUerDefaults ()
             readNSUerDefaults()
-            LocationB.setTitle(location, forState: UIControlState.Normal)
+          
+            LocationB.setTitle(locationS, forState: UIControlState.Normal)
            
         }
     }
@@ -501,6 +507,8 @@ UIScrollViewDelegate,UIAlertViewDelegate,NSURLConnectionDelegate,NSURLConnection
         //将数据全部存储到NSUerDefaults中
         let userDefaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
         //存储时，除了NSNumber类型使用对应的类型外，其他的都使用setObject:forKey:
+         println("saveNSUerDefaults")
+         println(location)
          userDefaults.setObject( location, forKey: "location")
          userDefaults.setObject( lo, forKey: "Longtitude")
          userDefaults.setObject( la, forKey: "Latitude")

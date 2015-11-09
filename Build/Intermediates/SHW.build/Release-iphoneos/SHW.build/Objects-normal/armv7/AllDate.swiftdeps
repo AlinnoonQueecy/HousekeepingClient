@@ -5,10 +5,10 @@ nominals:
 - "V3SHW8HttpData"
 class-members:
 top-level:
-- "UnicodeScalarType"
+- "String"
 - "IntegerLiteralType"
 - "FloatLiteralType"
-- "String"
+- "UnicodeScalarType"
 - "StringLiteralType"
 member-access:
 - "V3SHW8HttpData"

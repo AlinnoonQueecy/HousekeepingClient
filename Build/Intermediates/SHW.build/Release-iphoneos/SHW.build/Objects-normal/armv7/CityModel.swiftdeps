@@ -4,13 +4,13 @@ provides:
 nominals:
 - "C3SHW9CityModel"
 class-members:
-- "parentID"
-- "cityName"
 - "cityID"
 - "cityPinYin"
+- "cityName"
+- "parentID"
 top-level:
-- "NSObject"
 - "NSString"
+- "NSObject"
 member-access:
 - "C3SHW9CityModel"
 - "PSs9AnyObject"

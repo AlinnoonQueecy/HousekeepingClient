@@ -501,7 +501,10 @@ class BaseInfoVC: UIViewController,UITextFieldDelegate,NSURLConnectionDataDelega
             
             selectprovince = pr as! String
             selectcity = cit as! String
-            selectcounty = areas[areaNum] as! String
+            if areas != []{
+                selectcounty = areas[areaNum] as! String
+            }
+
         }
 //        let provinceNum = pickerView.selectedRowInComponent(0)
 //        

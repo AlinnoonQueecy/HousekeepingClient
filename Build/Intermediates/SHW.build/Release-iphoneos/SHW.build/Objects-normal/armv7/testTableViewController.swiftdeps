@@ -5,20 +5,20 @@ nominals:
 - "C3SHW23testTableViewController"
 class-members:
 - "didReceiveMemoryWarning"
-- "numberOfSectionsInTableView"
 - "tableView"
 - "viewDidLoad"
+- "numberOfSectionsInTableView"
 top-level:
 - "UITableView"
 - "UITableViewController"
 - "Int"
 member-access:
-- "CSo21UITableViewController"
-- "CSo11UIResponder"
-- "C3SHW23testTableViewController"
-- "PSs9AnyObject"
 - "CSo8NSObject"
+- "CSo21UITableViewController"
+- "PSs9AnyObject"
+- "CSo11UIResponder"
 - "CSo16UIViewController"
+- "C3SHW23testTableViewController"
 dynamic-lookup:
 cross-module:
 - "/Volumes/Xcode/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/Swift.swiftmodule"

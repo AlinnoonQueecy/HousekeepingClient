@@ -230,13 +230,13 @@ class CommonItemVC: UIViewController {
     }
     
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier! == "toOrderC" {
-            let controller = segue.destinationViewController as! CommonOrder
-            let  object = CommonItem
-            controller.OrderData = object
-      
-       }
-    }
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if segue.identifier! == "toOrderC" {
+//            let controller = segue.destinationViewController as! CommonOrder
+//            let  object = CommonItem
+//            controller.OrderData = object
+//      
+//       }
+//    }
 
 }

@@ -498,41 +498,6 @@ SWIFT_CLASS("_TtC3SHW12CommonItemVC")
 - (void)reply;
 - (UINavigationItem * __nonnull)onMakeNavitem;
 - (void)readNSUerDefaults;
-- (void)prepareForSegue:(UIStoryboardSegue * __nonnull)segue sender:(id __nullable)sender;
-- (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UITextView;
-
-SWIFT_CLASS("_TtC3SHW11CommonOrder")
-@interface CommonOrder : UIViewController <UITextFieldDelegate, UIAlertViewDelegate, NSURLConnectionDataDelegate, UIScrollViewDelegate>
-@property (nonatomic) UINavigationBar * __nullable navigationBar;
-@property (nonatomic) serviceItemInfo * __null_unspecified OrderData;
-@property (nonatomic, copy) NSString * __nonnull customerid;
-@property (nonatomic, copy) NSString * __nonnull loginPassword;
-@property (nonatomic) MyInfo * __null_unspecified myinfo;
-@property (nonatomic) UILabel * __nullable servantID;
-@property (nonatomic) UITextField * __nonnull customerName;
-@property (nonatomic) UITextField * __nonnull dizhi;
-@property (nonatomic) UITextField * __nonnull dianhua;
-@property (nonatomic) UITextView * __nonnull beizhu;
-@property (nonatomic) UIScrollView * __nonnull scrollView;
-@property (nonatomic) UIButton * __nullable yuyue;
-@property (nonatomic, copy) NSString * __nonnull orderNo;
-@property (nonatomic) CGFloat orderY;
-@property (nonatomic) CGFloat customerInfoY;
-@property (nonatomic) CGFloat CBY;
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
-- (void)yuding:(UIButton * __nonnull)yuyue;
-- (void)alertView:(UIAlertView * __nonnull)alertView clickedButtonAtIndex:(NSInteger)buttonIndex;
-- (void)reply;
-- (UINavigationItem * __nonnull)onMakeNavitem;
-- (void)readNSUerDefaults;
-- (void)touchScrollView:(UITapGestureRecognizer * __nonnull)sender;
-- (void)keyboardWillShow:(NSNotification * __nonnull)sender;
-- (void)keyboardWillHide:(NSNotification * __nonnull)sender;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -614,6 +579,7 @@ SWIFT_CLASS("_TtC3SHW8DetailVC")
 @end
 
 @class Finishinfo;
+@class UITextView;
 @class UIColor;
 
 SWIFT_CLASS("_TtC3SHW10EvaluateVC")
@@ -916,6 +882,7 @@ SWIFT_CLASS("_TtC3SHW6MainVC")
 @property (nonatomic, copy) NSString * __nonnull titleOfState;
 @property (nonatomic, copy) NSArray * __nonnull AdvertiseDatas;
 @property (nonatomic) NSArray * __nonnull range;
+@property (nonatomic, copy) NSString * __nonnull locationS;
 @property (nonatomic, copy) NSString * __nonnull location;
 @property (nonatomic, copy) NSString * __nonnull customerid;
 @property (nonatomic, copy) NSString * __nonnull loginPassword;
@@ -1064,8 +1031,6 @@ SWIFT_CLASS("_TtC3SHW13OrderDetailVC")
 @property (nonatomic) CGFloat orderY;
 @property (nonatomic) CGFloat customerInfoY;
 @property (nonatomic) CGFloat CBY;
-
-/// 地理位置编码
 @property (nonatomic) BMKGeoCodeSearch * __null_unspecified geocodeSearch;
 @property (nonatomic, copy) NSString * __null_unspecified selectprovince;
 @property (nonatomic, copy) NSString * __null_unspecified selectcity;

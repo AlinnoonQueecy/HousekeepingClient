@@ -628,10 +628,12 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
         let pr: AnyObject? = root[provinceNum].objectForKey("state")
         let cit:AnyObject? = cities[cityNum].objectForKey("city")
         
-        
+       
         selectprovince = pr as! String
         selectcity = cit as! String
+        if areas != []{
         selectcounty = areas[areaNum] as! String
+            }
         }
     }
     //预定的跳转函数

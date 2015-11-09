@@ -25,7 +25,7 @@ class BusinessVC:  UIViewController,UITableViewDataSource,UITableViewDelegate,JS
     var customerid:String = ""
     var loginPassword:String = ""
     //声明地址
-    var location:String = "沈阳市"
+    var location:String = ""
     //声明一个去一口价的BUtton
     var writing = UIButton()
     //change by LZF
@@ -80,6 +80,8 @@ class BusinessVC:  UIViewController,UITableViewDataSource,UITableViewDelegate,JS
             //读取本地存储的地址
             readNSUerDefaults()
         //类别
+        println("FirstType")
+           println(FirstType)
             serviceTypeData = refreshServiceType(FirstType!) as![ServiceType]
         
             for var i = 0;i < serviceTypeData.count;i++ {
@@ -103,7 +105,7 @@ class BusinessVC:  UIViewController,UITableViewDataSource,UITableViewDelegate,JS
         //change by LZF
           //data1 = ["区域不限","和平区","大东区","沈河区","皇姑区","铁西区","浑南区","于洪区","沈北新区","苏家屯区","新民市","辽中县","康平县","法库县"]
         
-//          println("location\(location)")
+           println("location\(location)")
           data12 = queryCounty(location) as! [String]
           data1 += data12
 //          println(data1)
@@ -418,8 +420,10 @@ class BusinessVC:  UIViewController,UITableViewDataSource,UITableViewDelegate,JS
             loginPassword = userDefaultes.stringForKey("loginPassword")!
             
         }
+        if  (userDefaultes.stringForKey("location") != nil ){
         location = userDefaultes.stringForKey("location")!
         print("location\(location)")
+        }
         
     }
 

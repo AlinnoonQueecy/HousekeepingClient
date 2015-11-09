@@ -77,13 +77,7 @@ class OrderDetailVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NS
     var province:String = ""
     var cities:NSArray = []
     var areas:NSArray = []
-//    @IBAction func cloaeKeyboard(sender: AnyObject) {
-//        println("取消键盘1")
-//        //self.view.endEditing(true)
-//       // self.view.resignFirstResponder()
-//        scrollView.endEditing(true)
-//        
-//    }
+ 
     
       override func viewDidLoad() {
         super.viewDidLoad()
@@ -403,20 +397,7 @@ class OrderDetailVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NS
         serviceTime.text = "\(Date)"
         
         serviceCounty.resignFirstResponder()
-        
-//        let provinceNum = pickview.selectedRowInComponent(0)
-//        let cityNum = pickview.selectedRowInComponent(1)
-//        
-//        let areaNum = pickview.selectedRowInComponent(2)
-//        
-//        let pr: AnyObject? = root[provinceNum].objectForKey("state")
-//        let cit:AnyObject? = cities[cityNum].objectForKey("city")
-//        
-//      
-//        selectprovince = pr as! String
-//        selectcity = cit as! String
-//        selectcounty = areas[areaNum] as! String
-        serviceCounty.text = "\(selectprovince)省 \(selectcity)市 \(selectcounty)"
+         serviceCounty.text = "\(selectprovince)省 \(selectcity)市 \(selectcounty)"
         
         
     }
@@ -530,7 +511,9 @@ class OrderDetailVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NS
         
         selectprovince = pr as! String
         selectcity = cit as! String
-        selectcounty = areas[areaNum] as! String
+        if areas != []{
+            selectcounty = areas[areaNum] as! String
+        }
     }
     
 
