@@ -11,8 +11,7 @@ struct HttpData {
     static let  http  = "http://219.216.65.182:8080"
     static var count = 0
     static var  salary = "0"
-//static let  http  = "http://192.168.1.122:8080"
-//    static let  http  = "http://192.168.1.113:8080"
+ 
     static var  customerid:String = ""
     static var  loginpassword:String = ""
     static let  imgArray:[String] = ["1217.jpg","125.jpg","129.jpg","128.jpg"]

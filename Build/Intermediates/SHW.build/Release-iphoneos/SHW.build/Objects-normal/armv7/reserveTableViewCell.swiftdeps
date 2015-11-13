@@ -4,27 +4,27 @@ provides:
 nominals:
 - "C3SHW20reserveTableViewCell"
 class-members:
-- "setSelected"
+- "orderNo"
+- "pic"
+- "cancel"
+- "awakeFromNib"
 - "orderTime"
 - "serviceType"
-- "startTime"
-- "awakeFromNib"
 - "servantName"
-- "cancel"
-- "pic"
-- "orderNo"
+- "startTime"
+- "setSelected"
 top-level:
 - "UILabel"
 - "UIButton"
+- "UIImageView"
 - "Bool"
 - "UITableViewCell"
-- "UIImageView"
 member-access:
-- "CSo15UITableViewCell"
 - "CSo11UIResponder"
+- "CSo15UITableViewCell"
+- "C3SHW20reserveTableViewCell"
 - "PSs9AnyObject"
 - "CSo6UIView"
-- "C3SHW20reserveTableViewCell"
 - "CSo8NSObject"
 dynamic-lookup:
 cross-module:

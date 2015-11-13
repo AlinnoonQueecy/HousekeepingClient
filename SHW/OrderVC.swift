@@ -25,20 +25,20 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
     //读取本地数据
     var customerid:String =  ""
     var loginPassword:String = ""
-//    var ServiceType = ""
-    var ServiceType:String = ""
+ 
     //声明一个数组ServantData来保存获取的信息
     var Data:[ServantInfo] = []
     var servantData:[ServantInfo] = []
     //声明页面其他控件
     //var servicePicture:UIImage?
-    var itemName:UILabel?
+    var itemN:UILabel?
     var serviceTypeL:UILabel?
     var itemIntro:UILabel?
     var priceDescription:UILabel?
     //有可能为空的控件
     //    var customerN:UILabel?
-     var AddServant = UIButton()
+    var AddServant = UIButton()
+    var itemName =  UITextField()
     var servantName1 = UILabel()
     var servantName =  UITextField()
     var Servant = UILabel()
@@ -86,6 +86,9 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
     var selectServantPick:UIPickerView!
     var  selectServantID:String!
     var  selectServantName:String!
+    
+    var TypeData:[String:NSArray] = Dictionary<String,NSArray>()
+
   
     
     override func viewDidLoad() {
@@ -101,6 +104,22 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
         
         //初始化数据
         myinfo = QueryInfo(customerid) as MyInfo
+        var  FirstTypeData:[ServiceType] = refreshParentType("") as! [ServiceType]
+        for var i = 0;i < FirstTypeData.count;i++ {
+            
+            var FTypeName = FirstTypeData[i].typeName
+            
+            var STypeData = refreshServiceType(FTypeName) as![ServiceType]
+            
+              var range:[String] = []
+            for var n = 0;n < STypeData.count;n++ {
+                range += [STypeData[n].typeName] // 小类名称
+                
+            }
+       
+            
+            TypeData[FTypeName] = range
+        }
         
         
         //实例化导航条
@@ -178,19 +197,20 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
      
         
         //服务项目
-        let itemName = UILabel(frame: CGRectMake(15, orderY+35+30, labelW, 25))
-        itemName.text = "服务项目:\(ServiceType)"
-        itemName.textColor = UIColor.blackColor()
-        itemName.font = UIFont.systemFontOfSize(15)
-        scrollView.addSubview(itemName)
+        let itemN = UILabel(frame: CGRectMake(15, orderY+35+35, labelW, 25))
+        itemN.text = "服务项目:"
+        itemN.textColor = UIColor.blackColor()
+        itemN.font = UIFont.systemFontOfSize(15)
+        scrollView.addSubview(itemN)
         
-//        AddServant = UIButton(frame: CGRectMake(15, orderY+90, labelW, 25))
-//        AddServant.setTitle("添加服务人员", forState: UIControlState.Normal)
-//        AddServant.setTitleColor(UIColor.blueColor(), forState: UIControlState.Normal)
-//        AddServant.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Left
-//        AddServant.titleLabel?.font = UIFont.systemFontOfSize(17)
-//        AddServant.addTarget(self,action:Selector("addServant:"), forControlEvents: UIControlEvents.TouchUpInside)
-//        scrollView.addSubview(AddServant)
+        itemName = UITextField(frame: CGRectMake(80, orderY+35+35, width-90, 30))
+        itemName.borderStyle = UITextBorderStyle.RoundedRect
+        itemName.clearButtonMode=UITextFieldViewMode.WhileEditing
+        //编辑时出现清除按钮
+        scrollView.addSubview(itemName)
+
+        
+ 
         
      
         selectServantPick = UIPickerView(frame: CGRectMake(0,300,width, 300))
@@ -210,12 +230,12 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
         buttons.append(doneButton)
         toolbar.setItems(buttons, animated: false)
         
-        Servant = UILabel(frame: CGRectMake(15, orderY+90, labelW, 25))
+        Servant = UILabel(frame: CGRectMake(15, orderY+105, labelW, 25))
         Servant.text = "服务员ID: "
         Servant.textColor = UIColor.blackColor()
         Servant.font = UIFont.systemFontOfSize(15)
         scrollView.addSubview(Servant)
-        servantID = UITextField(frame: CGRectMake(80, orderY+90, width-90, 30))
+        servantID = UITextField(frame: CGRectMake(80, orderY+105, width-90, 30))
         servantID.borderStyle = UITextBorderStyle.RoundedRect
         servantID.adjustsFontSizeToFitWidth=true  //当文字超出文本框宽度时，自动调整文字大小
         servantID.minimumFontSize=12
@@ -232,7 +252,7 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
         scrollView.addSubview(servantID)
         
         
-        let ServantH = orderY+125
+        let ServantH = orderY+140
         servantName1 = UILabel(frame: CGRectMake(15, ServantH, labelW, 25))
         servantName1.text = "人员名称:"
         servantName1.textColor = UIColor.blackColor()
@@ -375,11 +395,11 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
         scrollView.addSubview(dizhi)
         
     
-        let serviceType = UILabel(frame: CGRectMake(15, customerInfoY+35, 80, 25))
-        serviceType.text = "联系电话:"
-        serviceType.textColor = UIColor.blackColor()
-        serviceType.font = UIFont.systemFontOfSize(15)
-        scrollView.addSubview(serviceType)
+        let mobilePhone = UILabel(frame: CGRectMake(15, customerInfoY+35, 80, 25))
+        mobilePhone.text = "联系电话:"
+        mobilePhone.textColor = UIColor.blackColor()
+        mobilePhone.font = UIFont.systemFontOfSize(15)
+        scrollView.addSubview(mobilePhone)
         dianhua = UITextField(frame: CGRectMake(80, customerInfoY+35, width-90, 30))
         dianhua.text = myinfo.mobilePhone
         dianhua.borderStyle = UITextBorderStyle.RoundedRect
@@ -458,45 +478,26 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
     }
     
     
-    
-//    func addServant(AddServant:UIButton){
-//        AddServant.hidden = true
-//        servantName1.hidden = false
-//        servantName.hidden = false
-//        Servant.hidden = false
-//        servantID.hidden = false
-//        
-//        
-//    }
+ 
     
     //toolBar 的函数
     func donePressed() {
+        
+        
         serviceTime.resignFirstResponder()
+        // NSDate转化NSString
+        let s = datePicker.date
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+        Date = dateFormatter.stringFromDate(s)
+        serviceTime.text = "\(Date)"
         
-                // NSDate转化NSString
-                let s = datePicker.date
-                let dateFormatter = NSDateFormatter()
-                dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
-                 Date = dateFormatter.stringFromDate(s)
-        
-             print("Date\(Date)")
-         serviceTime.text = "\(Date)"
-        
-        
-         servantID.resignFirstResponder()
-        let Num = selectServantPick.selectedRowInComponent(0)
-        println("NUM:\(Num)")
-        
-        selectServantID = Data[Num].servantID
-        selectServantName = Data[Num].servantName
-        println("selectServantID:\(selectServantID)")
+        servantID.resignFirstResponder()
         servantID.text = selectServantID
         servantName.text = selectServantName
         
-        
-         serviceCounty.resignFirstResponder()
-
-         serviceCounty.text = "\(selectprovince)省 \(selectcity)市 \(selectcounty)"
+        serviceCounty.resignFirstResponder()
+        serviceCounty.text = "\(selectprovince)省 \(selectcity)市 \(selectcounty)"
         
     }
     //设置列数
@@ -552,7 +553,7 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
             
            return Data[row].servantID + Data[row].servantName as  String
             
-        }else{
+        }else if pickerView.tag == 2 {
         if component == 0 {
             //return month[row]
             //return provinces.keys.array[row]
@@ -634,6 +635,10 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
         if areas != []{
         selectcounty = areas[areaNum] as! String
             }
+         }else if pickerView.tag == 1  {
+            let Num = selectServantPick.selectedRowInComponent(0)
+            selectServantID = Data[Num].servantID
+            selectServantName = Data[Num].servantName
         }
     }
     //预定的跳转函数
@@ -641,7 +646,7 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
         
   
         
-        if dizhi.text == "" || dianhua.text!.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) != 11||serviceCounty.text == ""||serviceTime.text == ""||customerName.text == ""||salary.text == ""{
+        if dizhi.text == "" || !verifyPhoneNumber(dianhua.text)||serviceCounty.text == ""||serviceTime.text == ""||customerName.text == ""||salary.text == "" {
             let alert =  UIAlertView(title: "", message: "请填写完整", delegate: self, cancelButtonTitle: "确定")
             // alert.tag = 1
             alert.show()
@@ -750,7 +755,7 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
             
         }
         println("isDirected\(isDirected)")
-        let serverResponse = QureyDeclare(customerid, customerName.text!, servantID.text!,servantName.text!, dianhua.text!, serviceTime.text!,selectprovince, selectcity, selectcounty, dizhi.text!,"\(serviceLongitude)", "\(serviceLatitude)", salary.text!, ServiceType, beizhu.text,isDirected)
+        let serverResponse = QureyDeclare(customerid, customerName.text!, servantID.text!,servantName.text!, dianhua.text!, serviceTime.text!,selectprovince, selectcity, selectcounty, dizhi.text!,"\(serviceLongitude)", "\(serviceLatitude)", salary.text!, itemName.text, beizhu.text,isDirected)
         
         if serverResponse == "Success"{
             

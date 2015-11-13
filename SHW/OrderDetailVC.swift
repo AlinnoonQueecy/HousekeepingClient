@@ -523,7 +523,7 @@ class OrderDetailVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NS
     //预定的跳转函数
     func yuding(yuyue:UIButton){
         
-        if dizhi.text == "" || dianhua.text.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) != 11||serviceCounty.text == ""||serviceTime.text == ""||customerName.text == ""||salary.text == "" {
+        if dizhi.text == "" || !verifyPhoneNumber(dianhua.text)||serviceCounty.text == ""||serviceTime.text == ""||customerName.text == ""||salary.text == "" {
             let alert =  UIAlertView(title: "", message: "请填写完整", delegate: self, cancelButtonTitle: "确定")
              // alert.tag = 1
             alert.show()
@@ -636,7 +636,14 @@ class OrderDetailVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NS
             //alert.tag = 1
             alert.show()
             
+        }else if serverResponse == "NotSuccess"{
+            
+            let alert =  UIAlertView(title: "预定失败", message: "服务人员忙碌，暂时不能预订", delegate: self, cancelButtonTitle: "确定")
+            alert.tag = 1
+            alert.show()
+            
         }
+
     }
 
     func touchScrollView(sender: UITapGestureRecognizer){

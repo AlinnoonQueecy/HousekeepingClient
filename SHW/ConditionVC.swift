@@ -22,11 +22,13 @@ class ConditionVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     var selectData:[String:String] = Dictionary<String,String>()
     var  Index:NSArray!
     var  indexCode:String!
+    var  indexPrice:String!
     
     var selectedCell: UITableViewCell?
     var selectedIndexPath: NSIndexPath?
     var sectionCount: Int?
     var selectedItems: NSMutableArray = NSMutableArray() // 存放所有选中的cell标题
+    var selectedPrice: NSMutableArray = NSMutableArray() // 存放所有选中的cell的价格
     
     var  width:CGFloat!
     var salary:String!
@@ -60,35 +62,40 @@ class ConditionVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
         tableView.dataSource = self
         self.view.addSubview(tableView)
         IndexSettingData =  refreshIndexSetting(ServiceType!)as! [IndexSetting]
+      
         
-        println("IndexSettingData\(IndexSettingData.count)")
-        
-        var n = IndexSettingData.count
+      
         
         for var i = 0;i < IndexSettingData.count;i++ {
             
             var indexName = IndexSettingData[i].indexName
-            println("indexName\(indexName)")
+             
+            
+            var string1 = IndexSettingData[i].indexRange
+             var string2 = IndexSettingData[i].price
+           
             
             
-            var string = IndexSettingData[i].indexRange
-            println("string\(string)")
-            
-            
+            var range1:[String] = []
+            range1 = string1.componentsSeparatedByString(";")
+            var range2:[String] = []
+            range2 = string2.componentsSeparatedByString(";")
             var range:[String] = []
-            range = string.componentsSeparatedByString(";")
             
+            for var n = 0;n < range1.count;n++ {
+                if range2[n] == "-1"{
+                    range2[n] = ""
+                }
+                range += ["\(range1[n]) （ \(range2[n])元）"]
+                
+            }
             
             data[indexName] = range
-            
-            
         }
         var keys:NSArray = Array(data.keys)
         println("data\(data.count)")
         
         self.Index  = keys
-        
-        // Do any additional setup after loading the view.
     }
     //导航条详情
     func reply (){
@@ -112,6 +119,7 @@ class ConditionVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
             for var i = 0;i < IndexSettingData.count;i++ {
                 
                 selectIndex += "\(sortedItem[i])"
+                
                 
             }
             println("selectIndex\(selectIndex)")
@@ -260,6 +268,7 @@ class ConditionVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
         let selectedRow:NSInteger = userDefault.integerForKey("\(indexPath.section)")
         
         indexCode = IndexSettingData[indexPath.section].indexCode
+        
         println("indexCode\(indexCode)")
         
         if selectedRow == 0 && HttpData.count < sectionCount{
@@ -271,6 +280,7 @@ class ConditionVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
                 
                 if indexPath.row <= 9 {
                     selectedItems.addObject(indexCode+"0"+"\(indexPath.row+1)"); // 添加到数组中
+                   // selectedPrice.addObject(<#anObject: AnyObject#>)
                 }else {
                     selectedItems.addObject(indexCode+"\(indexPath.row+1)"); // 添加到数组中
                 }

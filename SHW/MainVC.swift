@@ -47,10 +47,11 @@ UIScrollViewDelegate,UIAlertViewDelegate,NSURLConnectionDelegate,NSURLConnection
     var detailView:UIView!
     var webView:UIWebView!
     var LocationB = UIButton()
-    var _data:NSData?
+    var data:NSData?
     var imageUrlString:NSString?
     //   var imgView = UIButton()
     var img:UIImage?
+    var termImg:UIImage?
     /// 定位服务
     var locationService: BMKLocationService!
     /// 当前用户位置
@@ -83,14 +84,13 @@ UIScrollViewDelegate,UIAlertViewDelegate,NSURLConnectionDelegate,NSURLConnection
         
         
         AdvertiseDatas = refreshAdvertise() as! [HomeAdvertise]
-        let FirstTypeData = refreshParentType("")//1
-//        print("FirstTypeData\(FirstTypeData.count)")
-//        print("进入定位状态")
+        var  FirstTypeData:[ServiceType] = refreshParentType("") as! [ServiceType]
+ 
         
         
       
         
-        //var bounds:CGRect = self.view.bounds
+      
         let leadheight = self.view.bounds.height*0.11
         let scrollviewheight = self.view.bounds.height*0.27
         let pageCtrly = leadheight + scrollviewheight-self.view.bounds.height*0.03
@@ -160,11 +160,11 @@ UIScrollViewDelegate,UIAlertViewDelegate,NSURLConnectionDelegate,NSURLConnection
         }
         
         //3.添加图片标题
-        imgLabel = UILabel(frame: CGRect(x:0, y: leadheight+self.view.bounds.height*0.27-35, width: self.view.bounds.width, height: 30))
-        imgLabel.backgroundColor = UIColor.whiteColor()
-        imgLabel.alpha = 0.5
-        self.view.addSubview(imgLabel )
-        imgLabel.text = AdvertiseDatas[0].advertiseIntro
+//        imgLabel = UILabel(frame: CGRect(x:0, y: leadheight+self.view.bounds.height*0.27-35, width: self.view.bounds.width, height: 30))
+//        imgLabel.backgroundColor = UIColor.whiteColor()
+//        imgLabel.alpha = 0.5
+//        self.view.addSubview(imgLabel )
+//        imgLabel.text = AdvertiseDatas[0].advertiseIntro
         //imgLabel.text = "hao"
         
         //4.创建UIPageControl
@@ -217,9 +217,20 @@ UIScrollViewDelegate,UIAlertViewDelegate,NSURLConnectionDelegate,NSURLConnection
             let term1 = UIButton(frame: CGRectMake(8+(width+2)*CGFloat(i%3),CGFloat(i/3)*((ButtonScrollheight-4)/3+2), width,(ButtonScrollheight-4)/3))
             print(term1.frame.origin.x)
               print(term1.frame.origin.y)
-            term1 .setTitle(FirstTypeData[i] as? String, forState:UIControlState.Normal)
+            term1 .setTitle(FirstTypeData[i].typeName as String, forState:UIControlState.Normal)
             term1.setTitleShadowColor(UIColor.whiteColor(),forState: UIControlState.Normal)
-            
+            let buttonImageUS = HttpData.http+"/NationalService/\(FirstTypeData[i].typeLogo)"
+            println("buttonImageUS\(buttonImageUS)")
+            let url:NSString = buttonImageUS.URLEncodedString()
+            let data = getImageData(url as String)
+            if data == nil{
+                termImg = UIImage(named: HttpData.imgArray[i%3])
+                
+            }else{
+                termImg = UIImage(data: data!)
+            }
+
+            term1.setBackgroundImage(termImg, forState: UIControlState.Normal)
             term1.backgroundColor = color[i%9]
             term1.titleLabel?.font = UIFont.systemFontOfSize(16)
             term1.showsTouchWhenHighlighted = true
@@ -368,7 +379,7 @@ UIScrollViewDelegate,UIAlertViewDelegate,NSURLConnectionDelegate,NSURLConnection
         let viewSize:CGSize  = scrollView.frame.size
         let rect:CGRect = CGRect(x:CGFloat(self.pageCtrl.currentPage)*viewSize.width , y: 0, width: viewSize.width, height: viewSize.height)
         scrollView.scrollRectToVisible(rect , animated:true);
-        imgLabel.text = AdvertiseDatas[pageCtrl.currentPage].advertiseIntro
+        //imgLabel.text = AdvertiseDatas[pageCtrl.currentPage].advertiseIntro
     }
  
     

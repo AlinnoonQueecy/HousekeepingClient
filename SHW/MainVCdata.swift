@@ -38,7 +38,7 @@ func refreshParentType(select:String) ->NSArray  {
     request.HTTPMethod = "POST"
     
     let param:String = "{\"typeName\":\"\(select)\"}"
-    //print("typeName\(select)")
+   
     let data:NSData = param.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true)!
     request.HTTPBody = data;
     var response:NSURLResponse?
@@ -52,30 +52,39 @@ func refreshParentType(select:String) ->NSArray  {
     else
     {
         var jsonString = NSString(data:receiveData!, encoding: NSUTF8StringEncoding)
-       // println(jsonString)
+        println(jsonString)
         
     }
     
     let json:AnyObject! = NSJSONSerialization.JSONObjectWithData(receiveData!, options: NSJSONReadingOptions.AllowFragments, error: nil)
     
     let test1: AnyObject?=json.objectForKey("serverResponse")
-    var ServiceTypeData:[String] = []
+    var ServiceTypeData:[ServiceType] = []
     let serverResponse:String = test1 as! String
     if serverResponse == "Success" {
-        let test2: AnyObject = json!.objectForKey("data")!
+        let test2: AnyObject = json.objectForKey("data")!
         let jsonArray = test2 as? NSArray
-        //var count = jsonArray?.count
+       
         
         for value in jsonArray!{
+            
+            let id:Int=value.objectForKey("id") as! Int
             let typeName:String=value.objectForKey("typeName") as! String
-            ServiceTypeData += [typeName]
-        
+            let typeIntro:String=value.objectForKey("typeIntro") as! String
+            let typeLogo:String=value.objectForKey("typeLogo") as! String
+            
+            let parentId:Int=value.objectForKey("parentId") as! Int
+            
+            
+            let obj:ServiceType=ServiceType(id:id,typeName:typeName,typeIntro:typeIntro,typeLogo:typeLogo,parentId:parentId )
+            
+            ServiceTypeData += [obj]
+            
+            
+            
         }
     }
-    // print("ServiceTypeData\(ServiceTypeData[0])")
     return ServiceTypeData
-   
-    
 }
 
 
@@ -88,7 +97,7 @@ func refreshServiceType(select:String) ->NSArray  {
     request.HTTPMethod = "POST"
   
     let param:String = "{\"typeName\":\"\(select)\"}"
-   // print("typeName\(select)")
+   
     let data:NSData = param.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true)!
     request.HTTPBody = data;
     var response:NSURLResponse?
@@ -102,7 +111,7 @@ func refreshServiceType(select:String) ->NSArray  {
     else
     {
         var jsonString = NSString(data:receiveData!, encoding: NSUTF8StringEncoding)
-       // println(jsonString)
+        println(jsonString)
         
     }
     
@@ -114,25 +123,16 @@ func refreshServiceType(select:String) ->NSArray  {
     if serverResponse == "Success" {
     let test2: AnyObject = json.objectForKey("data")!
     let jsonArray = test2 as? NSArray
-    //var count = jsonArray?.count
-    
     for value in jsonArray!{
         
         let id:Int=value.objectForKey("id") as! Int
         let typeName:String=value.objectForKey("typeName") as! String
         let typeIntro:String=value.objectForKey("typeIntro") as! String
         let typeLogo:String=value.objectForKey("typeLogo") as! String
-     
         let parentId:Int=value.objectForKey("parentId") as! Int
-       
-        
         let obj:ServiceType=ServiceType(id:id,typeName:typeName,typeIntro:typeIntro,typeLogo:typeLogo,parentId:parentId )
-      
         ServiceTypeData += [obj]
-//        println(obj)
-        
-        
-    }
+        }
     }
     return ServiceTypeData
     

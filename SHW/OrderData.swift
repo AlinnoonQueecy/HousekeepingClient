@@ -87,8 +87,7 @@ func getOrderData(orderNo:String) ->Finishinfo  {
 ////客户直接下单（A）
 func QureyDeclare (customerID:String,customerName:String,servantID:String,servantName:String,phoneNo:String,serviceTime:String,serviceProvince:String,serviceCity:String,serviceCounty:String,serviceAddress:String,serviceLongitude:String,serviceLatitude:String,salary:String,serviceType:String,remarks:String,isDirected:String)->String{
     let url: NSURL! = NSURL(string:HttpData.http+"/NationalService/MobileServiceDeclareAction?operation=_add")
-    
-    
+ 
     let request:NSMutableURLRequest = NSMutableURLRequest(URL: url, cachePolicy:NSURLRequestCachePolicy.UseProtocolCachePolicy,timeoutInterval: 10)
     
     request.HTTPMethod = "POST"

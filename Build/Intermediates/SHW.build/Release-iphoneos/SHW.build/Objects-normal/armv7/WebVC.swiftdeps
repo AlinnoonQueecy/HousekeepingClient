@@ -4,19 +4,19 @@ provides:
 nominals:
 - "C3SHW5WebVC"
 class-members:
-- "reply"
 - "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "reply"
 top-level:
-- !private "BooleanLiteralType"
-- "AnyObject"
 - "UIViewController"
+- "AnyObject"
+- !private "BooleanLiteralType"
 member-access:
 - "CSo16UIViewController"
 - "CSo11UIResponder"
-- "PSs9AnyObject"
-- "C3SHW5WebVC"
 - "CSo8NSObject"
+- "C3SHW5WebVC"
+- "PSs9AnyObject"
 dynamic-lookup:
 cross-module:
 - "/Volumes/Xcode/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/Swift.swiftmodule"

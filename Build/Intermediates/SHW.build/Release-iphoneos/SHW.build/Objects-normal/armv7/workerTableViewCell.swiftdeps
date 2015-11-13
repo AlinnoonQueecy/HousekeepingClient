@@ -4,27 +4,27 @@ provides:
 nominals:
 - "C3SHW19workerTableViewCell"
 class-members:
-- "workYears"
-- "awakeFromNib"
-- "setSelected"
-- "Status"
-- "servantScore"
-- "Score"
 - "servantStatus"
-- "servantName"
+- "Score"
+- "setSelected"
+- "servantScore"
 - "headPicture"
+- "servantName"
+- "Status"
+- "awakeFromNib"
+- "workYears"
 top-level:
-- "UILabel"
 - "UITableViewCell"
 - "UIImageView"
 - "Bool"
+- "UILabel"
 member-access:
-- "CSo11UIResponder"
 - "C3SHW19workerTableViewCell"
-- "PSs9AnyObject"
-- "CSo8NSObject"
+- "CSo11UIResponder"
 - "CSo6UIView"
+- "PSs9AnyObject"
 - "CSo15UITableViewCell"
+- "CSo8NSObject"
 dynamic-lookup:
 cross-module:
 - "/Volumes/Xcode/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/Swift.swiftmodule"

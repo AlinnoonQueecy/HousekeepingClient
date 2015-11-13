@@ -202,8 +202,8 @@ SWIFT_CLASS("_TtC3SHW10BaseInfoVC")
 - (NSString * __nullable)pickerView:(UIPickerView * __nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
 - (void)pickerView:(UIPickerView * __nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
 - (void)tapped:(UIButton * __nonnull)button;
-- (void)datePickerValueChange:(UIDatePicker * __nonnull)sender;
 - (void)alertView:(UIAlertView * __nonnull)alertView clickedButtonAtIndex:(NSInteger)buttonIndex;
+- (void)datePickerValueChange:(UIDatePicker * __nonnull)sender;
 - (void)viewWillAppear;
 - (void)check;
 - (void)reply;
@@ -755,8 +755,8 @@ SWIFT_CLASS("_TtC3SHW12IndexSetting")
 @property (nonatomic, copy) NSString * __nonnull indexCode;
 @property (nonatomic, copy) NSString * __nonnull indexName;
 @property (nonatomic, copy) NSString * __nonnull indexRange;
-@property (nonatomic, copy) NSString * __nonnull typeID;
-- (SWIFT_NULLABILITY(nonnull) instancetype)initWithId:(NSInteger)id serviceType:(NSString * __nonnull)serviceType indexCode:(NSString * __nonnull)indexCode indexName:(NSString * __nonnull)indexName indexRange:(NSString * __nonnull)indexRange typeID:(NSString * __nonnull)typeID OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, copy) NSString * __nonnull price;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithId:(NSInteger)id serviceType:(NSString * __nonnull)serviceType indexCode:(NSString * __nonnull)indexCode indexName:(NSString * __nonnull)indexName indexRange:(NSString * __nonnull)indexRange price:(NSString * __nonnull)price OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UIImagePickerController;
@@ -894,13 +894,20 @@ SWIFT_CLASS("_TtC3SHW6MainVC")
 @property (nonatomic) UIView * __null_unspecified detailView;
 @property (nonatomic) UIWebView * __null_unspecified webView;
 @property (nonatomic) UIButton * __nonnull LocationB;
-@property (nonatomic) NSData * __nullable _data;
+@property (nonatomic) NSData * __nullable data;
 @property (nonatomic) NSString * __nullable imageUrlString;
 @property (nonatomic) UIImage * __nullable img;
+@property (nonatomic) UIImage * __nullable termImg;
+
+/// 定位服务
 @property (nonatomic) BMKLocationService * __null_unspecified locationService;
+
+/// 当前用户位置
 @property (nonatomic) BMKUserLocation * __null_unspecified userLocation;
 @property (nonatomic) CLLocationDegrees la;
 @property (nonatomic) CLLocationDegrees lo;
+
+/// 地理位置编码
 @property (nonatomic) BMKGeoCodeSearch * __null_unspecified geocodeSearch;
 - (void)viewDidLoad;
 - (void)viewDidLayoutSubviews;
@@ -1077,14 +1084,14 @@ SWIFT_CLASS("_TtC3SHW7OrderVC")
 @property (nonatomic) NSString * __nonnull statusLabelText;
 @property (nonatomic, copy) NSString * __nonnull customerid;
 @property (nonatomic, copy) NSString * __nonnull loginPassword;
-@property (nonatomic, copy) NSString * __nonnull ServiceType;
 @property (nonatomic, copy) NSArray * __nonnull Data;
 @property (nonatomic, copy) NSArray * __nonnull servantData;
-@property (nonatomic) UILabel * __nullable itemName;
+@property (nonatomic) UILabel * __nullable itemN;
 @property (nonatomic) UILabel * __nullable serviceTypeL;
 @property (nonatomic) UILabel * __nullable itemIntro;
 @property (nonatomic) UILabel * __nullable priceDescription;
 @property (nonatomic) UIButton * __nonnull AddServant;
+@property (nonatomic) UITextField * __nonnull itemName;
 @property (nonatomic) UILabel * __nonnull servantName1;
 @property (nonatomic) UITextField * __nonnull servantName;
 @property (nonatomic) UILabel * __nonnull Servant;

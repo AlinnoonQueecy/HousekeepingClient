@@ -217,13 +217,13 @@ class ChangePasswordVC: UIViewController,UITextFieldDelegate {
      
       }
     func textDidChange(){
-        NewP = Newpassword.text!
-        ConfirmP = Confirmpassword.text!
-        if NewP.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) != 6{
-            label2.text = "请输入六位密码！"
+        NewP = Newpassword.text
+        ConfirmP = Confirmpassword.text
+        if !verifyPassword(NewP){
+            label2.text = "请输入由6-20位数组、字母组成的密码！"
         }else if NewP == OriginalP{
             label2.text = "和原密码相同！"
-        
+            
         }else {
             label2.text = ""
             if NewP != ConfirmP {
@@ -231,10 +231,10 @@ class ChangePasswordVC: UIViewController,UITextFieldDelegate {
             }else{
                 label3.text = ""
                 button.addTarget(self , action: Selector("tapped"), forControlEvents: UIControlEvents.TouchUpInside)
-                            
+                
             }
         }
- 
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

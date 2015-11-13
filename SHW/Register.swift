@@ -61,7 +61,7 @@ class Register: UIViewController,UITextFieldDelegate,UIAlertViewDelegate  {
             label2.text = Register[i]
             let n = CGFloat(32+64+57*4-40)
             let agreement = UIButton(frame: CGRectMake(15,n , 150, 30))
-            agreement.setTitle("《生活网用户协议》", forState: UIControlState.Normal)
+            agreement.setTitle("《全民家政用户协议》", forState: UIControlState.Normal)
             agreement.setTitleColor(UIColor.blueColor(), forState: UIControlState.Normal)
             agreement.backgroundColor = UIColor.whiteColor()
             agreement.titleLabel?.font = UIFont.systemFontOfSize(14)
@@ -92,7 +92,7 @@ class Register: UIViewController,UITextFieldDelegate,UIAlertViewDelegate  {
         customerID.adjustsFontSizeToFitWidth=true  //当文字超出文本框宽度时，自动调整文字大小
         customerID.minimumFontSize=14
         customerID.becomeFirstResponder()
-        customerID.placeholder = "请输入6至8位的账户名"
+        customerID.placeholder = "由6-20位数字、字母组成"
         customerID.delegate = self //设置代理
         customerID.clearButtonMode=UITextFieldViewMode.WhileEditing  //编辑时出现清除按钮
         customerID.returnKeyType = UIReturnKeyType.Go //表示完成输入，同时会跳到另一页
@@ -117,7 +117,7 @@ class Register: UIViewController,UITextFieldDelegate,UIAlertViewDelegate  {
         loginPassword.minimumFontSize=14
         loginPassword.becomeFirstResponder()
         loginPassword.delegate = self //设置代理
-        loginPassword.placeholder = "请输入6位密码"
+        loginPassword.placeholder = "由6-20位数字、字母组成"
         loginPassword.secureTextEntry = true
         loginPassword.clearButtonMode=UITextFieldViewMode.WhileEditing  //编辑时出现清除按钮
         loginPassword.returnKeyType = UIReturnKeyType.Go //表示完成输入，同时会跳到另一页
@@ -185,34 +185,27 @@ class Register: UIViewController,UITextFieldDelegate,UIAlertViewDelegate  {
         
     }
     
-    
     func tapped(button:UIButton){
-    
-        if customerID.text!.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) > 8 || customerID.text!.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) <  6{
+      
+        if !verifyPassword(customerID.text){
             let alert = UIAlertView()
             alert.title = ""
-            alert.message = "请输入6到8位用户账号"
+            alert.message = "请输入正确的用户账号"
             alert.addButtonWithTitle("确定")
             alert.show()
-        }else if phoneNo.text!.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) != 11{
+        }else if !verifyPhoneNumber(phoneNo.text){
             let alert = UIAlertView()
             alert.title = ""
-            alert.message = "请输入联系电话"
+            alert.message = "请输入正确的电话"
             alert.addButtonWithTitle("确定")
             alert.show()
-        }else if loginPassword.text == ""{
+        }else if !verifyPassword(loginPassword.text) {
             let alert = UIAlertView()
             alert.title = ""
-            alert.message = "请输入登录密码"
+            alert.message = "请输入正确的登录密码"
             alert.addButtonWithTitle("确定")
             alert.show()
             
-        }else if loginPassword.text!.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) != 6 {
-            let alert = UIAlertView()
-            alert.title = ""
-            alert.message = "请输入6位登录密码"
-            alert.addButtonWithTitle("确定")
-            alert.show()
             
         }else if Password.text != loginPassword.text{
             let alert = UIAlertView()
@@ -220,8 +213,10 @@ class Register: UIViewController,UITextFieldDelegate,UIAlertViewDelegate  {
             alert.message = "两次密码输入不同!"
             alert.addButtonWithTitle("确定")
             alert.show()
-
+            
         }else{
+            
+
             
             var url: NSURL! = NSURL(string:HttpData.http+"/NationalService/MobileCustomerInfoAction?operation=_add")
             
@@ -261,8 +256,10 @@ class Register: UIViewController,UITextFieldDelegate,UIAlertViewDelegate  {
             if serverResponse == "Success" {
                 //self.performSegueWithIdentifier("", sender: self)
                 let alert =  UIAlertView(title: "注册成功", message: "请登录", delegate: self, cancelButtonTitle: "确定")
-                alert.delegate = self
-                alert.show()
+                  alert.delegate = self
+              
+                  alert.show()
+                  alert.tag  =  1
                 customerid = customerID.text!
                 loginPwd = loginPassword.text!
                 saveNSUerDefaults ()
@@ -280,8 +277,9 @@ class Register: UIViewController,UITextFieldDelegate,UIAlertViewDelegate  {
     }
     //UIAlert触发函数
     func  alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
+         if (alertView.tag == 1) {
         self.dismissViewControllerAnimated(true, completion: nil)
-        
+        }
         //self.performSegueWithIdentifier("back", sender: self)
     }
     //导航条详情

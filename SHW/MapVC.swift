@@ -136,7 +136,7 @@ class MapVC: UIViewController,BMKMapViewDelegate,BMKLocationServiceDelegate{
 //            var coordinator = CLLocationCoordinate2DMake(Double(n)+la, lo)
             let coordinator = CLLocationCoordinate2DMake(servantData[i].registerLatitude, servantData[i].registerLongitude)
             pointAnnotation.coordinate = coordinator
-            pointAnnotation.title = servantData[i].servantName
+            pointAnnotation.title = "姓名:\(servantData[i].servantName)"
             pointAnnotation.subtitle = "星级:\(servantData[i].servantScore)"
             mapView.addAnnotation(pointAnnotation)
             //mapView.selectAnnotation(pointAnnotation, animated: true)

@@ -58,6 +58,7 @@
 		1F7974F21B2EA90B0052EED2 /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7974F11B2EA90B0052EED2 /* WebVC.swift */; };
 		1F7975141B2EC1840052EED2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7975121B2EC1840052EED2 /* LoginVC.swift */; };
 		1F7A38D31B08E47800776F4F /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7A38D21B08E47800776F4F /* MainVC.swift */; };
+		1F7FAA801BF4745800BA32A7 /* HSVerify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7FAA7F1BF4745800BA32A7 /* HSVerify.swift */; };
 		1F7FB9DE1BC518F8004DD69B /* beifen20151007.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7FB9DD1BC518F8004DD69B /* beifen20151007.swift */; };
 		1F84A9641B71A7B500FE8B85 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F84A9631B71A7B500FE8B85 /* Register.swift */; };
 		1F84A9661B71E32300FE8B85 /* PackageOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F84A9651B71E32300FE8B85 /* PackageOrder.swift */; };
@@ -211,6 +212,7 @@
 		1F7974F11B2EA90B0052EED2 /* WebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
 		1F7975121B2EC1840052EED2 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		1F7A38D21B08E47800776F4F /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		1F7FAA7F1BF4745800BA32A7 /* HSVerify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSVerify.swift; sourceTree = "<group>"; };
 		1F7FB9DD1BC518F8004DD69B /* beifen20151007.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = beifen20151007.swift; sourceTree = "<group>"; };
 		1F84A9631B71A7B500FE8B85 /* Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		1F84A9651B71E32300FE8B85 /* PackageOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackageOrder.swift; sourceTree = "<group>"; };
@@ -618,6 +620,7 @@
 		F806DA671B083CAF00BA6DCD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1F7FAA7F1BF4745800BA32A7 /* HSVerify.swift */,
 				1FC5307B1BAACEA1006B1A7C /* NSString+URL.h */,
 				1FC5307C1BAACEA1006B1A7C /* NSString+URL.m */,
 				1FC5300D1BA96C7D006B1A7C /* ZYHWebImage.swift */,
@@ -800,6 +803,7 @@
 				1FA104961B85AB4D00BD9AC5 /* MD5DataSigner.h in Sources */,
 				1FA104971B85AB4D00BD9AC5 /* MD5DataSigner.m in Sources */,
 				1FA104981B85AB4D00BD9AC5 /* NSDataEx.h in Sources */,
+				1F7FAA801BF4745800BA32A7 /* HSVerify.swift in Sources */,
 				1FA104991B85AB4D00BD9AC5 /* NSDataEx.m in Sources */,
 				1FA1049A1B85AB4D00BD9AC5 /* openssl_wrapper.h in Sources */,
 				1FA1049B1B85AB4D00BD9AC5 /* openssl_wrapper.m in Sources */,
@@ -972,7 +976,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
-				PROVISIONING_PROFILE = "93780eb2-2d30-4873-b386-4c8b865b5c9e";
+				PROVISIONING_PROFILE = "a5d4becb-f5ba-4224-af71-9243471fd466";
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/SHW/SHW-Bridge-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1027,7 +1031,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PROVISIONING_PROFILE = "93780eb2-2d30-4873-b386-4c8b865b5c9e";
+				PROVISIONING_PROFILE = "a5d4becb-f5ba-4224-af71-9243471fd466";
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/SHW/SHW-Bridge-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";

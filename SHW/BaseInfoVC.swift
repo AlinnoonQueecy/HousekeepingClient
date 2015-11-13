@@ -517,40 +517,47 @@ class BaseInfoVC: UIViewController,UITextFieldDelegate,NSURLConnectionDataDelega
     }
     
 
-     func tapped(button:UIButton){
-    
-      if customerName.text == ""{
+    func tapped(button:UIButton){
+        
+        if customerName.text == ""{
             let alert = UIAlertView()
             alert.title = ""
             alert.message = "请输入姓名"
             alert.addButtonWithTitle("确定")
             alert.show()
-        }else if  phoneNo.text!.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) != 11{
+        }else if !verifyPhoneNumber(phoneNo.text) && phoneNo.text != ""{
             let alert = UIAlertView()
             alert.title = ""
-            alert.message = "请输入正确电话号码"
+            alert.message = "请输入正确的座机号码"
             alert.addButtonWithTitle("确定")
             alert.show()
             
-      }else if  emailAddress.text == ""{
-        let alert = UIAlertView()
-        alert.title = ""
-        alert.message = "请输入邮箱地址"
-        alert.addButtonWithTitle("确定")
-        alert.show()
-      }else if  dizhi.text == ""{
-        let alert = UIAlertView()
-        alert.title = ""
-        alert.message = "请输入所在地"
-        alert.addButtonWithTitle("确定")
-        alert.show()
-      }else if  contactAddress.text == ""{
-        let alert = UIAlertView()
-        alert.title = ""
-        alert.message = "请输入联系地址"
-        alert.addButtonWithTitle("确定")
-        alert.show()
-      }else{
+        }else if !verifyPhoneNumber(mobilePhone.text) {
+            let alert = UIAlertView()
+            alert.title = ""
+            alert.message = "请输入正确的联系电话"
+            alert.addButtonWithTitle("确定")
+            alert.show()
+            
+        }else if !verifyEmail(emailAddress.text){
+            let alert = UIAlertView()
+            alert.title = ""
+            alert.message = "请输入正确的邮箱地址"
+            alert.addButtonWithTitle("确定")
+            alert.show()
+        }else if  dizhi.text == ""{
+            let alert = UIAlertView()
+            alert.title = ""
+            alert.message = "请输入所在地"
+            alert.addButtonWithTitle("确定")
+            alert.show()
+        }else if  contactAddress.text == ""{
+            let alert = UIAlertView()
+            alert.title = ""
+            alert.message = "请输入联系地址"
+            alert.addButtonWithTitle("确定")
+            alert.show()
+        }else{
     
         let url: NSURL! = NSURL(string:HttpData.http+"/NationalService/MobileCustomerInfoAction?operation=_update")
             
@@ -591,6 +598,8 @@ class BaseInfoVC: UIViewController,UITextFieldDelegate,NSURLConnectionDataDelega
                 //self.performSegueWithIdentifier("", sender: self)
                 let alert =  UIAlertView(title: "修改成功", message: "", delegate: self, cancelButtonTitle: "确定")
                 alert.delegate = self
+                alert.tag = 1
+
                 alert.show()
                 Info = QueryInfo(customerid) as MyInfo
                 
@@ -606,6 +615,13 @@ class BaseInfoVC: UIViewController,UITextFieldDelegate,NSURLConnectionDataDelega
         
     }
     
+    func  alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
+        if (alertView.tag == 1) {
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
+    }
+    
+
  
     /// 响应 datePicker 事件
     func datePickerValueChange(sender: UIDatePicker) {
@@ -613,12 +629,7 @@ class BaseInfoVC: UIViewController,UITextFieldDelegate,NSURLConnectionDataDelega
         customerBirthday.text = "\(sender.date)"
         
     }
-    //根据被点击按钮索引，触发事件
-    func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
-        print("点击确定")
-        //就是试试，不用
-    }
- 
+  
     
     
     func viewWillAppear(){
