@@ -54,6 +54,7 @@
 		1F694D0D1BB7DD5C0011B97F /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F694D0C1BB7DD5C0011B97F /* MapVC.swift */; };
 		1F694D111BB816550011B97F /* AnimatedAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F694D101BB816550011B97F /* AnimatedAnnotationView.swift */; };
 		1F694D451BBA3E2B0011B97F /* area.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F694D441BBA3E2B0011B97F /* area.plist */; };
+		1F6A9B591BF586BF004A4175 /* Type.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F6A9B581BF586BF004A4175 /* Type.plist */; };
 		1F7974DC1B2E79100052EED2 /* BusinessDVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7974DB1B2E79100052EED2 /* BusinessDVC.swift */; };
 		1F7974F21B2EA90B0052EED2 /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7974F11B2EA90B0052EED2 /* WebVC.swift */; };
 		1F7975141B2EC1840052EED2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7975121B2EC1840052EED2 /* LoginVC.swift */; };
@@ -208,6 +209,7 @@
 		1F694D0C1BB7DD5C0011B97F /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		1F694D101BB816550011B97F /* AnimatedAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedAnnotationView.swift; sourceTree = "<group>"; };
 		1F694D441BBA3E2B0011B97F /* area.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = area.plist; sourceTree = "<group>"; };
+		1F6A9B581BF586BF004A4175 /* Type.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Type.plist; sourceTree = "<group>"; };
 		1F7974DB1B2E79100052EED2 /* BusinessDVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessDVC.swift; sourceTree = "<group>"; };
 		1F7974F11B2EA90B0052EED2 /* WebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
 		1F7975121B2EC1840052EED2 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -347,6 +349,7 @@
 			children = (
 				1F694D441BBA3E2B0011B97F /* area.plist */,
 				1F10BE0E1B65BB2E00F028CB /* MyPlayground.playground */,
+				1F6A9B581BF586BF004A4175 /* Type.plist */,
 			);
 			name = "New Group";
 			sourceTree = "<group>";
@@ -761,6 +764,7 @@
 				1F694D451BBA3E2B0011B97F /* area.plist in Resources */,
 				1FAE5FE51BB19F2F00C86F3A /* mapapi.bundle in Resources */,
 				1FAE5FF71BB28EAD00C86F3A /* LaunchScreen.xib in Resources */,
+				1F6A9B591BF586BF004A4175 /* Type.plist in Resources */,
 				1FAE5FED1BB286CA00C86F3A /* icon_120.png in Resources */,
 				1F380C511B69BD2A0076ABB7 /* ico_make.png in Resources */,
 				1FAE5FFF1BB2943B00C86F3A /* Launch8_4.7.png in Resources */,

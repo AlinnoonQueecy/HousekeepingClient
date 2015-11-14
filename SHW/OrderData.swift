@@ -94,8 +94,8 @@ func QureyDeclare (customerID:String,customerName:String,servantID:String,servan
     
     let param:String = "{\"customerID\":\"\(customerID)\",\"customerName\":\"\(customerName)\",\"servantID\":\"\(servantID)\",\"servantName\":\"\(servantName)\",\"phoneNo\":\"\(phoneNo)\",\"serviceTime\":\"\(serviceTime)\",\"serviceProvince\":\"\(serviceProvince)\",\"serviceCity\":\"\(serviceCity)\",\"serviceCounty\":\"\(serviceCounty)\",\"serviceAddress\":\"\(serviceAddress)\",\"serviceLongitude\":\"\(serviceLongitude)\",\"serviceLatitude\":\"\(serviceLatitude)\",\"salary\":\"\(salary)\",\"serviceType\":\"\(serviceType)\",\"remarks\":\"\(remarks)\",\"isDirected\":\"\(isDirected)\"}"
     
-    print("param")
-    print(param)
+    println("param")
+    println(param)
     
     let data:NSData = param.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true)!
     request.HTTPBody = data;

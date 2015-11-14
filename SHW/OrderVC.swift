@@ -58,7 +58,7 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
     var orderY = CGFloat()
     //var customerInfoY = CGFloat()
     var CBY = CGFloat()
-       var isDirected:String!
+    var isDirected:String = "1"
     //经纬度
     var serviceLongitude:Double!
     var serviceLatitude:Double!
@@ -68,27 +68,32 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
     
     var root:NSArray = []
     var provinces:NSArray = []
-    var  dictionary1:NSDictionary!
+    var dictionary1:NSDictionary!
     var province:String = ""
     var cities:NSArray = []
     var areas:NSArray = []
 
     //选择的城市和地区
     var  selectprovince:String!
-    var  selectcity:String!
-    var  selectcounty:String!
+    var  selectcity:String = ""
+    var  selectcounty:String = ""
     
 
     
     var datePicker: UIDatePicker!
     var Date:String!
     var pickview:UIPickerView!
+    //服务人员选择
     var selectServantPick:UIPickerView!
-    var  selectServantID:String!
-    var  selectServantName:String!
-    
+    var selectServantID:String!
+    var selectServantName:String!
+    //项目选择
+    var selectItemPick:UIPickerView!
+    var selectItem:String!
+    //项目数据
     var TypeData:[String:NSArray] = Dictionary<String,NSArray>()
-
+    var secondtypes:NSArray!
+     var  Index:NSArray!
   
     
     override func viewDidLoad() {
@@ -104,6 +109,7 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
         
         //初始化数据
         myinfo = QueryInfo(customerid) as MyInfo
+        // 初始化数据
         var  FirstTypeData:[ServiceType] = refreshParentType("") as! [ServiceType]
         for var i = 0;i < FirstTypeData.count;i++ {
             
@@ -111,16 +117,20 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
             
             var STypeData = refreshServiceType(FTypeName) as![ServiceType]
             
-              var range:[String] = []
+            var range:[String] = []
             for var n = 0;n < STypeData.count;n++ {
                 range += [STypeData[n].typeName] // 小类名称
                 
             }
-       
+            
             
             TypeData[FTypeName] = range
         }
+        secondtypes = TypeData.values.array[0]
+        var keys:NSArray = Array(TypeData.keys)
+        println("data\(TypeData.count)")
         
+        self.Index  = keys
         
         //实例化导航条
         navigationBar = UINavigationBar(frame: CGRectMake(0, 0, width, 64))
@@ -203,25 +213,16 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
         itemN.font = UIFont.systemFontOfSize(15)
         scrollView.addSubview(itemN)
         
-        itemName = UITextField(frame: CGRectMake(80, orderY+35+35, width-90, 30))
-        itemName.borderStyle = UITextBorderStyle.RoundedRect
-        itemName.clearButtonMode=UITextFieldViewMode.WhileEditing
-        //编辑时出现清除按钮
-        scrollView.addSubview(itemName)
-
         
- 
         
-     
-        selectServantPick = UIPickerView(frame: CGRectMake(0,300,width, 300))
         
-        selectServantPick.dataSource = self
-        selectServantPick.tag  = 1
-     
+        selectItemPick = UIPickerView(frame: CGRectMake(0,300,width, 300))
+        selectItemPick.dataSource = self
+        selectItemPick.tag = 1
         
         //添加ToolBar（可以不要）
         
-        let f = selectServantPick.frame
+        let f = selectItemPick.frame
         let toolbar = UIToolbar(frame: CGRectMake(0, 0, f.width, (f.height * 0.15)))
         var buttons = [UIBarButtonItem]()
         let space = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil)
@@ -229,48 +230,23 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
         let doneButton = UIBarButtonItem(title: "确定", style: UIBarButtonItemStyle.Plain, target: self, action: "donePressed")
         buttons.append(doneButton)
         toolbar.setItems(buttons, animated: false)
-        
-        Servant = UILabel(frame: CGRectMake(15, orderY+105, labelW, 25))
-        Servant.text = "服务员ID: "
-        Servant.textColor = UIColor.blackColor()
-        Servant.font = UIFont.systemFontOfSize(15)
-        scrollView.addSubview(Servant)
-        servantID = UITextField(frame: CGRectMake(80, orderY+105, width-90, 30))
-        servantID.borderStyle = UITextBorderStyle.RoundedRect
-        servantID.adjustsFontSizeToFitWidth=true  //当文字超出文本框宽度时，自动调整文字大小
-        servantID.minimumFontSize=12
-        
-        //servantID.clearButtonMode=UITextFieldViewMode.WhileEditing
+
+
+        itemName = UITextField(frame: CGRectMake(80, orderY+35+35, width-90, 30))
+        itemName.borderStyle = UITextBorderStyle.RoundedRect
+        itemName.clearButtonMode=UITextFieldViewMode.WhileEditing
         //编辑时出现清除按钮
-//        Servant.hidden = true
-//        servantID.hidden = true
-        servantID.returnKeyType = UIReturnKeyType.Go //表示完成输入，同时会跳到另一页
-        //servantID.enabled = false
-        servantID.inputView = selectServantPick
-        servantID.inputAccessoryView = toolbar
-       
-        scrollView.addSubview(servantID)
+        itemName.inputView = selectItemPick
+        itemName.inputAccessoryView = toolbar
+        scrollView.addSubview(itemName)
+
+        
+
+     
         
         
-        let ServantH = orderY+140
-        servantName1 = UILabel(frame: CGRectMake(15, ServantH, labelW, 25))
-        servantName1.text = "人员名称:"
-        servantName1.textColor = UIColor.blackColor()
-        servantName1.font = UIFont.systemFontOfSize(15)
-        scrollView.addSubview(servantName1)
-        
-        servantName = UITextField(frame: CGRectMake(80,ServantH, width-90, 30))
-        servantName.enabled = false
-        servantName.borderStyle = UITextBorderStyle.RoundedRect
-        servantName.adjustsFontSizeToFitWidth=true  //当文字超出文本框宽度时，自动调整文字大小
-        servantName.minimumFontSize=12
-       
-        //servantName.clearButtonMode=UITextFieldViewMode.WhileEditing
-        //编辑时出现清除按钮
-//        servantName1.hidden = true
-//        servantName.hidden = true
-        scrollView.addSubview(servantName)
-        //薪水
+        let ServantH = orderY+70
+             //薪水
         let salaryLabel = UILabel(frame: CGRectMake(15, ServantH+35, 80, 25))
         salaryLabel.text = "服务费用:"
         salaryLabel.textColor = UIColor.blackColor()
@@ -340,7 +316,7 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
         scrollView.addSubview(quyu)
    
         pickview = UIPickerView()
-        pickview.tag = 2
+        pickview.tag = 3
         pickview.dataSource = self
         
  
@@ -394,14 +370,57 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
         dizhi.text = myinfo.contactAddress
         scrollView.addSubview(dizhi)
         
-    
-        let mobilePhone = UILabel(frame: CGRectMake(15, customerInfoY+35, 80, 25))
+        
+        
+        
+        
+        selectServantPick = UIPickerView()
+        selectServantPick.dataSource = self
+        selectServantPick.tag  = 2
+        
+        Servant = UILabel(frame: CGRectMake(15, customerInfoY+35, labelW, 25))
+        Servant.text = "服务员ID: "
+        Servant.textColor = UIColor.blackColor()
+        Servant.font = UIFont.systemFontOfSize(15)
+        scrollView.addSubview(Servant)
+        
+        servantID = UITextField(frame: CGRectMake(80, customerInfoY+35, width-90, 30))
+        servantID.borderStyle = UITextBorderStyle.RoundedRect
+        servantID.adjustsFontSizeToFitWidth=true  //当文字超出文本框宽度时，自动调整文字大小
+        servantID.minimumFontSize=12
+        //servantID.returnKeyType = UIReturnKeyType.Go //表示完成输入，同时会跳到另一页
+        servantID.inputView = selectServantPick
+        servantID.inputAccessoryView = toolbar
+        
+        scrollView.addSubview(servantID)
+        
+        
+        
+        servantName1 = UILabel(frame: CGRectMake(15, customerInfoY+70, labelW, 25))
+        servantName1.text = "人员名称:"
+        servantName1.textColor = UIColor.blackColor()
+        servantName1.font = UIFont.systemFontOfSize(15)
+        scrollView.addSubview(servantName1)
+        
+        servantName = UITextField(frame: CGRectMake(80,customerInfoY+70, width-90, 30))
+        servantName.enabled = false
+        servantName.borderStyle = UITextBorderStyle.RoundedRect
+        servantName.adjustsFontSizeToFitWidth=true  //当文字超出文本框宽度时，自动调整文字大小
+        servantName.minimumFontSize=12
+        
+        //servantName.clearButtonMode=UITextFieldViewMode.WhileEditing
+        //编辑时出现清除按钮
+        //        servantName1.hidden = true
+        //        servantName.hidden = true
+        scrollView.addSubview(servantName)
+
+        let mobilePhone = UILabel(frame: CGRectMake(15, customerInfoY+105, 80, 25))
         mobilePhone.text = "联系电话:"
         mobilePhone.textColor = UIColor.blackColor()
         mobilePhone.font = UIFont.systemFontOfSize(15)
         scrollView.addSubview(mobilePhone)
-        dianhua = UITextField(frame: CGRectMake(80, customerInfoY+35, width-90, 30))
-        dianhua.text = myinfo.mobilePhone
+        dianhua = UITextField(frame: CGRectMake(80, customerInfoY+105, width-90, 30))
+        dianhua.text = myinfo.phoneNo
         dianhua.borderStyle = UITextBorderStyle.RoundedRect
         dianhua.adjustsFontSizeToFitWidth=true  //当文字超出文本框宽度时，自动调整文字大小
         dianhua.minimumFontSize=12
@@ -411,13 +430,13 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
         scrollView.addSubview(dianhua)
         
         //备注
-        let remark = UILabel(frame: CGRectMake(15, customerInfoY+70,50, 25))
+        let remark = UILabel(frame: CGRectMake(15, customerInfoY+140,50, 25))
         remark.text = "备注:"
         remark.textColor = UIColor.blackColor()
         remark.font = UIFont.systemFontOfSize(15)
         scrollView.addSubview(remark)
         
-        beizhu = UITextView(frame: CGRectMake(80, customerInfoY+70,width-90, 80))
+        beizhu = UITextView(frame: CGRectMake(80, customerInfoY+140,width-90, 80))
         //字体
         beizhu.font = UIFont.systemFontOfSize(15)
         beizhu.textColor = UIColor.blackColor()
@@ -440,7 +459,7 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
         beizhu.keyboardType = UIKeyboardType.Twitter
         scrollView.addSubview(beizhu)
         //预定按钮
-        CBY = customerInfoY+100+80
+        CBY = customerInfoY+160+80
         yuyue = UIButton(frame:CGRectMake(width/2-125, CBY,250,30))
         yuyue! .setTitle("确认预订", forState:UIControlState.Normal)
         yuyue!.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
@@ -462,8 +481,8 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
         
         
          Data = [anyServant]
-        
-         Data += servantData
+//        // servantData = refreshServant(selectItem,"","","") as! [ServantInfo]
+//         Data += servantData
         
         
         
@@ -483,7 +502,7 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
     //toolBar 的函数
     func donePressed() {
         
-        
+        //时间
         serviceTime.resignFirstResponder()
         // NSDate转化NSString
         let s = datePicker.date
@@ -491,11 +510,14 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
         Date = dateFormatter.stringFromDate(s)
         serviceTime.text = "\(Date)"
-        
+        //服务项目
+        itemName.resignFirstResponder()
+        itemName.text = selectItem
+        //服务人员
         servantID.resignFirstResponder()
         servantID.text = selectServantID
         servantName.text = selectServantName
-        
+        //服务区域
         serviceCounty.resignFirstResponder()
         serviceCounty.text = "\(selectprovince)省 \(selectcity)市 \(selectcounty)"
         
@@ -504,10 +526,19 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         
         if pickerView.tag == 1{
-           return 1
+        println("1")
+           return 2
         }else if pickerView.tag == 2 {
-             return 3
+               println("2")
+             return 1
+         
+
             
+        }else if pickerView.tag == 3{
+             println("3")
+             return 3
+           
+
         }
        
           return 1
@@ -517,10 +548,50 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         
+        
         if pickerView.tag == 1{
-            return  Data.count
+            
+            println("11")
+
+            if component == 0 {
+                
+                return  TypeData.keys.array.count
+               
+            }
+            
+            
+            if component == 1 {
+                
+                return secondtypes.count
+                
+                
+            }
             
         }else if pickerView.tag == 2{
+            
+            //if (selectItem != "") || (selectItem != nil) {
+             if selectItem != nil  {
+//
+                println("Test空")
+                println("selectItem\(selectItem)")
+                servantData = refreshServant(selectItem,"","",selectcounty) as! [ServantInfo]
+                Data += servantData
+                println("行\(Data.count)")
+              
+                
+             }else{
+                let alert =  UIAlertView(title: "", message: "请先选择服务项目", delegate: self, cancelButtonTitle: "确定")
+                  alert.show()
+                
+                
+            }
+        
+           return  Data.count
+
+            
+        }else if pickerView.tag == 3{
+            println("33")
+
         
         if component == 0 {
             
@@ -549,19 +620,44 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
     //设置每行具体内容（titleForRow 和 viewForRow 二者实现其一即可）
     
     func  pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        if pickerView.tag == 1{
+        
+        if pickerView.tag == 1 {
             
-           return Data[row].servantID + Data[row].servantName as  String
+            if component == 0 {
+                
+                return TypeData.keys.array[row] as String
+               
+            }
             
-        }else if pickerView.tag == 2 {
+            if component == 1{
+//                println("具体显示\(secondtypes[row] as? String)")
+
+                return secondtypes[row] as? String
+               
+            }
+
+        }else if pickerView.tag == 2{
+        
+       
+                 if  selectItem != nil  {
+ 
+                
+                 servantData = refreshServant(selectItem,"","",selectcounty) as! [ServantInfo]
+                 Data += servantData
+              
+                return Data[row].servantID + Data[row].servantName as  String
+            }
+          
+            return Data[row].servantID + Data[row].servantName as  String
+
+            
+        }else if pickerView.tag == 3 {
         if component == 0 {
-            //return month[row]
-            //return provinces.keys.array[row]
-            return root[row].objectForKey("state") as? String
+        return root[row].objectForKey("state") as? String
         }
         
         if component == 1{
-            //return week[row]
+        
             return cities[row].objectForKey("city") as? String
             
         }
@@ -578,7 +674,38 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
     //选中行的操作
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-         if pickerView.tag == 2{
+        
+        if pickerView.tag == 1{
+    
+            if(component == 0){
+                
+                
+            secondtypes = TypeData[TypeData.keys.array[row]]!
+            // 重新加载二级选项并复位
+            pickerView.reloadComponent(1)
+            pickerView.selectRow(0, inComponent: 1, animated: true)
+            }
+            
+            
+            let FirstNum = pickerView.selectedRowInComponent(0)
+            
+            let SecondNum = pickerView.selectedRowInComponent(1)
+            
+            if secondtypes != []{
+            
+            selectItem = secondtypes[SecondNum] as! String
+                
+            }
+            itemName.text = selectItem
+            
+        }else if pickerView.tag == 2 {
+            let Num = selectServantPick.selectedRowInComponent(0)
+            selectServantID = Data[Num].servantID
+            selectServantName = Data[Num].servantName
+            servantID.text = selectServantID
+            servantName.text = selectServantName
+            
+        }else if pickerView.tag == 3{
   
     
         if(component == 0){
@@ -603,7 +730,7 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
             pickerView.reloadComponent(2)
             pickerView.selectRow(0, inComponent: 2, animated: true)
             
-        }
+                   }
         
         if(component == 1){
             
@@ -615,11 +742,7 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
             
             pickerView.reloadComponent(2)
             pickerView.selectRow(0, inComponent: 2, animated: true)
-            
-            
-            
-            
-        }
+                 }
 
         let provinceNum = pickview.selectedRowInComponent(0)
         let cityNum = pickview.selectedRowInComponent(1)
@@ -634,20 +757,17 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
         selectcity = cit as! String
         if areas != []{
         selectcounty = areas[areaNum] as! String
-            }
-         }else if pickerView.tag == 1  {
-            let Num = selectServantPick.selectedRowInComponent(0)
-            selectServantID = Data[Num].servantID
-            selectServantName = Data[Num].servantName
-        }
-    }
+                      }
+         }
+    
+     }
     //预定的跳转函数
     func yuding(yuyue:UIButton){
         
   
         
-        if dizhi.text == "" || !verifyPhoneNumber(dianhua.text)||serviceCounty.text == ""||serviceTime.text == ""||customerName.text == ""||salary.text == "" {
-            let alert =  UIAlertView(title: "", message: "请填写完整", delegate: self, cancelButtonTitle: "确定")
+        if dizhi.text == "" || !verifyPhoneNumber(dianhua.text)||serviceCounty.text == ""||serviceTime.text == ""||customerName.text == ""||salary.text == "" || itemName.text == "" {
+            let alert =  UIAlertView(title: "", message: "您还未选全!", delegate: self, cancelButtonTitle: "确定")
             // alert.tag = 1
             alert.show()
             
@@ -757,6 +877,8 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
         println("isDirected\(isDirected)")
         let serverResponse = QureyDeclare(customerid, customerName.text!, servantID.text!,servantName.text!, dianhua.text!, serviceTime.text!,selectprovince, selectcity, selectcounty, dizhi.text!,"\(serviceLongitude)", "\(serviceLatitude)", salary.text!, itemName.text, beizhu.text,isDirected)
         
+       
+        
         if serverResponse == "Success"{
             
             let alert =  UIAlertView(title: "预定成功", message: "服务人员会尽快与您取得联系!", delegate: self, cancelButtonTitle: "确定")
@@ -793,9 +915,10 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
     }
     override func viewWillAppear(animated: Bool) {
           scrollView.delegate = self
-        geocodeSearch.delegate = self
+          geocodeSearch.delegate = self
            pickview.delegate = self
         selectServantPick.delegate = self
+        selectItemPick.delegate = self
         
         salary.text = HttpData.salary
         
@@ -816,6 +939,7 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
         geocodeSearch.delegate = nil
            pickview.delegate = nil
         selectServantPick.delegate = nil
+        selectItemPick.delegate = nil
     }
     
     

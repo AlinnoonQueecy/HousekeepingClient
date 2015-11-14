@@ -399,7 +399,8 @@ class workerViewController: UIViewController,NSURLConnectionDataDelegate{
 //        scrollView.addSubview(comunication!)
 //        comunication!.addTarget(self , action:Selector("comunication"), forControlEvents: UIControlEvents.TouchUpInside)
         //预定按钮
-        yuyue = UIButton(frame:CGRectMake(width/2-125, CBY,250,30))
+//        yuyue = UIButton(frame:CGRectMake(width/2-125, CBY,250,30))
+         yuyue = UIButton(frame:CGRectMake(width/2-125, height-40,250,30))
         yuyue! .setTitle("立即预定", forState:UIControlState.Normal)
         yuyue!.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         yuyue!.titleLabel?.font = UIFont.systemFontOfSize(15)
@@ -415,7 +416,8 @@ class workerViewController: UIViewController,NSURLConnectionDataDelegate{
             yuyue.hidden = false
         }
 
-        scrollView.addSubview(yuyue!)
+       // scrollView.addSubview(yuyue!)
+        self.view.addSubview(yuyue!)
         yuyue!.addTarget(self , action:Selector("yuding:"), forControlEvents: UIControlEvents.TouchUpInside)
         scrollView.contentSize = CGSizeMake(width,CBY+120)
         print(scrollView.bounds.height)

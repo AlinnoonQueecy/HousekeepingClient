@@ -444,15 +444,16 @@ class BusinessVC:  UIViewController,UITableViewDataSource,UITableViewDelegate,JS
           
                 (segue.destinationViewController as! MapVC).ServiceType = object
                (segue.destinationViewController as! MapVC).Data = Data
-        }else if segue.identifier=="toOrder"{
-            let  object = SecondType
-            let  Data = ServantData
-            
-           // (segue.destinationViewController as! OrderVC).ServiceType = object
-            (segue.destinationViewController as! OrderVC).servantData = Data
-
-            
-            }
+      }
+ //           else if segue.identifier=="toOrder"{
+//            let  object = SecondType
+//            let  Data = ServantData
+//            
+//           // (segue.destinationViewController as! OrderVC).ServiceType = object
+//            (segue.destinationViewController as! OrderVC).servantData = Data
+//
+//            
+//            }
      }
     
 }

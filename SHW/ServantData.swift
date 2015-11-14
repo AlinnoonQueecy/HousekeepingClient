@@ -128,13 +128,13 @@ func refreshServant(serviceType:String,attributeName:String,upDown:String,servic
     
     let url: NSURL! = NSURL(string: HttpData.http+"/NationalService/MobileServantInfoAction?operation=_queryServants")
     
-    print("更新人员信息")
+ 
     
     let request:NSMutableURLRequest = NSMutableURLRequest(URL:url, cachePolicy:NSURLRequestCachePolicy.UseProtocolCachePolicy,timeoutInterval: 10)
     
     request.HTTPMethod = "POST"
     let param:String = "{\"serviceItem\":\"\(serviceType)\",\"attributeName\":\"\(attributeName)\",\"upDown\":\"\(upDown)\",\"serviceArea\":\"\(serviceArea)\"}"
-    print("param:\(param)")
+//    print("param:\(param)")
     let data:NSData = param.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true)!
     request.HTTPBody = data;
     var response:NSURLResponse?
@@ -148,7 +148,7 @@ func refreshServant(serviceType:String,attributeName:String,upDown:String,servic
     else
     {
         var jsonString = NSString(data:receiveData!, encoding: NSUTF8StringEncoding)
-        println(jsonString)
+//        println(jsonString)
         
     }
     

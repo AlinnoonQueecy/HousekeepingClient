@@ -8,8 +8,8 @@ top-level:
 - "StringLiteralType"
 - "UnicodeScalarType"
 - "IntegerLiteralType"
-- "String"
 - "FloatLiteralType"
+- "String"
 member-access:
 - "V3SHW8HttpData"
 dynamic-lookup:

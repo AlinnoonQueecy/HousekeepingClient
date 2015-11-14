@@ -319,7 +319,7 @@ class OrderDetailVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NS
         serviceType.font = UIFont.systemFontOfSize(15)
         scrollView.addSubview(serviceType)
         dianhua = UITextField(frame: CGRectMake(80, customerInfoY+140, width-90, 30))
-        dianhua.text = myinfo.mobilePhone
+        dianhua.text = myinfo.phoneNo
         dianhua.borderStyle = UITextBorderStyle.RoundedRect
         dianhua.adjustsFontSizeToFitWidth=true  //当文字超出文本框宽度时，自动调整文字大小
         dianhua.minimumFontSize=12
@@ -372,7 +372,7 @@ class OrderDetailVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NS
         
         
         //scrollView.contentSize = CGSizeMake(width,64+CBY+30+253)
-        scrollView.contentSize = CGSizeMake(width,64+CBY+30)
+        scrollView.contentSize = CGSizeMake(width,64+CBY+50)
         print(scrollView.bounds.height)
         
         
@@ -653,11 +653,11 @@ class OrderDetailVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NS
 //        self.view.endEditing(true)
     }
     func keyboardWillShow(sender:NSNotification){
-        scrollView.contentSize = CGSizeMake(width,64+CBY+40+253)
+        scrollView.contentSize = CGSizeMake(width,64+CBY+50+253)
         
     }
     func keyboardWillHide(sender:NSNotification){
-        scrollView.contentSize = CGSizeMake(width,64+CBY+30)
+        scrollView.contentSize = CGSizeMake(width,64+CBY+50)
         
     }
     override func viewWillAppear(animated: Bool) {

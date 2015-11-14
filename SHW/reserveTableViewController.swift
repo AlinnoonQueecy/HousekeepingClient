@@ -218,20 +218,31 @@ class reserveTViewController: UIViewController,UITableViewDataSource,UITableView
     func reply (){
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    func toOrderVC(){
+                let sb = UIStoryboard(name: "Main", bundle: nil)
+                let vc = sb.instantiateViewControllerWithIdentifier("OrderVC") as! UIViewController
+                self.presentViewController(vc, animated: true, completion: nil)
+    }
     
     func onMakeNavitem() -> UINavigationItem{
         print("创建导航条step1")
-        //创建一个导航项
+        //创建一个导航项UIBarButtonItem
         let navigationItem = UINavigationItem()
         //创建左边按钮
-        let leftButton =  UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Reply, target: self, action: "reply")
+        let leftButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Reply, target: self, action: "reply")
         leftButton.tintColor = UIColor.whiteColor()
-
+       // var rightButton = UIBarButtonItem(title: "发布需求", style: UIBarButtonItemStyle.Bordered, target: self, action: "toOrderVC")
+      
+        var rightButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: "toOrderVC")
+        rightButton.tintColor = UIColor.whiteColor()
+        
+     
         //var leftButton =  UIBarButtonItem(title: "返回", style: UIBarButtonItemStyle.Bordered, target: self, action: "reply")
         //导航栏的标题
         navigationItem.title = "发布列表"
         //设置导航栏左边按钮
         navigationItem.setLeftBarButtonItem(leftButton, animated: true)
+        navigationItem.setRightBarButtonItem(rightButton, animated: true)
         navigationBar.pushNavigationItem(navigationItem, animated: true)
         
         

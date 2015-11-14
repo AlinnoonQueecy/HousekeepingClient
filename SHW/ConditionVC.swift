@@ -124,8 +124,9 @@ class ConditionVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
             }
             println("selectIndex\(selectIndex)")
             
-            salary = getPrice(ServiceType!, selectIndex)
+           // salary = getPrice(ServiceType!, selectIndex)
             
+            salary = "0.01"
             if salary == "-1"{
                 let alert =  UIAlertView(title: "", message: "组合条件错误!", delegate: self, cancelButtonTitle: "确定")
                 alert.show()

@@ -4,21 +4,21 @@ provides:
 nominals:
 - "C8SHWTests8SHWTests"
 class-members:
-- "testExample"
-- "tearDown"
 - "setUp"
 - "testPerformanceExample"
+- "testExample"
+- "tearDown"
 top-level:
-- !private "BooleanLiteralType"
 - "XCTestCase"
 - !private "XCTAssert"
+- !private "BooleanLiteralType"
 - !private "StringLiteralType"
 member-access:
-- "CSo8NSObject"
-- "CSo10XCTestCase"
 - "PSs9AnyObject"
-- !private "C8SHWTests8SHWTests"
 - "CSo6XCTest"
+- "CSo10XCTestCase"
+- !private "C8SHWTests8SHWTests"
+- "CSo8NSObject"
 dynamic-lookup:
 cross-module:
 - "/Volumes/Xcode/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/Swift.swiftmodule"

@@ -1386,7 +1386,7 @@
         <!--OrderVC-->
         <scene sceneID="Syj-Jm-aSy">
             <objects>
-                <viewController title="OrderVC" id="8wZ-Jg-Ax2" customClass="OrderVC" customModule="SHW" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OrderVC" title="OrderVC" id="8wZ-Jg-Ax2" customClass="OrderVC" customModule="SHW" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EJA-ds-flt"/>
                         <viewControllerLayoutGuide type="bottom" id="B97-ct-3p5"/>
@@ -1456,7 +1456,7 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="GUV-7R-3RF"/>
+        <segue reference="jaK-FE-Kyp"/>
         <segue reference="VKq-uR-HhJ"/>
-        <segue reference="NQF-10-sa1"/>
     </inferredMetricsTieBreakers>
 </document>

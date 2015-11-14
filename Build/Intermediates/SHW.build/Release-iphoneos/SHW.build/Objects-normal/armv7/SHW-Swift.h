@@ -514,9 +514,11 @@ SWIFT_CLASS("_TtC3SHW11ConditionVC")
 @property (nonatomic, copy) NSDictionary * __nonnull selectData;
 @property (nonatomic) NSArray * __null_unspecified Index;
 @property (nonatomic, copy) NSString * __null_unspecified indexCode;
+@property (nonatomic, copy) NSString * __null_unspecified indexPrice;
 @property (nonatomic) UITableViewCell * __nullable selectedCell;
 @property (nonatomic) NSIndexPath * __nullable selectedIndexPath;
 @property (nonatomic) NSMutableArray * __nonnull selectedItems;
+@property (nonatomic) NSMutableArray * __nonnull selectedPrice;
 @property (nonatomic, copy) NSString * __null_unspecified salary;
 @property (nonatomic, copy) NSString * __nullable ServiceType;
 - (void)viewWillAppear:(BOOL)animated;
@@ -898,16 +900,10 @@ SWIFT_CLASS("_TtC3SHW6MainVC")
 @property (nonatomic) NSString * __nullable imageUrlString;
 @property (nonatomic) UIImage * __nullable img;
 @property (nonatomic) UIImage * __nullable termImg;
-
-/// 定位服务
 @property (nonatomic) BMKLocationService * __null_unspecified locationService;
-
-/// 当前用户位置
 @property (nonatomic) BMKUserLocation * __null_unspecified userLocation;
 @property (nonatomic) CLLocationDegrees la;
 @property (nonatomic) CLLocationDegrees lo;
-
-/// 地理位置编码
 @property (nonatomic) BMKGeoCodeSearch * __null_unspecified geocodeSearch;
 - (void)viewDidLoad;
 - (void)viewDidLayoutSubviews;
@@ -940,9 +936,15 @@ SWIFT_CLASS("_TtC3SHW6MainVC")
 SWIFT_CLASS("_TtC3SHW5MapVC")
 @interface MapVC : UIViewController <BMKMapViewDelegate, BMKLocationServiceDelegate>
 @property (nonatomic) UINavigationBar * __nullable navigationBar;
+
+/// 百度地图视图
 @property (nonatomic) BMKMapView * __null_unspecified mapView;
 @property (nonatomic) NSInteger i;
+
+/// 定位服务
 @property (nonatomic) BMKLocationService * __null_unspecified locationService;
+
+/// 当前用户位置
 @property (nonatomic) BMKUserLocation * __null_unspecified userLocation;
 @property (nonatomic) BMKPointAnnotation * __null_unspecified pointAnnotation;
 @property (nonatomic) BMKPointAnnotation * __null_unspecified animatedAnnotation;
@@ -959,6 +961,8 @@ SWIFT_CLASS("_TtC3SHW5MapVC")
 - (void)reply;
 - (UINavigationItem * __nonnull)onMakeNavitem;
 - (void)addPointAnnotation;
+
+/// /    /// 添加动画标注
 - (void)addAnimatedAnnotation;
 - (BMKOverlayView * __null_unspecified)mapView:(BMKMapView * __null_unspecified)mapView viewForOverlay:(id <BMKOverlay> __null_unspecified)overlay;
 - (UIImage * __nonnull)getImageFromView:(UIView * __nonnull)view;
@@ -1108,9 +1112,7 @@ SWIFT_CLASS("_TtC3SHW7OrderVC")
 @property (nonatomic) CGFloat width;
 @property (nonatomic) CGFloat orderY;
 @property (nonatomic) CGFloat CBY;
-@property (nonatomic, copy) NSString * __null_unspecified isDirected;
-
-/// 地理位置编码
+@property (nonatomic, copy) NSString * __nonnull isDirected;
 @property (nonatomic) BMKGeoCodeSearch * __null_unspecified geocodeSearch;
 @property (nonatomic) NSArray * __nonnull root;
 @property (nonatomic) NSArray * __nonnull provinces;
@@ -1119,14 +1121,19 @@ SWIFT_CLASS("_TtC3SHW7OrderVC")
 @property (nonatomic) NSArray * __nonnull cities;
 @property (nonatomic) NSArray * __nonnull areas;
 @property (nonatomic, copy) NSString * __null_unspecified selectprovince;
-@property (nonatomic, copy) NSString * __null_unspecified selectcity;
-@property (nonatomic, copy) NSString * __null_unspecified selectcounty;
+@property (nonatomic, copy) NSString * __nonnull selectcity;
+@property (nonatomic, copy) NSString * __nonnull selectcounty;
 @property (nonatomic) UIDatePicker * __null_unspecified datePicker;
 @property (nonatomic, copy) NSString * __null_unspecified Date;
 @property (nonatomic) UIPickerView * __null_unspecified pickview;
 @property (nonatomic) UIPickerView * __null_unspecified selectServantPick;
 @property (nonatomic, copy) NSString * __null_unspecified selectServantID;
 @property (nonatomic, copy) NSString * __null_unspecified selectServantName;
+@property (nonatomic) UIPickerView * __null_unspecified selectItemPick;
+@property (nonatomic, copy) NSString * __null_unspecified selectItem;
+@property (nonatomic, copy) NSDictionary * __nonnull TypeData;
+@property (nonatomic) NSArray * __null_unspecified secondtypes;
+@property (nonatomic) NSArray * __null_unspecified Index;
 - (void)viewDidLoad;
 - (void)selectCondition:(UIButton * __nonnull)conditionB;
 - (void)donePressed;
@@ -1393,6 +1400,7 @@ SWIFT_CLASS("_TtC3SHW22reserveTViewController")
 - (void)cancel:(UIButton * __nonnull)cancel;
 - (void)selected;
 - (void)reply;
+- (void)toOrderVC;
 - (UINavigationItem * __nonnull)onMakeNavitem;
 - (void)refresh;
 - (void)readNSUerDefaults;
