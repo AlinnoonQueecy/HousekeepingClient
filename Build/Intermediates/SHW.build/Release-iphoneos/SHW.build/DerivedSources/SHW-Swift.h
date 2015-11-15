@@ -936,15 +936,9 @@ SWIFT_CLASS("_TtC3SHW6MainVC")
 SWIFT_CLASS("_TtC3SHW5MapVC")
 @interface MapVC : UIViewController <BMKMapViewDelegate, BMKLocationServiceDelegate>
 @property (nonatomic) UINavigationBar * __nullable navigationBar;
-
-/// 百度地图视图
 @property (nonatomic) BMKMapView * __null_unspecified mapView;
 @property (nonatomic) NSInteger i;
-
-/// 定位服务
 @property (nonatomic) BMKLocationService * __null_unspecified locationService;
-
-/// 当前用户位置
 @property (nonatomic) BMKUserLocation * __null_unspecified userLocation;
 @property (nonatomic) BMKPointAnnotation * __null_unspecified pointAnnotation;
 @property (nonatomic) BMKPointAnnotation * __null_unspecified animatedAnnotation;
@@ -961,8 +955,6 @@ SWIFT_CLASS("_TtC3SHW5MapVC")
 - (void)reply;
 - (UINavigationItem * __nonnull)onMakeNavitem;
 - (void)addPointAnnotation;
-
-/// /    /// 添加动画标注
 - (void)addAnimatedAnnotation;
 - (BMKOverlayView * __null_unspecified)mapView:(BMKMapView * __null_unspecified)mapView viewForOverlay:(id <BMKOverlay> __null_unspecified)overlay;
 - (UIImage * __nonnull)getImageFromView:(UIView * __nonnull)view;
@@ -1078,6 +1070,7 @@ SWIFT_CLASS("_TtC3SHW13OrderDetailVC")
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIToolbar;
 
 SWIFT_CLASS("_TtC3SHW7OrderVC")
 @interface OrderVC : UIViewController <UITextFieldDelegate, UIAlertViewDelegate, NSURLConnectionDataDelegate, UIScrollViewDelegate, BMKGeoCodeSearchDelegate, UIPickerViewDataSource, UIPickerViewDelegate>
@@ -1113,6 +1106,8 @@ SWIFT_CLASS("_TtC3SHW7OrderVC")
 @property (nonatomic) CGFloat orderY;
 @property (nonatomic) CGFloat CBY;
 @property (nonatomic, copy) NSString * __nonnull isDirected;
+
+/// 地理位置编码
 @property (nonatomic) BMKGeoCodeSearch * __null_unspecified geocodeSearch;
 @property (nonatomic) NSArray * __nonnull root;
 @property (nonatomic) NSArray * __nonnull provinces;
@@ -1123,6 +1118,7 @@ SWIFT_CLASS("_TtC3SHW7OrderVC")
 @property (nonatomic, copy) NSString * __null_unspecified selectprovince;
 @property (nonatomic, copy) NSString * __nonnull selectcity;
 @property (nonatomic, copy) NSString * __nonnull selectcounty;
+@property (nonatomic) UIToolbar * __null_unspecified toolbar;
 @property (nonatomic) UIDatePicker * __null_unspecified datePicker;
 @property (nonatomic, copy) NSString * __null_unspecified Date;
 @property (nonatomic) UIPickerView * __null_unspecified pickview;
@@ -1141,6 +1137,7 @@ SWIFT_CLASS("_TtC3SHW7OrderVC")
 - (NSInteger)pickerView:(UIPickerView * __nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
 - (NSString * __nullable)pickerView:(UIPickerView * __nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
 - (void)pickerView:(UIPickerView * __nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
+- (void)textFieldDidBeginEditing:(UITextField * __nonnull)servantID;
 - (void)yuding:(UIButton * __nonnull)yuyue;
 - (void)alertView:(UIAlertView * __nonnull)alertView clickedButtonAtIndex:(NSInteger)buttonIndex;
 - (void)didReceiveMemoryWarning;

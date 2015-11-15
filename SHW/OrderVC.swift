@@ -79,7 +79,7 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
     var  selectcounty:String = ""
     
 
-    
+    var toolbar: UIToolbar!
     var datePicker: UIDatePicker!
     var Date:String!
     var pickview:UIPickerView!
@@ -223,7 +223,7 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
         //添加ToolBar（可以不要）
         
         let f = selectItemPick.frame
-        let toolbar = UIToolbar(frame: CGRectMake(0, 0, f.width, (f.height * 0.15)))
+        toolbar = UIToolbar(frame: CGRectMake(0, 0, f.width, (f.height * 0.15)))
         var buttons = [UIBarButtonItem]()
         let space = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil)
         buttons.append(space)
@@ -388,9 +388,10 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
         servantID.borderStyle = UITextBorderStyle.RoundedRect
         servantID.adjustsFontSizeToFitWidth=true  //当文字超出文本框宽度时，自动调整文字大小
         servantID.minimumFontSize=12
+        servantID.delegate = self
         //servantID.returnKeyType = UIReturnKeyType.Go //表示完成输入，同时会跳到另一页
-        servantID.inputView = selectServantPick
-        servantID.inputAccessoryView = toolbar
+//        servantID.inputView = selectServantPick
+//        servantID.inputAccessoryView = toolbar
         
         scrollView.addSubview(servantID)
         
@@ -579,12 +580,14 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
                 println("行\(Data.count)")
               
                 
-             }else{
-                let alert =  UIAlertView(title: "", message: "请先选择服务项目", delegate: self, cancelButtonTitle: "确定")
-                  alert.show()
-                
-                
-            }
+             }
+ //            else{
+//                  println("22")
+//                let alert =  UIAlertView(title: "", message: "请先选择服务项目", delegate: self, cancelButtonTitle: "确定")
+//                  alert.show()
+//                
+//                
+//            }
         
            return  Data.count
 
@@ -761,6 +764,22 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
          }
     
      }
+    //编辑ServantTextField
+   func textFieldDidBeginEditing(servantID: UITextField) {
+        
+        
+        if selectItem == nil {
+            
+            let alert =  UIAlertView(title: "", message: "请先选择服务项目", delegate: self, cancelButtonTitle: "确定")
+            alert.tag = 2
+            alert.show()
+            
+        }else {
+            servantID.inputView = selectServantPick
+            servantID.inputAccessoryView = toolbar
+        }
+        
+    }
     //预定的跳转函数
     func yuding(yuyue:UIButton){
         
@@ -796,6 +815,9 @@ class OrderVC: UIViewController,UITextFieldDelegate,UIAlertViewDelegate,NSURLCon
     func  alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
         if alertView.tag == 1{
             self.dismissViewControllerAnimated(true, completion: nil)
+        }else if alertView.tag == 2{
+            servantID.resignFirstResponder()
+
         }
         
         //self.performSegueWithIdentifier("OrderServantTo", sender: self)

@@ -385,20 +385,7 @@ class workerViewController: UIViewController,NSURLConnectionDataDelegate{
         
 //        //交流按钮
           let CBY = servantintroYH+150+TH4
-//        comunication = UIButton(frame:CGRectMake(30, CBY,100,30))
-//        comunication! .setTitle("在线交流", forState:UIControlState.Normal)
-//        comunication!.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
-//        comunication!.titleLabel?.font = UIFont.systemFontOfSize(15)
-//        //title的位置
-//        comunication!.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Center
-//        //点击是否亮
-//        comunication!.showsTouchWhenHighlighted = true
-//        //圆角
-//        comunication?.layer.cornerRadius = 5
-//        comunication!.backgroundColor = UIColor.orangeColor()
-//        scrollView.addSubview(comunication!)
-//        comunication!.addTarget(self , action:Selector("comunication"), forControlEvents: UIControlEvents.TouchUpInside)
-        //预定按钮
+         //预定按钮
 //        yuyue = UIButton(frame:CGRectMake(width/2-125, CBY,250,30))
          yuyue = UIButton(frame:CGRectMake(width/2-125, height-40,250,30))
         yuyue! .setTitle("立即预定", forState:UIControlState.Normal)
@@ -461,8 +448,7 @@ class workerViewController: UIViewController,NSURLConnectionDataDelegate{
         readNSUerDefaults()
         
         if customerid == "" ||  loginPassword == "" {
-//            let alert =  UIAlertView(title: "", message: "登录后才能收藏哦!", delegate: self, cancelButtonTitle: "确定")
-//            alert.show()
+ 
             
             let sb = UIStoryboard(name: "Main", bundle: nil)
             let vc = sb.instantiateViewControllerWithIdentifier("LoginVC") as! UIViewController
@@ -513,8 +499,7 @@ class workerViewController: UIViewController,NSURLConnectionDataDelegate{
         if customerid != "" && loginPassword != ""{
             self.performSegueWithIdentifier("toOrder", sender: self)
         }else {
-//            let alert =  UIAlertView(title: "", message: "登录后才能预定哦!", delegate: self, cancelButtonTitle: "确定")
-//            alert.show()
+ 
             let sb = UIStoryboard(name: "Main", bundle: nil)
             let vc = sb.instantiateViewControllerWithIdentifier("LoginVC") as! UIViewController
             self.presentViewController(vc, animated: true, completion: nil)
@@ -536,7 +521,6 @@ class workerViewController: UIViewController,NSURLConnectionDataDelegate{
         let leftButton =  UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Reply, target: self, action: "reply")
         leftButton.tintColor = UIColor.whiteColor()
 
-        //var leftButton =  UIBarButtonItem(title: "返回", style: UIBarButtonItemStyle.Bordered, target: self, action: "reply")
         //导航栏的标题
         navigationItem.title = "人员详情"
         //设置导航栏左边按钮
@@ -595,7 +579,7 @@ class workerViewController: UIViewController,NSURLConnectionDataDelegate{
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+         
     }
     
 }
